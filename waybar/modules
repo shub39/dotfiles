@@ -434,6 +434,11 @@
     "interval" : 86400, // once every day
     "tooltip": true,
 },
+
+"custom/cava_mviz": {
+    "exec": "/home/shub/Programs/dotfiles/hyprland/scripts/WaybarCava.sh",
+    "format": "{}"
+},
       
 "custom/keybinds": {
     "format":"󰺁 HINT!",
