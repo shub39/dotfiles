@@ -16,7 +16,9 @@
 "margin-right": 8,
 
 "modules-left": [
-	"hyprland/workspaces#pacman",
+	"custom/menu",
+	"custom/separator#dot-line",
+	"hyprland/window",
 	"custom/separator#dot-line",
 	"cpu",
 	"custom/separator#dot-line", 
@@ -27,19 +29,19 @@
 	],
 
 "modules-center": [
-	"custom/menu",
-	"custom/separator#dot-line",
-	"hyprland/window",
+	"hyprland/workspaces#pacman",
 	"custom/separator#dot-line",
 	"clock",	
 	], 
 
 "modules-right": [
+	"mpris",
+	"custom/separator#dot-line",
 	"network#speed",
 	"custom/separator#dot-line",
 	"custom/swaync",
 	"custom/separator#dot-line",
-	"bluetooth",
+	"bluetooth", 
 	"custom/separator#dot-line", 
 	"pulseaudio",
 	"pulseaudio#microphone",

@@ -304,12 +304,9 @@
     "interval": 10,
 	"format": "{player_icon} ",
 	"format-paused": "{status_icon} <i>{dynamic}</i>",
-	"on-click-middle": "playerctl play-pause",
-    "on-click": "playerctl previous",
+	"on-click": "playerctl play-pause",
     "on-click-right": "playerctl next",
     "scroll-step": 5.0,
-    "on-scroll-up": "~/.config/hypr/scripts/Volume.sh --inc",
-    "on-scroll-down": "~/.config/hypr/scripts/Volume.sh --dec",
     "smooth-scrolling-threshold": 1,
 	"player-icons": {
         "chromium": "",
