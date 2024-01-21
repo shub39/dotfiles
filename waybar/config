@@ -14,19 +14,19 @@
 "modules-left": [
 	"custom/menu",
 	"custom/separator#dot-line",
-	"hyprland/window",
-	"custom/separator#dot-line",
 	"cpu",
 	"custom/separator#dot-line", 
 	"temperature",
 	"custom/separator#dot-line", 
-	"memory"
+	"memory",
+	"custom/separator#dot-line",
+	"clock"	,
+	"custom/separator#dot-line",
+	"hyprland/window"
 	],
 
 "modules-center": [
 	"hyprland/workspaces",
-	"custom/separator#dot-line",
-	"clock"	
 	], 
 
 "modules-right": [
