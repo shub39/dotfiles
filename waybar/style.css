@@ -28,15 +28,16 @@ window#waybar.empty #window {
 }
 
 tooltip {
-	background: #1e1e2e;
+	background: #2e281e;
 	opacity: 0.8;
 	border-radius: 10px;
 	border-width: 2px;
 	border-style: solid;
-	border-color: #11111b;
+	border-color: #1b1711;
 }
 
 tooltip label{
+	padding: 10px;
 	color: #cdd6f4;
 }
 
@@ -53,8 +54,8 @@ tooltip label{
 #custom-menu,
 #custom-swaync{
 	border-radius: 16px;
-  	color: #3A3B3C;
-  	border: 1px solid #b4befe;
+  	color: #050505;
+  	border: 3px solid #000000;
 	padding-top: 3px;
 	padding-bottom: 3px;
     padding-left: 6px;
@@ -80,7 +81,7 @@ tooltip label{
 
 #workspaces button {
   	background-color: #ffffff;
-  	color: #3A3B3C;
+  	color: #000000;
     box-shadow: none;
 	text-shadow: none;
     padding: 0px;
@@ -93,7 +94,7 @@ tooltip label{
 
 #workspaces button.active {
   	background-color: #ffd900;
-  	color: #3A3B3C;
+  	color: #000000;
     padding-left: 8px;
     padding-right: 8px;
     animation: gradient_f 20s ease-in infinite;

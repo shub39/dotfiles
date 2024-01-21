@@ -1,5 +1,5 @@
 {
-"include": "/home/shub/Programs/dotfiles/waybar/modules",
+"include": "~/.config/dotfiles/waybar/modules",
 "layer": "top",
 "exclusive": true,
 "passthrough": false,

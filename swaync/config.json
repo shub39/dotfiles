@@ -2,15 +2,15 @@
     "$schema": "/etc/xdg/swaync/configSchema.json",
   
     "positionX": "right",
-    "positionY": "top",
-    "control-center-positionX": "none",
-    "control-center-positionY": "none",
+    "positionY": "bottom",
+    "control-center-positionX": "right",
+    "control-center-positionY": "top",
     "control-center-margin-top": 8,
     "control-center-margin-bottom": 8,
     "control-center-margin-right": 8,
     "control-center-margin-left": 8,
     "control-center-width": 500,
-    "control-center-height": 600,
+    "control-center-height": 1000,
     "fit-to-screen": false,
   
     "layer": "overlay",
@@ -20,8 +20,8 @@
     "notification-body-image-height": 100,
     "notification-body-image-width": 200,
     "notification-inline-replies": true,
-    "timeout": 2,
-    "timeout-low": 2,
+    "timeout": 3,
+    "timeout-low": 3,
     "timeout-critical": 0,
     "notification-window-width": 500,
     "keyboard-shortcuts": true,
@@ -50,7 +50,7 @@
         "button-text": "Clear All"
       },
       "dnd": {
-        "text": "Do Not Disturb"
+        "text": "Leave me Alone !!"
       },
       "label": {
         "max-lines": 5,
