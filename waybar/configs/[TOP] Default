@@ -1,10 +1,6 @@
-/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-
-// ### DEFAULT - Top ### //
 {
 "include": "/home/shub/Programs/dotfiles/waybar/modules",
 "layer": "top",
-//"mode": "dock",
 "exclusive": true,
 "passthrough": false,
 "position": "top",
@@ -12,8 +8,8 @@
 "fixed-center": true,
 "ipc": true,
 "margin-top": 3,
-"margin-left": 8,
-"margin-right": 8,
+"margin-left": 5,
+"margin-right": 5,
 
 "modules-left": [
 	"custom/menu",
@@ -24,14 +20,13 @@
 	"custom/separator#dot-line", 
 	"temperature",
 	"custom/separator#dot-line", 
-	"memory",
-	"custom/separator#dot-line",
+	"memory"
 	],
 
 "modules-center": [
-	"hyprland/workspaces#pacman",
+	"hyprland/workspaces",
 	"custom/separator#dot-line",
-	"clock",	
+	"clock"	
 	], 
 
 "modules-right": [
@@ -44,6 +39,6 @@
 	"bluetooth", 
 	"custom/separator#dot-line", 
 	"pulseaudio",
-	"pulseaudio#microphone",
-	],
+	"pulseaudio#microphone"
+	]
 }
