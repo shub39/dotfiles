@@ -47,7 +47,7 @@
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action {
   border-radius: 7px;
   color: #98971a;
-  background-color: #7c6f64;
+  background-color: #282828;
   box-shadow: inset 0 0 0 1px #45475a;
   margin: 7px;
 }
