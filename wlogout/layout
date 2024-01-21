@@ -24,7 +24,7 @@
 }
 {
     "label" : "lock",
-    "action" : "swaylock",
+    "action" : "swaylock -C /home/shub/.config/dotfiles/swaylock/config",
     "text" : "Lock",
     "keybind" : "l"
 }
