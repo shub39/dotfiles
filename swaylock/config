@@ -24,7 +24,7 @@ effect-blur=9x5
 # effect-pixelate=5
 
 color=1f1d2e80
-font="Montserrat-Medium"
+font="montserrat"
 indicator
 indicator-radius=200
 indicator-thickness=20
