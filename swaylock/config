@@ -14,22 +14,22 @@ datestr=%d %B, %a
 #screenshots
 
 # Add an image as a background. You need to disable screenshots above
-image=~/.config/dotfiles/penguin.jpg
+image=~/.config/dotfiles/flowers.jpg
 
 # Effect for background
 # NOTE: if you choose image as wallpaper, you may want to comment (#) these effects 
-effect-blur=9x5
+# effect-blur=9x5
 # effect-vignette=0.5:0.5
 # effect-greyscale
 # effect-pixelate=5
 
-color=1f1d2e80
-font="montserrat"
+color=98971A
+font="Montserrat-Medium"
 indicator
 indicator-radius=200
 indicator-thickness=20
 
-text-color=e0def4
+text-color=98971A
 text-caps-lock-color=ffffff
 inside-color=000000
 line-color=1f1d2e
