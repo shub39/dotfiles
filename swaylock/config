@@ -1,50 +1,24 @@
 daemonize
-show-failed-attempts
 clock
 
-# AM/PM formats (American Format)
-#datestr=%a, %B %e
-#timestr=%I:%M %p
-
-#24 HRS clock format and standard Europe Date Format
-timestr=%H:%M
-datestr=%d %B, %a
-
-# Add current display as background
-#screenshots
-
-# Add an image as a background. You need to disable screenshots above
+font="montserrat"
 image=~/.config/dotfiles/flowers.jpg
 
-# Effect for background
-# NOTE: if you choose image as wallpaper, you may want to comment (#) these effects 
-# effect-blur=9x5
-# effect-vignette=0.5:0.5
-# effect-greyscale
-# effect-pixelate=5
-
-color=98971A
-font="Montserrat-Medium"
 indicator
 indicator-radius=200
 indicator-thickness=20
 
-text-color=98971A
-text-caps-lock-color=ffffff
-inside-color=000000
-line-color=1f1d2e
-ring-color=191724
-separator-color=00000000
+inside-color=271C06
+line-color=FABD2F
+ring-color=665C54
+separator-color=FABD2F
 text-ver-color=ffffff
-inside-ver-color=000000
+inside-ver-color=271C06
 line-ver-color=0000ff
-ring-ver-color=2777ff
-text-wrong-color=ff0000
-inside-wrong-color=000000
-line-wrong-color=000000
+ring-ver-color=458588
+inside-wrong-color=271C06
+line-wrong-color=271C06
 ring-wrong-color=ff8000
-text-clear-color=000000
-inside-clear-color=ffffff
 line-clear-color=00ff00
 ring-clear-color=0ffff0
 key-hl-color=ff0000
