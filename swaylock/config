@@ -2,7 +2,7 @@ daemonize
 clock
 
 font="montserrat"
-image=~/.config/dotfiles/flowers.jpg
+image=Pictures/wallpapers/"$(ls Pictures/wallpapers | shuf -n 1)"
 
 indicator
 indicator-radius=200
@@ -10,7 +10,7 @@ indicator-thickness=20
 
 inside-color=271C06
 line-color=FABD2F
-ring-color=665C54
+ring-color=FABD2FL
 separator-color=FABD2F
 text-ver-color=ffffff
 inside-ver-color=271C06
