@@ -1,64 +1,143 @@
-{
-  "$schema": "/etc/xdg/swaync/configSchema.json",
 
+
+{
+ 
+  "$schema": "/etc/xdg/swaync/configSchema.json",
   "positionX": "right",
   "positionY": "top",
-  "control-center-positionX": "none",
-  "control-center-positionY": "none",
-  "control-center-margin-top": 8,
-  "control-center-margin-bottom": 8,
-  "control-center-margin-right": 8,
-  "control-center-margin-left": 8,
-  "control-center-width": 500,
-  "control-center-height": 600,
-  "fit-to-screen": false,
-
   "layer": "overlay",
-  "control-center-layer": "overlay",
-  "cssPriority": "user",
+  "control-center-margin-top": 20,
+  "control-center-margin-bottom": 20,
+  "control-center-margin-right": 20,
+  "control-center-margin-left": 20,
   "notification-icon-size": 64,
   "notification-body-image-height": 100,
   "notification-body-image-width": 200,
-  "notification-inline-replies": true,
-  "timeout": 10,
-  "timeout-low": 5,
+  "timeout": 3,
+  "timeout-low": 2,
   "timeout-critical": 0,
-  "notification-window-width": 500,
+  "fit-to-screen": false,
+  "control-center-width": 500,
+  "control-center-height": 1000,
+  "notification-window-width": 440,
   "keyboard-shortcuts": true,
   "image-visibility": "when-available",
   "transition-time": 200,
   "hide-on-clear": true,
   "hide-on-action": true,
   "script-fail-notify": true,
-
   "widgets": [
-    "inhibitors",
-    "title",
-    "mpris",
-    "notifications",
-    "dnd"
+      "title",
+      "menubar",
+      "dnd",
+      "notifications",
+      "mpris",
+      "volume"
   ],
   "widget-config": {
-    "inhibitors": {
-      "text": "Inhibitors",
-      "button-text": "Clear All",
-      "clear-all-button": true
-    },
-    "title": {
-      "text": "Notifications",
-      "clear-all-button": true,
-      "button-text": "Clear All"
-    },
-    "dnd": {
-      "text": "Leave me Alone!!"
-    },
-    "label": {
-      "max-lines": 5,
-      "text": "Label Text"
-    },
-    "mpris": {
-      "image-size": 96,
-      "image-radius": 20
-    }
+      "title": {
+          "text": "Notification Center",
+          "clear-all-button": true,
+          "button-text": "󰆴 Clear All"
+      },
+      "dnd": {
+          "text": "Do Not Disturb"
+      },
+      "label": {
+          "max-lines": 1,
+          "text": "Notification Center"
+      },
+      "mpris": {
+          "image-size": 96,
+          "image-radius": 7
+      },
+      "volume": {
+          "label": "󰕾",
+    "show-per-app": true
+      },
+      "menubar": {
+        "menu#power-buttons": {
+          "label": "  ", 
+          "position": "left",
+          "actions": [ 
+            {
+              "label": "   Reboot",
+              "command": "systemctl reboot"
+            },
+            {
+              "label": "   Lock",
+              "command": "swaylock -C ~/.config/dotfiles/swaylock/config"
+            },
+            {
+              "label": "   Logout",
+              "command": "loginctl terminate-session ${XDG_SESSION_ID-}"
+            },
+            {
+              "label": "   Shut down",
+              "command": "systemctl poweroff"
+            }
+          ]
+        },
+        "menu#powermode-buttons": {
+          "label": "  ", 
+          "position": "left",
+          "actions": [ 
+            {
+              "label": "Performance",
+              "command": "powerprofilesctl set performance"
+            },
+            {
+              "label": "Balanced",
+              "command": "powerprofilesctl set balanced"
+            },
+            {
+              "label": "Power-saver",
+              "command": "powerprofilesctl set power-saver"
+            }
+          ]
+        },
+        "menu#network-buttons": {
+          "label": "  ", 
+          "position": "left",
+          "actions": [ 
+            {
+              "label": "Open WIFI",
+              "command": "nm-connection-editor"
+            },
+            {
+              "label": "Open Bluetooth",
+              "command": "blueman-manager"
+            }
+          ]
+        },
+        "menu#IDE-buttons": {
+          "label": "  ", 
+          "position": "left",
+          "actions": [ 
+            {
+              "label": "Open VSCodium",
+              "command": "codium"
+            },
+            {
+              "label": "Open Android studio",
+              "command": "Programs/android-studio-2023.1.1.27-linux/android-studio/bin/studio.sh"
+            }
+          ]
+        },
+        "menu#screenshot-buttons": {
+          "label": "  ",
+          "position": "left",
+          "actions": [
+            {
+              "label": "   Entire screen",
+              "command": "swaync-client -cp && sleep 1 && hyprshot -m output"
+            },
+            {
+              "label": "   Select a region",
+              "command": "swaync-client -cp && sleep 1 && hyprshot -m region"
+            }
+          ]
+        }  
   }
+}
 }
