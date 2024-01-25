@@ -97,7 +97,7 @@
           ]
         },
         "menu#network-buttons": {
-          "label": "  ", 
+          "label": "   ", 
           "position": "left",
           "actions": [ 
             {
@@ -111,7 +111,7 @@
           ]
         },
         "menu#IDE-buttons": {
-          "label": "  ", 
+          "label": "   ", 
           "position": "left",
           "actions": [ 
             {
@@ -125,7 +125,7 @@
           ]
         },
         "menu#screenshot-buttons": {
-          "label": "  ",
+          "label": "   ",
           "position": "left",
           "actions": [
             {

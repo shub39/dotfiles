@@ -91,7 +91,7 @@
 .control-center {
     background: @cc-bg;
     border: 3px solid #FABD2F;
-    border-radius: 15px;
+    border-radius: 0px;
 }
  
 .control-center-list {
@@ -112,11 +112,17 @@
  
 .widget-title {
     color: #f9f5d7;
+    border: 3px solid #FABD2F;
     background: @noti-bg-darker;
     padding: 5px 10px;
     margin: 10px 10px 5px 10px;
     font-size: 1.5rem;
-    border-radius: 15px;
+    border-radius: 0px;
+}
+
+.widget-volume {
+    border: 3px solid #FABD2F;
+    border-radius: 0px;
 }
  
 .widget-title>button {
@@ -125,7 +131,7 @@
     text-shadow: none;
     background: @noti-bg;
     box-shadow: none;
-    border-radius: 15px;
+    border-radius: 0px;
 }
  
 .widget-title>button:hover {
@@ -137,13 +143,14 @@
     background: @noti-bg-darker;
     padding: 5px 10px;
     margin: 5px 10px 10px 10px;
-    border-radius: 15px;
+    border: 3px solid #FABD2F;
+    border-radius: 0px;
     font-size: large;
     color: #f2e5bc;
 }
  
 .widget-dnd>switch {
-    border-radius: 15px;
+    border-radius: 0px;
     background: #665c54;
 }
  
@@ -154,16 +161,17 @@
  
 .widget-dnd>switch slider {
     background: @cc-bg;
-    border-radius: 15px
+    border-radius: 0px
 }
  
 .widget-dnd>switch:checked slider {
     background: @cc-bg;
-    border-radius: 15px
+    border-radius: 0px
 }
  
 .widget-label {
     margin: 10px 10px 5px 10px;
+    border: 3px solid #FABD2F;
 }
  
 .widget-label>label {
@@ -176,11 +184,12 @@
     background: @noti-bg-darker;
     padding: 5px 10px 0px 0px;
     margin: 5px 10px 5px 10px;
-    border-radius: 15px;
+    border: 3px solid #FABD2F;
+    border-radius: 0px;
 }
  
 .widget-mpris > box > button {
-    border-radius: 15px;
+    border-radius: 0px;
 }
  
 .widget-mpris-player {
@@ -201,14 +210,14 @@
     font-size: x-large;
     padding: 5px;
     margin: 5px 10px 10px 10px;
-    border-radius: 15px;
+    border-radius: 0px;
     background: @noti-bg-darker;
 }
  
 .widget-buttons-grid>flowbox>flowboxchild>button {
     margin: 3px;
     background: @cc-bg;
-    border-radius: 15px;
+    border-radius: 0px;
     color: @text-color
 }
  
@@ -231,28 +240,28 @@
 .widget-menubar>box{
   padding: 8px 0px 4px;
   margin: 0px 8px;
-  border-radius: 15px;
+  border-radius: 0px;
   background-color: #282828;
 }
 
 .widget-menubar>box>.menu-button-bar>button{
   border: 3px solid #FABD2F;
   background: #282828;
-  border-radius: 15px;
+  border-radius: 0px;
   margin: 4px 12px;
 }
 
 .widget-buttons-grid{
   padding: 0px 8px 8px;
   margin: 0px 8px 8px;
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0px;
   background-color: #282828;
   font-size: 14px;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button{
   background: #282828;
-  border-radius: 15px;
+  border-radius: 0px;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
@@ -265,7 +274,7 @@
 .screencast-buttons,
 .powermode-buttons,
 .power-buttons{
-  border-radius: 15px;
+  border-radius: 0px;
 }
 
 .IDE-buttons>button,
@@ -278,6 +287,7 @@
   padding: 2px 0px;
   margin: 5px 70px 3px;
   border: 3px solid #FABD2F;
+  border-radius: 0px;
 }
 
 .network-buttons>button:hover,
