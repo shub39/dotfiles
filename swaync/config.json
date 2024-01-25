@@ -27,8 +27,8 @@
   "hide-on-action": true,
   "script-fail-notify": true,
   "widgets": [
-      "title",
       "menubar",
+      "title",
       "dnd",
       "notifications",
       "mpris",
@@ -57,7 +57,7 @@
       },
       "menubar": {
         "menu#power-buttons": {
-          "label": "  ", 
+          "label": "    ", 
           "position": "left",
           "actions": [ 
             {
@@ -79,7 +79,7 @@
           ]
         },
         "menu#powermode-buttons": {
-          "label": "  ", 
+          "label": "    ", 
           "position": "left",
           "actions": [ 
             {

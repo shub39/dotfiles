@@ -36,7 +36,7 @@
     background: @cc-bg;
     padding: 7px;
     border-radius: 0px;
-    border: 2px solid #85796f;
+    border: 3px solid #FABD2F;
     margin: 0;
 }
  
@@ -59,7 +59,7 @@
  
 .notification-action {
     color: #ebdbb2;
-    border: 2px solid #85796f;
+    border: 3px solid #FABD2F;
     border-top: none;
     border-radius: 0px;
     background: #32302F;
@@ -90,7 +90,7 @@
  
 .control-center {
     background: @cc-bg;
-    border: 2px solid #85796f;
+    border: 3px solid #FABD2F;
     border-radius: 15px;
 }
  
@@ -218,12 +218,12 @@
 }
  
 .widget-menubar>box>.menu-button-bar>button {
-    border: none;
+    border: 3px solid #FABD2F;
     background: transparent
 }
  
 .topbar-buttons>button {
-    border: none;
+    border: 3px solid #FABD2F;
     background: transparent
 }
  
@@ -236,7 +236,7 @@
 }
 
 .widget-menubar>box>.menu-button-bar>button{
-  border: 1px solid #FABD2F;
+  border: 3px solid #FABD2F;
   background: #282828;
   border-radius: 15px;
   margin: 4px 12px;
@@ -277,7 +277,7 @@
   background: transparent;
   padding: 2px 0px;
   margin: 5px 70px 3px;
-  border: 1px solid #FABD2F;
+  border: 3px solid #FABD2F;
 }
 
 .network-buttons>button:hover,
