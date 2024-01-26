@@ -7,9 +7,10 @@
 "spacing": 3,
 "fixed-center": true,
 "ipc": true,
-"margin-top": 3,
-"margin-left": 5,
-"margin-right": 5,
+"margin-top": 10,
+"margin-left": 20,
+"margin-right": 20,
+"margin-bottom":-10,
 
 "modules-left": [
 	"custom/menu",

@@ -31,8 +31,7 @@
       "title",
       "dnd",
       "notifications",
-      "mpris",
-      "volume"
+      "mpris"
   ],
   "widget-config": {
       "title": {
@@ -129,11 +128,11 @@
           "position": "left",
           "actions": [
             {
-              "label": "   Entire screen",
+              "label": "    Entire screen",
               "command": "swaync-client -cp && sleep 1 && hyprshot -m output"
             },
             {
-              "label": "   Select a region",
+              "label": "    Select a region",
               "command": "swaync-client -cp && sleep 1 && hyprshot -m region"
             }
           ]

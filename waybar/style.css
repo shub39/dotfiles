@@ -30,7 +30,7 @@ window#waybar.empty #window {
 tooltip {
 	background: #2e281e;
 	opacity: 0.8;
-	border-radius: 0px;
+	border-radius: 5px;
 	border-width: 2px;
 	border-style: solid;
 	border-color: #1b1711;
@@ -53,9 +53,9 @@ tooltip label{
 #workspaces,
 #custom-menu,
 #custom-swaync{
-	border-radius: 0px;
-  	color: #050505;
-  	border: 3px solid #000000;
+	border-radius: 5px;
+  	color: #de9061;
+  	border: 3px solid #251907;
 	padding-top: 3px;
 	padding-bottom: 3px;
     padding-left: 6px;
@@ -63,29 +63,30 @@ tooltip label{
 }
  
 #clock {
-	background-color: #ffd900;
+	background-color: #5a3618;
 }
 
 #mpris {
-	background-color: #ffd900;
-	color: black;
+	background-color: #5a3618;
+	color: #de9061;
 }
 
 #cpu {
-	background-color: #ff9900;
+	background-color: #5a3618;
 }
 
 #memory {
-	background-color: #ff9900;
+	background-color: #5a3618;
 }
 
 #workspaces button {
-  	background-color: #ffffff;
-  	color: #000000;
+  	background-color: #de9061;
+	margin: 1px;
+  	color: #5a3618;
     box-shadow: none;
 	text-shadow: none;
     padding: 0px;
-    border-radius: 0px;
+    border-radius: 5px;
     padding-left: 4px;
     padding-right: 4px;
     animation: gradient_f 20s ease-in infinite;
@@ -93,8 +94,8 @@ tooltip label{
 }
 
 #workspaces button.active {
-  	background-color: #ffd900;
-  	color: #000000;
+  	background-color: #5a3618;
+  	color: #de9061;
     padding-left: 8px;
     padding-right: 8px;
     animation: gradient_f 20s ease-in infinite;
@@ -102,29 +103,27 @@ tooltip label{
 }
 
 #workspaces button:hover {
-    background: #8a7500;
-    color: #f6c177;
-    padding-left: 3px;
-    padding-right: 3px;
+	background-color: #5a3618;
+	color: #de9061;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #custom-menu {
-	background-color: #ff9900;
+	background-color: #5a3618;
 	padding-right: 10px;
-	border-radius: 0px;
-  	color: #080808;
-  	border: 3px solid #000000;
+	border-radius: 5px;
+  	color: #de9061;
+  	border: 3px solid #251907;
 }
 
 
 #custom-swaync {
-	background-color: #ff9900;
+	background-color: #5a3618;
 }
 
 #temperature {
-  	background-color: #ff9900;
+  	background-color: #5a3618;
 }
 
 #temperature.critical {
@@ -132,26 +131,28 @@ tooltip label{
 }
 
 #bluetooth {
-	background-color: #ff9900;
+	background-color: #5a3618;
 }
 #window {
-	background-color: #ffd900;
+	background-color: #de9061;
+	color: #5a3618;
 }
 
 #pulseaudio {
-	background-color: #ff9900;
+	background-color: #5a3618;
 }
 
 #pulseaudio.bluetooth {
-	background-color: #f5c2e7;
+	background-color: #5a3618;
 }
 #pulseaudio.muted {
-	background-color: #313244;
+	background-color: #5a3618;
 	color: #cdd6f4;
 }
 
 #network {
-	background-color: #ffd900;
+	background-color: #de9061;
+	color: #5a3618;
 }
 #network.disconnected,#network.disabled {
 	background-color: #313244;
