@@ -29,7 +29,7 @@
 .notification-content {
     background: @textc;
     padding: 7px;
-    border-radius: 5px;
+    border-radius: 10px 10px 0px 0px;
     border: 3px solid @borderc;
     margin: 0;
 }
@@ -39,7 +39,7 @@
     color: @bgc;
     text-shadow: none;
     padding: 0;
-    border-radius: 5px;
+    border-radius: 20px;
     margin-top: 5px;
     margin-right: 5px;
 }
@@ -56,14 +56,14 @@
     color: @textc;
     border: 3px solid @borderc;
     border-top: none;
-    border-radius: 5px;
-    background: #32302F;
+    border-radius: 0px 0px 10px 10px;
+    background: @bgc;
 }
  
 .notification-default-action:hover,
 .notification-action:hover {
-    color: @bgc;
-    background: @textc;
+    color: @textc;
+    background: @bgc;
 }
  
 .summary {
@@ -109,15 +109,15 @@
     color: @textc;
     border: 3px solid @borderc;
     background: @bgc;
-    padding: 5px 10px;
+    padding: 10px 10px;
     margin: 10px 10px 5px 10px;
     font-size: 1.5rem;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .widget-volume {
     border: 3px solid @borderc;
-    border-radius: 5px;
+    border-radius: 10px;
 }
  
 .widget-title>button {
@@ -126,46 +126,47 @@
     text-shadow: none;
     background: @bgc;
     box-shadow: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
  
 .widget-title>button:hover {
-    background: @bgc;
-    color: @textc;
+    background: @textc;
+    color: @bgc;
 }
  
 .widget-dnd {
     background: @bgc;
-    padding: 5px 10px;
-    margin: 5px 10px 10px 10px;
+    padding: 10px 10px;
+    margin: 10px 10px 10px 10px;
     border: 3px solid @borderc;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: large;
     color: @textc;
 }
  
 .widget-dnd>switch {
-    border-radius: 5px;
-    background: @bgc;
+    border-radius: 20px;
+    background: @textc;
+    border: 3px solid
 }
  
 .widget-dnd>switch:checked {
     background: #d79921;
-    border: 1px solid #d79921;
+    border: 3px solid #d79921;
 }
  
 .widget-dnd>switch slider {
     background: @bgc;
-    border-radius: 5px
+    border-radius: 20px
 }
  
 .widget-dnd>switch:checked slider {
     background: @bgc;
-    border-radius: 5px
+    border-radius: 20px
 }
  
 .widget-label {
-    margin: 10px 10px 5px 10px;
+    margin: 10px 10px 10px 10px;
     border: 3px solid @borderc;
 }
  
@@ -175,20 +176,20 @@
 }
  
 .widget-mpris {
-    color: @textc;
     background: @bgc;
-    padding: 5px 10px 0px 0px;
+    color: @textc;
+    padding: 10px 10px 10px 10px;
     margin: 10px;
     border: 3px solid @borderc;
     border-radius: 20px;
 }
  
 .widget-mpris > box > button {
-    border-radius: 5px;
+    border-radius: 20px;
 }
  
 .widget-mpris-player {
-    padding: 5px 10px;
+    padding: 10px 10px;
     margin: 10px
 }
  
@@ -203,7 +204,7 @@
  
 .widget-buttons-grid {
     font-size: x-large;
-    padding: 5px;
+    padding: 10px;
     margin: 10px 10px 10px 10px;
     border-radius: 20px;
     background: @bgc;
@@ -241,9 +242,17 @@
 
 .widget-menubar>box>.menu-button-bar>button{
   border: 3px solid @borderc;
-  background: @bgc;
-  border-radius: 5px;
+  background: @textc;
+  color: @bgc;
+  border-radius: 20px;
   margin: 4px 12px;
+}
+
+.widget-menubar>box>.menu-button-bar>button:hover{
+    padding-left: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-right: 20px;
 }
 
 .widget-buttons-grid{
