@@ -62,8 +62,8 @@
  
 .notification-default-action:hover,
 .notification-action:hover {
-    color: @textc;
-    background: @bgc;
+    color: @bgc;
+    background: @textc;
 }
  
 .summary {
