@@ -33,8 +33,8 @@
      
 "clock": {
     "interval": 1,
-    "format": " {:%H:%M}",
-    "format-alt": " {:%H:%M   %Y, %d %B, %A}",
+    "format": "  {:%H:%M}",
+    "format-alt": "  {:%H:%M     %Y, %d %B, %A}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode"          : "year",
