@@ -14,12 +14,7 @@
 
 "modules-left": [
 	"custom/menu",
-	"custom/separator#dot-line",
-	"cpu",
-	"custom/separator#dot-line", 
-	"temperature",
-	"custom/separator#dot-line", 
-	"memory",
+
 	"custom/separator#dot-line",
 	"clock"	,
 	"custom/separator#dot-line",
@@ -33,11 +28,11 @@
 "modules-right": [
 	"mpris",
 	"custom/separator#dot-line",
-	"network#speed",
+	"cpu", 
+	"temperature", 
+	"memory",
 	"custom/separator#dot-line",
 	"custom/swaync",
-	"custom/separator#dot-line",
-	"bluetooth", 
 	"custom/separator#dot-line", 
 	"pulseaudio",
 	"pulseaudio#microphone"

@@ -54,8 +54,8 @@ tooltip label{
 #custom-menu,
 #custom-swaync{
 	border-radius: 20px;
-  	color: #de9061;
-  	border: 3px solid #251907;
+  	color: #ebdbb2;
+  	border: 3px solid #3c3836;
 	padding-top: 3px;
 	padding-bottom: 3px;
     padding-left: 6px;
@@ -63,38 +63,38 @@ tooltip label{
 }
  
 #clock {
-	background-color: #5a3618;
+	background-color: #282828;
 }
 
 #mpris {
-	background-color: #5a3618;
-	color: #de9061;
+	background-color: #282828;
+	color: #ebdbb2;
 }
 
 #cpu {
-	background-color: #5a3618;
+	background-color: #282828;
 }
 
 #memory {
-	background-color: #5a3618;
+	background-color: #282828;
 }
 
 #workspaces button {
-  	background-color: #de9061;
+  	background-color: #282828;
 	margin: 1px;
-  	color: #5a3618;
+  	color: #ebdbb2;
     box-shadow: none;
 	text-shadow: none;
     border-radius: 20px;
-    padding-left: 4px;
-    padding-right: 8px;
+    padding-left: 2px;
+    padding-right: 6px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #workspaces button.active {
-  	background-color: #5a3618;
-  	color: #de9061;
+  	background-color: #ebdbb2;
+  	color: #282828;
     padding-left: 8px;
     padding-right: 8px;
     animation: gradient_f 20s ease-in infinite;
@@ -102,27 +102,27 @@ tooltip label{
 }
 
 #workspaces button:hover {
-	background-color: #5a3618;
-	color: #de9061;
+	background-color: #282828;
+	color: #fabd2f;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #custom-menu {
-	background-color: #5a3618;
+	background-color: #282828;
 	padding-right: 10px;
 	border-radius: 20px;
-  	color: #de9061;
-  	border: 3px solid #251907;
+  	color: #ebdbb2;
+  	border: 3px solid #3c3836;
 }
 
 
 #custom-swaync {
-	background-color: #5a3618;
+	background-color: #282828;
 }
 
 #temperature {
-  	background-color: #5a3618;
+  	background-color: #282828;
 }
 
 #temperature.critical {
@@ -130,28 +130,28 @@ tooltip label{
 }
 
 #bluetooth {
-	background-color: #5a3618;
+	background-color: #282828;
 }
 #window {
-	background-color: #de9061;
-	color: #5a3618;
+	background-color: #ebdbb2;
+	color: #282828;
 }
 
 #pulseaudio {
-	background-color: #5a3618;
+	background-color: #282828;
 }
 
 #pulseaudio.bluetooth {
-	background-color: #5a3618;
+	background-color: #282828;
 }
 #pulseaudio.muted {
-	background-color: #5a3618;
-	color: #cdd6f4;
+	background-color: #282828;
+	color: #ebdbb2;
 }
 
 #network {
-	background-color: #de9061;
-	color: #5a3618;
+	background-color: #282828;
+	color: #ebdbb2;
 }
 #network.disconnected,#network.disabled {
 	background-color: #313244;
