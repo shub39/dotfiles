@@ -1,7 +1,7 @@
  
-@define-color bgc #1d2021;
-@define-color borderc #d79921;
-@define-color textc #d79921;
+@define-color bgc #282828;
+@define-color borderc #ebdbb2;
+@define-color textc #ebdbb2;
  
 * {
     font-family: JetBrains Mono;
@@ -204,7 +204,7 @@
     padding: 10px;
     margin: 10px 10px 10px 10px;
     border-radius: 20px;
-    background: @bgc;
+    background: #3c3836;
 }
  
 .widget-buttons-grid>flowbox>flowboxchild>button {
@@ -221,7 +221,7 @@
  
 .widget-menubar>box>.menu-button-bar>button {
     border: 3px solid @borderc;
-    background: transparent
+    background: #3c3836
 }
  
 .topbar-buttons>button {
@@ -231,10 +231,10 @@
  
 
 .widget-menubar>box{
-  padding: 8px 0px 4px;
-  margin: 0px 8px;
+  padding: 8px 0px 8px;
+  margin: 8px 8px;
   border-radius: 20px;
-  background-color: @bgc;
+  background-color: #3c3836;
 }
 
 .widget-menubar>box>.menu-button-bar>button{
