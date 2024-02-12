@@ -103,7 +103,8 @@ tooltip label{
 
 #workspaces button:hover {
 	background-color: #282828;
-	color: #fabd2f;
+	color: #282828;
+	background-color: #ebdbb2;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }

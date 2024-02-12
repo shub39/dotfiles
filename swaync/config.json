@@ -1,5 +1,3 @@
-
-
 {
  
   "$schema": "/etc/xdg/swaync/configSchema.json",
@@ -40,7 +38,7 @@
           "button-text": "󰆴 Clear All"
       },
       "dnd": {
-          "text": "Do Not Disturb"
+          "text": "Leave me alone!!"
       },
       "label": {
           "max-lines": 1,
