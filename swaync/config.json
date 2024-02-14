@@ -127,11 +127,11 @@
           "actions": [
             {
               "label": "    Entire screen",
-              "command": "swaync-client -cp && sleep 1 && hyprshot -m output"
+              "command": "hyprshot -o Pictures/Screenshots -m region"
             },
             {
               "label": "    Select a region",
-              "command": "swaync-client -cp && sleep 1 && hyprshot -m region"
+              "command": "hyprshot -o Pictures/Screenshots -m output"
             }
           ]
         }  

@@ -172,7 +172,7 @@
     "exec": "echo ; echo 󱓟 app launcher",
     "interval" : 86400,
     "tooltip": true,
-    "on-click": "rofi -config ~/.config/dotfiles/rofi/config.rasi -show drun"
+    "on-click": "codium ~/.config/dotfiles/"
 },
 
 "custom/swaync": {
