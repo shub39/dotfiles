@@ -109,7 +109,7 @@
         "playing": "  ",
         "stopped": "  "
 	},
-	"max-length": 30
+	"max-length": 20
 },
 
 "network#speed": {
