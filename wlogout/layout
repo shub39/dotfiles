@@ -24,7 +24,7 @@
 }
 {
     "label" : "lock",
-    "action" : "swaylock -C /home/shub/.config/dotfiles/swaylock/config",
+    "action" : "/home/shub/.config/dotfiles/hyprland/scripts/lockscreen.sh",
     "text" : "Lock",
     "keybind" : "l"
 }
