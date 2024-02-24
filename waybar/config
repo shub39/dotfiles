@@ -13,11 +13,8 @@
 "margin-bottom":-10,
 
 "modules-left": [
-	"custom/menu",
-
-	"custom/separator#dot-line",
+	"custom/cava",
 	"clock"	,
-	"custom/separator#dot-line",
 	"hyprland/window"
 	],
 
@@ -27,14 +24,10 @@
 
 "modules-right": [
 	"mpris",
-	"custom/separator#dot-line",
 	"cpu", 
 	"temperature", 
 	"memory",
-	"custom/separator#dot-line",
 	"custom/swaync",
-	"custom/separator#dot-line", 
-	"pulseaudio",
-	"pulseaudio#microphone"
+	"pulseaudio"
 	]
 }

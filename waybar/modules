@@ -42,9 +42,9 @@
       "weeks-pos"     : "right",
       "on-scroll"     : 1,
       "format": {
-      "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+      "days":       "<span color='#ebdbb2'><b>{}</b></span>",
       "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
-      "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+      "weekdays":   "<span color='#ebdbb2'><b>{}</b></span>",
       "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
                 }
                 }
@@ -58,14 +58,14 @@
 },
    
 "cpu": {
-    "format": " 󰍛 {usage}% ",  
+    "format": " {usage}% 󰍛 ",  
     "interval": 1,
     "on-click-right": "gnome-system-monitor"
 },
          
 "hyprland/window": {
     "format": " {} ",
-    "max-length": 60,
+    "max-length": 35,
     "separate-outputs": true,
     "offscreen-css" : true,
     "offscreen-css-text": "(inactive)",
@@ -112,24 +112,10 @@
 	"max-length": 20
 },
 
-"network#speed": {
-    "interval": 1,
-    "format": "{ifname}",
-    "format-wifi": " {icon}  {bandwidthUpBytes}  {bandwidthDownBytes} ",
-    "format-ethernet": " 󰌘   {bandwidthUpBytes}  {bandwidthDownBytes} ",
-    "format-disconnected": "󰌙", 
-    "tooltip-format": "{ipaddr}",
-    "format-linked": "󰈁 {ifname} (No IP)",
-    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
-    "tooltip-format-ethernet": "{ifname} 󰌘",
-    "tooltip-format-disconnected": "󰌙 Disconnected",
-    "max-length": 50,
-    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"]
-},
       
 "pulseaudio": {
-    "format": " {icon} {volume}% ",
-    "format-bluetooth": " {icon} 󰂰 {volume}% ",
+    "format": " {volume}% {icon} ",
+    "format-bluetooth": " 󰂰 {volume}% {icon} ",
     "format-muted": "󰖁",
     "format-icons": {
         "headphone": "",
@@ -147,15 +133,6 @@
     "smooth-scrolling-threshold": 1
 },
       
-"pulseaudio#microphone": {
-    "format": " {format_source} ",
-    "format-source": "{volume}%",
-    "format-source-muted": " ",
-    "on-click-right": "pavucontrol -t 4",
-	"tooltip-format": "{source_desc} | {source_volume}%",
-    "scroll-step": 5
-},
-    
 "temperature": {
     "interval": 10,
     "tooltip": true,
@@ -167,17 +144,10 @@
     "on-click-right": "kitty --title nvtop sh -c 'nvtop'"
 },
                     
-"custom/menu": {
-    "format": " {} ",
-    "exec": "echo ; echo 󱓟 app launcher",
-    "interval" : 86400,
-    "tooltip": true,
-    "on-click": "codium ~/.config/dotfiles/"
-},
 
 "custom/swaync": {
     "tooltip":true,     
-    "format": " {icon}  {} ",
+    "format": " {} {icon} ",
     "format-icons": {
       "notification": "<span foreground='red'><sup></sup></span>",
       "none": "",
@@ -194,11 +164,22 @@
     "on-click": "sleep 0.1 && swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true
-},
- 
-"custom/separator#dot-line": {
-    "format": "",
-    "interval": "once",
-    "tooltip": false
-}
+    },
+
+"wlr/taskbar": {
+    "format": "{icon} {name} ",
+    "icon-size": 15,
+    "all-outputs": false,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [
+          "wofi",
+          "rofi" 
+                   ]
+    },
+"custom/cava": {
+    "exec": "~/.config/dotfiles/hyprland/scripts/waybarCava.sh",
+    "format": "{}"
+    }  
 }
