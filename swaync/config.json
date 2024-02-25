@@ -25,7 +25,6 @@
   "hide-on-action": true,
   "script-fail-notify": true,
   "widgets": [
-      "menubar",
       "title",
       "notifications",
       "dnd",

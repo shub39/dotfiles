@@ -155,12 +155,12 @@
  
 .widget-dnd>switch slider {
     background: @bgc;
-    border-radius: 20px
+    border-radius: 10px
 }
  
 .widget-dnd>switch:checked slider {
     background: @bgc;
-    border-radius: 20px
+    border-radius: 10px
 }
  
 .widget-label {
@@ -178,11 +178,11 @@
     color: @textc;
     padding: 5px 5px 5px 5px;
     margin: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
  
 .widget-mpris > box > button {
-    border-radius: 20px;
+    border-radius: 10px;
 }
  
 .widget-mpris-player {
@@ -203,14 +203,14 @@
     font-size: x-large;
     padding: 10px;
     margin: 10px 10px 10px 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     background: #3c3836;
 }
  
 .widget-buttons-grid>flowbox>flowboxchild>button {
     margin: 3px;
     background: @bgc;
-    border-radius: 20px;
+    border-radius: 10px;
     color: @textc
 }
  
@@ -233,35 +233,33 @@
 .widget-menubar>box{
   padding: 8px 0px 8px;
   margin: 8px 8px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #3c3836;
 }
 
 .widget-menubar>box>.menu-button-bar>button{
-  background: @textc;
-  color: @bgc;
-  border-radius: 20px;
+  background: @bgc;
+  color: @textc;
+  border-radius: 10px;
   margin: 4px 12px;
 }
 
 .widget-menubar>box>.menu-button-bar>button:hover{
-    padding-left: 27px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-right: 27px;
+    background: @textc;
+    color: @bgc;
 }
 
 .widget-buttons-grid{
   padding: 0px 8px 8px;
   margin: 0px 8px 8px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: @bgc;
   font-size: 14px;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button{
   background: @bgc;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
@@ -274,7 +272,7 @@
 .screencast-buttons,
 .powermode-buttons,
 .power-buttons{
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .IDE-buttons>button,
@@ -287,7 +285,7 @@
   padding: 2px 0px;
   margin: 5px 70px 3px;
   border: 3px solid @borderc;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .network-buttons>button:hover,

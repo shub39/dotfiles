@@ -88,7 +88,7 @@ tooltip label{
     box-shadow: none;
 	text-shadow: none;
     border-radius: 7px;
-    padding-left: 2px;
+    padding-left: 6px;
     padding-right: 6px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
@@ -97,8 +97,7 @@ tooltip label{
 #workspaces button.active {
   	background-color: #ebdbb2;
   	color: #282828;
-    padding-left: 8px;
-    padding-right: 8px;
+
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
