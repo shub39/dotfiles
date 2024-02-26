@@ -69,6 +69,8 @@ tooltip label{
 }
 
 #mpris {
+	padding-left: 10px;
+	padding-right: 15px;
 	background-color: #282828;
 	color: #ebdbb2;
 }
