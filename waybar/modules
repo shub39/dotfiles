@@ -180,6 +180,7 @@
     },
 "custom/cava": {
     "exec": "~/.config/dotfiles/hyprland/scripts/waybarCava.sh",
-    "format": "{}"
+    "format": "{}",
+    "on-click": "codium ~/.config/dotfiles/"
     }  
 }
