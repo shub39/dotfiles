@@ -167,7 +167,7 @@
     },
 
 "wlr/taskbar": {
-    "format": "{icon} {name} ",
+    "format": " {icon} ",
     "icon-size": 15,
     "all-outputs": false,
     "tooltip-format": "{title}",
@@ -175,7 +175,8 @@
     "on-click-middle": "close",
     "ignore-list": [
           "wofi",
-          "rofi" 
+          "rofi",
+          "librewolf-default" 
                    ]
     },
 "custom/cava": {

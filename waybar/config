@@ -23,6 +23,7 @@
 	], 
 
 "modules-right": [
+	"wlr/taskbar",
 	"mpris",
 	"cpu", 
 	"temperature", 
