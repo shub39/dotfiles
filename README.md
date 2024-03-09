@@ -1,10 +1,10 @@
 # DotFiles
-Dot files for my hyprland configuration. Using gruvbox color palette. Still learning 
+Dot files for my hyprland configuration. Using gruvbox color palette. I think i have finished it. Currently using 
 
 ## TODO
-1) update swaync design to latest or switch to other notification manager.
-2) learn neovim and add a config for that.
-3) add packages information.
-4) Explore animations and tweak them.
+1) Do something about wifi.
+2) Add a install script.
+3) Add scripts to explain keybinds and make it simpler to use.
+4) Continue Using it.
 
 ![](screenshots/1.png)

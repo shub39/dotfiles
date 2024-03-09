@@ -15,8 +15,8 @@
       "5": []
     },
     "format-icons": {
-      "active": "  ",
-      "default": "  "
+      "active": "",
+      "default": " "
 	} 
 },
        
@@ -88,15 +88,15 @@
 
 "mpris": {
     "interval": 10,
-	"format": "{player_icon}",
-	"format-paused": "{status_icon} <i>{dynamic}</i>",
+	"format": " {player_icon} ",
+	"format-paused": " {status_icon} ",
 	"on-click": "playerctl play-pause",
     "on-click-right": "playerctl next",
     "scroll-step": 5.0,
     "smooth-scrolling-threshold": 1,
 	"player-icons": {
-        "chromium": "   ",
-		"default": " ",
+        "chromium": " ",
+		"default": "",
         "firefox": "",
         "kdeconnect": "",
         "mopidy": "",
@@ -105,9 +105,9 @@
 		"vlc": "󰕼"
 	},
 	"status-icons": {
-		"paused": " 󰐎 ",
-        "playing": "  ",
-        "stopped": "  "
+		"paused": "󰐎",
+        "playing": "",
+        "stopped": ""
 	},
 	"max-length": 30
 },
@@ -168,7 +168,7 @@
 
 "wlr/taskbar": {
     "format": " {icon} ",
-    "icon-size": 15,
+    "icon-size": 20,
     "all-outputs": false,
     "tooltip-format": "{title}",
     "on-click": "activate",
@@ -176,7 +176,8 @@
     "ignore-list": [
           "wofi",
           "rofi",
-          "librewolf-default" 
+          "librewolf-default",
+          "kitty"
                    ]
     },
 "custom/cava": {
