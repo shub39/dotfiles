@@ -1,5 +1,15 @@
 # DotFiles
-Dot files for my hyprland configuration. Using gruvbox color palette. I think i have finished it. Currently using 
+Dot files for my hyprland configuration. Using gruvbox color palette. I think i have finished it. Currently using on Fedora 39
+
+## Packages
+1) hyprland
+2) kitty
+3) neofetch
+4) rofi 
+5) swaylock
+6) swaync
+7) waybar
+8) wlogout
 
 ## TODO
 1) Do something about wifi.
