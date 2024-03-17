@@ -11,7 +11,7 @@ Dot files for my hyprland configuration. Using gruvbox color palette. I think i 
 7) waybar
 8) wlogout
 
-## TODO
+## Plans
 1) Do something about wifi.
 2) Add a install script.
 3) Add scripts to explain keybinds and make it simpler to use.
