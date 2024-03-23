@@ -183,6 +183,6 @@
 "custom/cava": {
     "exec": "~/.config/dotfiles/hyprland/scripts/waybarCava.sh",
     "format": "{}",
-    "on-click": "codium ~/.config/dotfiles/"
+    "on-click": "kitty -c ~/.config/dotfiles/kitty/kitty.conf nvim -c cd ~/.config/dotfiles/"
     }  
 }
