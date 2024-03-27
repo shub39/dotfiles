@@ -60,7 +60,7 @@
               "label": "   Reboot",
               "command": "systemctl reboot"
             },
-            {
+           {
               "label": "   Lock",
               "command": "swaylock -C ~/.config/dotfiles/swaylock/config"
             },
