@@ -144,7 +144,6 @@
     "on-click-right": "kitty -c ~/.config/dotfiles/kitty/kitty.conf --title nvtop sh -c 'nvtop'"
 },
                     
-
 "custom/swaync": {
     "tooltip":true,     
     "format": " {} {icon} ",
@@ -180,6 +179,7 @@
           "kitty"
                    ]
     },
+
 "custom/cava": {
     "exec": "~/.config/dotfiles/hyprland/scripts/waybarCava.sh",
     "format": "{}",

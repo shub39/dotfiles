@@ -56,12 +56,11 @@ tooltip label{
 #custom-swaync{
 	background: #282828;
 	border-radius: 10px;
-  	color: #ebdbb2;
-  	border: 3px solid #ebdbb2;
+  color: #ebdbb2;
 	padding-top: 3px;
 	padding-bottom: 3px;
-    padding-left: 6px;
-    padding-right: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
  
 #clock {

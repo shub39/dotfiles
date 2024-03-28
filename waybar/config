@@ -7,10 +7,10 @@
 "spacing": 3,
 "fixed-center": true,
 "ipc": true,
-"margin-top": 10,
-"margin-left": 20,
-"margin-right": 20,
-"margin-bottom":-10,
+"margin-top": 30,
+"margin-left": 30,
+"margin-right": 30,
+"margin-bottom": 0,
 
 "modules-left": [
 	"custom/cava",
