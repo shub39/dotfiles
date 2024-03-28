@@ -28,20 +28,16 @@ window#waybar.empty #window {
 }
 
 tooltip {
-	background: #282828;
+	background: #000000;
 	opacity: 1;
 	border-radius: 10px;
-	border-width: 3px;
-	border-style: solid;
-	border-color: #ebdbb2;
 }
 
 tooltip label{
 	padding: 10px;
-	color: #ebdbb2;
+	color: #ffffff;
 }
 
-#bluetooth,
 #custom-cava,
 #clock,
 #cpu,
@@ -62,25 +58,7 @@ tooltip label{
   padding-left: 6px;
   padding-right: 6px;
 }
- 
-#clock {
-	background-color: #282828;
-}
 
-#mpris {
-	padding-left: 10px;
-	padding-right: 15px;
-	background-color: #282828;
-	color: #ebdbb2;
-}
-
-#cpu {
-	background-color: #282828;
-}
-
-#memory {
-	background-color: #282828;
-}
 
 #workspaces button {
   	background-color: #282828;
@@ -111,43 +89,8 @@ tooltip label{
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
-#custom-menu {
-	background-color: #282828;
-	padding-right: 10px;
-	border-radius: 10px;
-  	color: #ebdbb2;
-  	border: 3px solid #ebdbb2;
-}
-
-
-#custom-swaync {
-	background-color: #282828;
-}
-
-#temperature {
-  	background-color: #282828;
-}
-
 #temperature.critical {
   background-color: red;
 }
 
-#bluetooth {
-	background-color: #282828;
-}
-#window {
-	background-color: #ebdbb2;
-	color: #282828;
-}
 
-#pulseaudio {
-	background-color: #282828;
-}
-
-#pulseaudio.bluetooth {
-	background-color: #282828;
-}
-#pulseaudio.muted {
-	background-color: #282828;
-	color: #ebdbb2;
-}

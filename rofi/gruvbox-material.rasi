@@ -36,9 +36,7 @@
 window {
     location: center;
     anchor:   center;
-    border-radius: 5px;
-    border: 3px;
-    border-color: #EBDBB2;
+    border-radius: 12px;
     height: 560px;
     width: 600px;
 

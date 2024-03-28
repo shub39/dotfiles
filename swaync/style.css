@@ -30,7 +30,6 @@
 .notification-content {
     background: @textc;
     padding: 7px;
-    border: 3px solid @borderc;
     margin: 0;
 }
  
@@ -54,9 +53,8 @@
  
 .notification-action {
     color: @textc;
-    border: 3px solid @borderc;
     border-top: none;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 20px 20px;
     background: @bgc;
 }
  
@@ -85,7 +83,6 @@
  
 .control-center {
     background-color: @bgc;
-    border: 3px solid @borderc;
     border-radius: 20px;
 }
  
@@ -125,7 +122,7 @@
     text-shadow: none;
     background: @bgc;
     box-shadow: none;
-    border-radius: 10px;
+    border-radius: 20px;
 }
  
 .widget-title>button:hover {
@@ -145,12 +142,10 @@
 .widget-dnd>switch {
     border-radius: 20px;
     background: @textc;
-    border: 3px solid
 }
  
 .widget-dnd>switch:checked {
     background: #d79921;
-    border: 3px solid #d79921;
 }
  
 .widget-dnd>switch slider {
@@ -165,7 +160,6 @@
  
 .widget-label {
     margin: 10px 10px 10px 10px;
-    border: 3px solid @borderc;
 }
  
 .widget-label>label {
@@ -178,11 +172,11 @@
     color: @textc;
     padding: 5px 5px 5px 5px;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
  
 .widget-mpris > box > button {
-    border-radius: 10px;
+    border-radius: 20px;
 }
  
 .widget-mpris-player {
@@ -203,7 +197,7 @@
     font-size: x-large;
     padding: 10px;
     margin: 10px 10px 10px 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     background: #3c3836;
 }
  
@@ -220,12 +214,10 @@
 }
  
 .widget-menubar>box>.menu-button-bar>button {
-    border: 3px solid @borderc;
     background: #3c3836
 }
  
 .topbar-buttons>button {
-    border: 3px solid @borderc;
     background: transparent
 }
  
