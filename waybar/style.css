@@ -57,33 +57,23 @@ tooltip label{
 }
 
 #window{
-  background: #ebdbb2;
-  color: #282828;
+  color: #ebdbb2;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-right: 6px;
   padding-left: 6px;
+  border-radius: 12px;
 }
 
 #workspaces button {
 	margin: 1px;
-  color: #ebdbb2;
   box-shadow: none;
 	text-shadow: none;
-  border-radius: 0px;
+  border-radius: 12px;
   padding-left: 6px;
   padding-right: 6px;
-}
-
-#workspaces button.active {
   background-color: #ebdbb2;
   color: #282828;
-}
-
-#workspaces button:hover {
-	background-color: #282828;
-	color: #282828;
-	background-color: #ebdbb2;
 }
 
 #temperature.critical {

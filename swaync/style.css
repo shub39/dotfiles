@@ -119,6 +119,7 @@
 .widget-title>button {
     font-size: 1rem;
     color: @textc;
+    padding: 10px;
     text-shadow: none;
     background: @bgc;
     box-shadow: none;

@@ -51,5 +51,8 @@
 - alacritty
 - google-chrome
 - mpv
+- polkit-kde-authentication-agent
+- xdg-desktop-portal
+- xdg-desktop-portal-hyprland
 
 </details>
