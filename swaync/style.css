@@ -1,0 +1,185 @@
+ 
+@define-color bgc #282828;
+@define-color borderc #ebdbb2;
+@define-color textc #ebdbb2;
+ 
+* {
+    font-family: JetBrains Mono;
+    font-weight: bold;
+	  font-size: 14px
+}
+ 
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+    opacity: 1;
+    background: @bgc
+}
+ 
+.notification-row {
+    outline: none;
+    margin: 20px;
+    padding: 0;
+}
+ 
+.notification {
+    background: @textc;
+    margin: 0px;
+    border-radius: 20px;
+}
+ 
+.notification-content {
+    background: @textc;
+    padding: 7px;
+    margin: 0;
+}
+ 
+.close-button {
+    background: @textc;
+    color: @bgc;
+    text-shadow: none;
+    padding: 0;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+ 
+.close-button:hover {
+    box-shadow: none;
+    background: @bgc;
+    color: @textc;
+    transition: all .15s ease-in-out;
+    border: none
+}
+ 
+.notification-action {
+    color: @textc;
+    border-top: none;
+    border-radius: 0px 0px 20px 20px;
+    background: @bgc;
+}
+ 
+.notification-default-action:hover,
+.notification-action:hover {
+    color: @bgc;
+    background: @textc;
+}
+ 
+.summary {
+	padding-top: 7px;
+    font-size: 13px;
+    color: @bgc;
+}
+ 
+.time {
+    font-size: 11px;
+    color: @bgc;
+    margin-right: 24px
+}
+ 
+.body {
+    font-size: 12px;
+    color: @bgc;
+}
+ 
+.control-center {
+    background-color: @bgc;
+    border-radius: 20px;
+}
+ 
+.control-center-list {
+    background: transparent
+}
+ 
+.control-center-list-placeholder {
+    opacity: .5
+}
+ 
+.floating-notifications {
+    background: transparent
+}
+ 
+.blank-window {
+    background: alpha(black, 0.1)
+}
+ 
+.widget-title {
+    color: @textc;
+    background: @bgc;
+    padding: 10px 10px;
+    margin: 10px 10px 5px 10px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+
+.widget-volume {
+    border: 3px solid @borderc;
+    border-radius: 10px;
+}
+ 
+.widget-title>button {
+    font-size: 1rem;
+    color: @textc;
+    text-shadow: none;
+    background: @bgc;
+    box-shadow: none;
+    border-radius: 20px;
+}
+ 
+.widget-title>button:hover {
+    background: @textc;
+    color: @bgc;
+}
+ 
+.widget-dnd {
+    background: @bgc;
+    padding: 10px 10px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+    font-size: large;
+    color: @textc;
+}
+ 
+.widget-dnd>switch {
+    border-radius: 20px;
+    background: @textc;
+}
+ 
+.widget-dnd>switch:checked {
+    background: #d79921;
+}
+ 
+.widget-dnd>switch slider {
+    background: @bgc;
+    border-radius: 10px
+}
+ 
+.widget-dnd>switch:checked slider {
+    background: @bgc;
+    border-radius: 10px
+}
+ 
+.widget-label {
+    margin: 10px 10px 10px 10px;
+}
+ 
+.widget-label>label {
+    font-size: 1rem;
+    color: @textc;
+}
+ 
+.widget-mpris {
+    background: #3c3836;
+    color: @textc;
+    padding: 5px 5px 5px 5px;
+    margin: 10px;
+    border-radius: 20px;
+}
+ 
+.widget-mpris > box > button {
+    border-radius: 20px;
+}
+ 
+.widget-mpris-player {
+    padding: 5px 5px;
+    margin: 10px
+} 

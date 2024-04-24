@@ -1,0 +1,93 @@
+* {
+font-family: "JetBrains Mono";
+font-weight: bold;
+min-height: 0;
+font-size: 102%;
+font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+padding: 1px;
+}
+
+window#waybar {
+  	background-color: rgba(0, 0, 0, 0);
+  	transition-property: background-color;
+  	transition-duration: .5s;
+}
+
+window#waybar.hidden {
+  	opacity: 0.5;
+}
+
+window#waybar.empty {
+	background-color: transparent;
+}
+
+window#waybar.empty #window {
+	padding: 0px;
+	border: 0px;
+	background-color: transparent;
+}
+
+tooltip {
+	opacity: 1;
+	border-radius: 10px;
+}
+
+tooltip label{
+	padding: 10px;
+	color: #ebdbb2;
+}
+
+#custom-cava,
+#clock,
+#cpu,
+#memory,
+#mpris,
+#network,
+#pulseaudio,
+#temperature,
+#workspaces,
+#custom-menu,
+#custom-swaync{
+	border-radius: 10px;
+  color: #ebdbb2;
+	padding-top: 3px;
+	padding-bottom: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#window{
+  background: #ebdbb2;
+  color: #282828;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+#workspaces button {
+	margin: 1px;
+  color: #ebdbb2;
+  box-shadow: none;
+	text-shadow: none;
+  border-radius: 0px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#workspaces button.active {
+  background-color: #ebdbb2;
+  color: #282828;
+}
+
+#workspaces button:hover {
+	background-color: #282828;
+	color: #282828;
+	background-color: #ebdbb2;
+}
+
+#temperature.critical {
+  background-color: red;
+}
+
+

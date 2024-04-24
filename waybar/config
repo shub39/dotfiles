@@ -1,0 +1,34 @@
+{
+"include": "~/.config/dotfiles/waybar/modules",
+"layer": "top",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 3,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 0,
+"margin-left": 0,
+"margin-right": 0,
+"margin-bottom": 0,
+
+"modules-left": [
+	"custom/cava",
+	"clock"	,
+	"hyprland/window"
+	],
+
+"modules-center": [
+	"hyprland/workspaces"
+	], 
+
+"modules-right": [
+	"wlr/taskbar",
+	"mpris",
+	"cpu", 
+	"temperature", 
+	"memory",
+	"custom/swaync",
+	"pulseaudio"
+	]
+}
