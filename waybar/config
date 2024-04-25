@@ -14,8 +14,9 @@
 
 "modules-left": [
   "hyprland/workspaces",
+  "clock",
 	"custom/cava",
-	"clock"
+  "mpris"
 	],
 
 "modules-center": [
@@ -24,7 +25,6 @@
 
 "modules-right": [
 	"wlr/taskbar",
-	"mpris",
 	"cpu", 
 	"temperature", 
 	"memory",

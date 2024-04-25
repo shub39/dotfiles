@@ -76,22 +76,12 @@
 
 "mpris": {
     "interval": 10,
-	"format": " {player_icon} ",
-	"format-paused": " {status_icon} ",
+	"format": " {title} ",
+	"format-paused": " {title} {status_icon} ",
 	"on-click": "playerctl play-pause",
     "on-click-right": "playerctl next",
     "scroll-step": 5.0,
     "smooth-scrolling-threshold": 1,
-	"player-icons": {
-        "chromium": " ",
-		"default": "",
-        "firefox": "",
-        "kdeconnect": "",
-        "mopidy": "",
-		"mpv": "󰐹",
-        "spotify": "",
-		"vlc": "󰕼"
-	},
 	"status-icons": {
 		"paused": "󰐎",
         "playing": "",
