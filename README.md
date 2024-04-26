@@ -14,11 +14,13 @@
 </a>
 </div>
 
-![1](https://github.com/shub39/dotfiles/assets/143277026/f6feac85-fc2f-481a-8774-789d4e20ad0c)
+![2024-04-26-075334_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/cd38c8d0-bc9c-4ff2-baa8-e5940088cf6a)
 
-![2](https://github.com/shub39/dotfiles/assets/143277026/5c32b4fa-4901-4c5e-bec1-3db4823d1c05)
+![2024-04-26-075350_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/0eec9744-ce3c-48e0-8ed5-1111b8c97b50)
 
-![3](https://github.com/shub39/dotfiles/assets/143277026/77b52f5f-ff26-4d62-9304-b015f937dcaf)
+![2024-04-26-075417_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/6abd9ad6-074d-40d0-9776-0d04d502f171)
+
+
 
 <details>
 <summary><h3>Packages</h3></summary>
