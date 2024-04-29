@@ -20,6 +20,7 @@
 
 ![2024-04-26-075417_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/6abd9ad6-074d-40d0-9776-0d04d502f171)
 
+![image](https://github.com/shub39/dotfiles/assets/143277026/e4f7b124-b850-4b1b-8cd2-6c2fa1107269)
 
 
 <details>
