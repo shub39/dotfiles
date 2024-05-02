@@ -9,7 +9,7 @@
 ![](https://img.shields.io/github/stars/shub39/dotfiles?style=for-the-badge&logo=andela&color=FFB686&logoColor=D9E0EE&labelColor=292324)
 ![](https://img.shields.io/github/repo-size/shub39/dotfiles?color=CAC992&label=SIZE&logo=googledrive&style=for-the-badge&logoColor=D9E0EE&labelColor=292324)
 ![](https://img.shields.io/badge/issues-Skill-green?style=for-the-badge&color=CCE8E9&logoColor=D9E0EE&labelColor=292324) 
-[![](https://img.shields.io/badge/watch-Youtube-red?style=for-the-badge&logo=youtube&color=CCE8E9&logoColor=D9E0EE&labelColor=292324)](https://youtu.be/kniqmQc3hYA) 
+[![](https://img.shields.io/badge/watch-Youtube-red?style=for-the-badge&logo=youtube&color=CCE8E9&logoColor=D9E0EE&labelColor=292324)](https://youtu.be/ZZDs9ZK9R_U?si=9R65mKfAn-Wrryd3) 
 
 </a>
 </div>
@@ -21,41 +21,3 @@
 ![2024-04-26-075417_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/6abd9ad6-074d-40d0-9776-0d04d502f171)
 
 ![image](https://github.com/shub39/dotfiles/assets/143277026/e4f7b124-b850-4b1b-8cd2-6c2fa1107269)
-
-
-<details>
-<summary><h3>Packages</h3></summary>
-
-<h4>Required</h4>
-
-- hyprland-git
-- hyprlock
-- hyprpaper
-- kitty
-- rofi
-- swaync
-- wlogout
-- waybar-git
-- hyprshot
-
-<h4>Others</h4>
-
-- browser(floorp)
-- nautilus
-- discord
-- zapzap
-- materialgram
-- g4music
-- rofi-emoji-git
-- vlc
-- scrcpy
-- neofetch
-- zsh
-- alacritty
-- google-chrome
-- mpv
-- polkit-kde-authentication-agent
-- xdg-desktop-portal
-- xdg-desktop-portal-hyprland
-
-</details>
