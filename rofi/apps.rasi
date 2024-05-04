@@ -1,5 +1,5 @@
 configuration {
-    show-icons: false;
+    show-icons: true;
     font: "JetBrains Mono 12";
     icon-theme: "Gruvbox-Plus-Dark";
 

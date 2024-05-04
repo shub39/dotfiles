@@ -61,13 +61,8 @@
         },
         {
             "type": "uptime",
-            "key": "├─󰅐",
-            "keyColor": "blue"
-        },
-        {
-            "type": "media",
-            "key": "╰─󰝚",
+            "key": "╰─󰅐",
             "keyColor": "blue"
         }
-    ]
+            ]
 }
