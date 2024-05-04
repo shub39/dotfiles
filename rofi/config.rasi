@@ -1,5 +1,5 @@
 configuration {
-    show-icons: true;
+    show-icons: false;
     font: "JetBrains Mono 12";
     icon-theme: "Gruvbox-Plus-Dark";
 
@@ -10,7 +10,7 @@ configuration {
     display-combi:  "󰕘 combi:";
     display-filebrowser: "󰉋 filebrowser:";
 
-    dpi: 100;
+    dpi: 125;
 }
 
 

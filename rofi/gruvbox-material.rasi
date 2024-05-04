@@ -1,5 +1,3 @@
-
-
 * {
 	gruv0: #282828;
 	gruv1: #32302f;
@@ -21,15 +19,15 @@
 	aqua: #89b482;
 	purple: #d3869b;
 
-    reddark: #c14a4a;
-    yellowdark: #b47109;
+  reddark: #c14a4a;
+  yellowdark: #b47109;
 
-    foreground:  @gruv9;
-    background-color:  transparent;
+  foreground:  @gruv9;
+  background-color:  transparent;
     
-    highlight: underline bold #eee0b7;
+  highlight: underline bold #eee0b7;
 
-    transparent: rgba(46,52,64,0);
+  transparent: rgba(46,52,64,0);
 
 }
 
