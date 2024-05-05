@@ -5,7 +5,7 @@
     transition-duration: 0.7s;
   }
   window {
-    background-color: rgba(40, 40, 40, 0.5);
+    background-color: rgba(40, 40, 40, 0.1);
     border-radius: 10px;
   }
   button {

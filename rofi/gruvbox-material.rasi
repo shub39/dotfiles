@@ -53,7 +53,7 @@ message {
     padding: 10px;
     border:  0px 2px 2px 2px;
     border-color: @gruv0;
-    background-color: @gruv7;
+    background-color: transparent;
 }
 
 inputbar {

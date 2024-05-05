@@ -35,8 +35,6 @@
             "keyColor": "green"
         },
         "break",
-
-        
         {
             "type": "title",
             "key": "╭─",
@@ -64,5 +62,5 @@
             "key": "╰─󰅐",
             "keyColor": "blue"
         }
-            ]
+    ]
 }

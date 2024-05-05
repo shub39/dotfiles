@@ -10,7 +10,7 @@ configuration {
     display-combi:  "󰕘 combi:";
     display-filebrowser: "󰉋 filebrowser:";
 
-    dpi: 100;
+    dpi: 110;
 }
 
 
