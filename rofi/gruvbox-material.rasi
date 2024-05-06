@@ -27,14 +27,14 @@
     
   highlight: underline bold #eee0b7;
 
-  transparent: rgba(46,52,64,0);
+  transparent: rgba(0,0,0,0.1);
 
 }
 
 window {
     location: center;
     anchor:   center;
-    border-radius: 12px;
+    border-radius: 20px;
     height: 560px;
     width: 600px;
 
@@ -53,17 +53,17 @@ message {
     padding: 10px;
     border:  0px 2px 2px 2px;
     border-color: @gruv0;
-    background-color: transparent;
+    background-color: @transparent;
 }
 
 inputbar {
     color: @gruv6;
     padding: 14px;
-    background-color: @gruv0;
-    border-color: @gruv0;
+    background-color: @transparent;
+    border-color: @transparent;
 
     border: 1px;
-    border-radius: 5px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 entry, prompt, case-indicator {
@@ -79,8 +79,8 @@ listview {
     padding: 8px;
     border-radius: 5px;
     border: 2px 2px 2px 2px;
-    border-color: @gruv0;
-    background-color: @gruv0;
+    border-color: @transparent;
+    background-color: @transparent;
     dynamic: false;
 }
 
@@ -90,7 +90,7 @@ element {
     border-radius: 5px;
     color: @foreground;
     text-color: @gruv6;
-    background-color: @gruv1;
+    background-color: @transparent;
 }
 
 element.normal.active {
@@ -122,7 +122,6 @@ element-text, element-icon {
     size: 3ch;
     margin: 0 10 0 0;
     vertical-align: 0.5;
-    background-color: inherit;
     text-color: @gruv6;
 }
 
