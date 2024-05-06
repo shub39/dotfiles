@@ -14,10 +14,12 @@
 </a>
 </div>
 
-![2024-04-26-075334_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/cd38c8d0-bc9c-4ff2-baa8-e5940088cf6a)
+![image](https://github.com/shub39/dotfiles/assets/143277026/7d142108-2063-4631-8bba-f64e6eb37473)
 
-![2024-04-26-075350_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/0eec9744-ce3c-48e0-8ed5-1111b8c97b50)
+![image](https://github.com/shub39/dotfiles/assets/143277026/1941cf7d-c7c3-410f-8e2e-f66a8d204ca6)
 
-![2024-04-26-075417_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/6abd9ad6-074d-40d0-9776-0d04d502f171)
+![2024-05-06-192028_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/1bb05e4a-56ba-4b9e-9f42-d8168be49b45)
 
-![image](https://github.com/shub39/dotfiles/assets/143277026/e4f7b124-b850-4b1b-8cd2-6c2fa1107269)
+![2024-05-06-192050_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/60754f80-5b49-4268-9d7c-17aa4a6ce872)
+
+![2024-05-06-192058_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/ed9b0aee-5a24-4713-b1be-659fabc85649)
