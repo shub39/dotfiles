@@ -16,7 +16,8 @@
 
 ![image](https://github.com/shub39/dotfiles/assets/143277026/7d142108-2063-4631-8bba-f64e6eb37473)
 
-![image](https://github.com/shub39/dotfiles/assets/143277026/1941cf7d-c7c3-410f-8e2e-f66a8d204ca6)
+![image](https://github.com/shub39/dotfiles/assets/143277026/0ae99f53-d475-4759-b922-465107f505b9)
+
 
 ![2024-05-06-192028_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/1bb05e4a-56ba-4b9e-9f42-d8168be49b45)
 
