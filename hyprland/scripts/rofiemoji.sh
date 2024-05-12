@@ -1,6 +1,6 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-# Rofi Emoticons. Not my own. Cant remember the source
+
+#RofiEmojis Taken from Jakoolit's dotfiles
 
 sed '1,/^# # DATA # #$/d' $0 | 
 rofi -i -dmenu -config ~/.config/dotfiles/rofi/config.rasi| 

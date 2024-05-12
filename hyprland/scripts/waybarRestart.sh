@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+#Restart Waybar and swaync
+
 killall waybar
 killall swaync
 waybar -c ~/.config/dotfiles/waybar/config -s ~/.config/dotfiles/waybar/style.css &

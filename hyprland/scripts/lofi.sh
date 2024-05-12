@@ -4,10 +4,6 @@
 
 iDIR="$HOME/.config/swaync/icons"
 
-# Note: You can add more options below with the following format:
-# ["TITLE"]="link"
-
-# Define menu options as an associative array
 declare -A menu_options=(
   ["Lofi Girl ☕️🎶"]="https://play.streamafrica.net/lofiradio"
   ["White Noise 📖🎶"]="https://www.youtube.com/watch?v=nMfPqeZjc2c&t=7040s&pp=ygULd2hpdGUgbm9pc2U%3D"
@@ -20,7 +16,6 @@ declare -A menu_options=(
   ["Relaxing Music ☕️🎶"]="https://youtube.com/playlist?list=PLMIbmfP_9vb8BCxRoraJpoo4q1yMFg4CE"
 )
 
-# Function for displaying notifications
 notification() {
   notify-send -u normal "Playing now: $@"
 }
@@ -36,7 +31,6 @@ main() {
 
   notification "$choice"
   
-  # Check if the link is a playlist
   if [[ $link == *playlist* || $link == *watch* ]]; then
     mpv --shuffle --vid=no --volume=50 "$link"
   else
@@ -44,5 +38,4 @@ main() {
   fi
 }
 
-# Check if an online music process is running and send a notification, otherwise run the main function
 pkill mpv && notify-send -u low "Online Music stopped" || main

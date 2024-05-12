@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#SCRCPY
+
 killall scrcpy
 notify-send "SCRCPY is running! but you cant see me."
 scrcpy --no-video
