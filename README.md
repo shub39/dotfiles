@@ -1,6 +1,6 @@
 <div align="center">
-    <h1>✨ shub39's Hyprland dotfiles ✨</h1>
-    <h3></h3>
+    <h1>🌕 shub39's Hyprland dotfiles 🌕</h1>
+    <h3><i>Nothing like gruvbox</i></h3>
 </div>
 
 <div align="center"> 
@@ -14,13 +14,12 @@
 </a>
 </div>
 
-![image](https://github.com/shub39/dotfiles/assets/143277026/7d142108-2063-4631-8bba-f64e6eb37473)
+![2024-05-16-090849_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/98e050ba-4e9a-4dd5-9096-8a05f1c7a5c1)
 
-![image](https://github.com/shub39/dotfiles/assets/143277026/0ae99f53-d475-4759-b922-465107f505b9)
+![2024-05-16-091249_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/fc8c3ba2-daba-4a99-94c8-dbda1903d8e2)
 
+![2024-05-16-090956_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/f4014df3-45ca-4811-95c5-5f5b25fb2d66)
 
-![2024-05-06-192028_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/1bb05e4a-56ba-4b9e-9f42-d8168be49b45)
+![2024-05-16-091327_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/8498a511-74f9-434f-be13-c35ed3fc0aa5)
 
-![2024-05-06-192050_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/60754f80-5b49-4268-9d7c-17aa4a6ce872)
-
-![2024-05-06-192058_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/ed9b0aee-5a24-4713-b1be-659fabc85649)
+![2024-05-16-091342_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/3c1af5f3-4cff-4c94-b7a7-80d51d016df5)
