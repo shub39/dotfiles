@@ -9,7 +9,7 @@
 ![](https://img.shields.io/github/stars/shub39/dotfiles?style=for-the-badge&logo=andela&color=FFB686&logoColor=D9E0EE&labelColor=292324)
 ![](https://img.shields.io/github/repo-size/shub39/dotfiles?color=CAC992&label=SIZE&logo=googledrive&style=for-the-badge&logoColor=D9E0EE&labelColor=292324)
 ![](https://img.shields.io/badge/issues-Skill-green?style=for-the-badge&color=CCE8E9&logoColor=D9E0EE&labelColor=292324) 
-[![](https://img.shields.io/badge/watch-Youtube-red?style=for-the-badge&logo=youtube&color=CCE8E9&logoColor=D9E0EE&labelColor=292324)](https://youtu.be/3qJWOpZu1jE) 
+[![](https://img.shields.io/badge/watch-Youtube-red?style=for-the-badge&logo=youtube&color=CCE8E9&logoColor=D9E0EE&labelColor=292324)](https://youtu.be/9QG0O4XFASc) 
 
 </a>
 </div>
