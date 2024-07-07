@@ -3,9 +3,9 @@
 @define-color textc #282828;
 
 * {
-  font-family: JetBrains Mono;
+  font-family: JetBrainsMonoNerdFontMono;
   font-weight: bold;
-  font-size: 14px
+  font-size: 15px
 }
 
 .control-center .notification-row:focus,

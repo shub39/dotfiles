@@ -21,8 +21,8 @@
      
 "clock": {
     "interval": 1,
-    "format": "   {:%H:%M} ",
-    "format-alt": "   {:%H:%M     %Y, %d %B, %A} ",
+    "format": " 🕑  {:%H:%M} ",
+    "format-alt": " 🕑  {:%H:%M  🗓️   %Y, %d %B, %A} ",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode"          : "year",
@@ -46,7 +46,7 @@
 },
    
 "cpu": {
-    "format": " {usage}% 󰍛 ",  
+    "format": " {usage}% 🧠 ",  
     "interval": 1,
     "on-click-right": "gnome-system-monitor"
 },
@@ -67,7 +67,7 @@
   
 "memory": {
     "interval": 10,
-    "format": " {percentage}% 󰾆 ",
+    "format": " {percentage}% 📊 ",
     "format-alt-click": "click",
     "tooltip": true,
     "tooltip-format": "{used:0.1f}GB/{total:0.1f}G",
@@ -84,8 +84,8 @@
     "smooth-scrolling-threshold": 1,
 	"status-icons": {
 		"paused": "󰐎",
-        "playing": "",
-        "stopped": ""
+        "playing": "▶️",
+        "stopped": "⏸️"
 	},
 	"max-length": 30
 },
@@ -94,15 +94,15 @@
 "pulseaudio": {
     "format": " {volume}% {icon} ",
     "format-bluetooth": " 󰂰 {volume}% {icon} ",
-    "format-muted": "󰖁",
+    "format-muted": "🔇",
     "format-icons": {
-        "headphone": "",
-        "hands-free": "",
-        "headset": "",
-        "phone": "",
-        "portable": "",
-        "car": "",
-    "default": ["", "", "󰕾", ""], 
+        "headphone": "🔈",
+        "hands-free": "🔈",
+        "headset": "🔈",
+        "phone": "🔈",
+        "portable": "🔈",
+        "car": "🔈",
+    "default": ["🔈", "🔈", "🔈", "🔈"], 
     "ignored-sinks": ["Easy Effects Sink"]
     },
     "scroll-step": 5.0,
@@ -118,7 +118,7 @@
     "critical-threshold": 82,
     "format-critical": "{temperatureC}°C {icon}",
     "format": " {temperatureC}°C {icon} ",
-    "format-icons": ["󰈸"],
+    "format-icons": ["🔥"],
     "on-click-right": "kitty -c ~/.config/dotfiles/kitty/kitty.conf --title nvtop sh -c 'nvtop'"
 },
                     
@@ -126,14 +126,14 @@
     "tooltip":true,     
     "format": " {} {icon} ",
     "format-icons": {
-      "notification": "<span foreground='red'><sup></sup></span>",
-      "none": "",
-      "dnd-notification": "<span foreground='red'><sup></sup></span>",
-      "dnd-none": "",
-      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-      "inhibited-none": "",
-      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-      "dnd-inhibited-none": ""
+      "notification": "🔔<span foreground='red'><sup></sup></span>",
+      "none": "🔔",
+      "dnd-notification": "🔕<span foreground='red'><sup></sup></span>",
+      "dnd-none": "🔕",
+      "inhibited-notification": "🔔<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "🔔",
+      "dnd-inhibited-notification": "🔕<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": "🔕"
     },
     "return-type": "json",
     "exec-if": "which swaync-client",
@@ -152,7 +152,7 @@
     "on-click-middle": "close",
     "ignore-list": [
           "rofi",
-          "org.mozilla.firefox",
+          "firefox",
           "kitty"
                    ]
     },

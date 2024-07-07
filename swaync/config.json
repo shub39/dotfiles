@@ -27,7 +27,6 @@
   "widgets": [
       "title",
       "notifications",
-      "dnd",
       "mpris"
   ],
   "widget-config": {
