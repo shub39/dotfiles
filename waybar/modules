@@ -1,13 +1,24 @@
 {
 "hyprland/workspaces": {
-	"active-only": true,
-    "all-outputs": false, 
-    "show-special": false,
-    "on-click": "activate",
-    "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1",
-},
-       
+	"active-only": false,
+	"all-outputs": true,
+	"format": "{icon}",
+	"show-special": false,
+	"on-click": "activate",
+	"on-scroll-up": "hyprctl dispatch workspace e+1",
+	"on-scroll-down": "hyprctl dispatch workspace e-1",
+	"persistent-workspaces": {
+		"1": [],
+		"2": [],
+		"3": [],
+		"4": [],
+		"5": [],
+	},
+	"format-icons": {
+		"active": "👁️‍🗨️",
+		"default": "🗨️",
+	},
+},      
 "bluetooth": {
     "format": "  ",
     "format-disabled": " 󰂳 ",
@@ -153,7 +164,9 @@
     "ignore-list": [
           "rofi",
           "firefox",
-          "kitty"
+          "kitty",
+          "jetbrains-studio",
+          "Spotify"
                    ]
     },
 
