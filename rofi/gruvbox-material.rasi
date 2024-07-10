@@ -60,9 +60,9 @@ inputbar {
     color: @gruv6;
     padding: 14px;
     background-color: @transparent;
-    border-color: @transparent;
+    border-color: @gruv6;
 
-    border: 1px;
+    border: 4px;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -77,9 +77,9 @@ prompt {
 
 listview {
     padding: 8px;
-    border-radius: 5px;
-    border: 2px 2px 2px 2px;
-    border-color: @transparent;
+    border-radius: 0px 0px 20px 20px;
+    border: 0px 4px 4px 4px;
+    border-color: @gruv6;
     background-color: @transparent;
     dynamic: false;
 }

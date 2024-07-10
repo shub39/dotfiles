@@ -23,3 +23,18 @@
 ![2024-05-16-091327_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/8498a511-74f9-434f-be13-c35ed3fc0aa5)
 
 ![2024-05-16-091342_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/3c1af5f3-4cff-4c94-b7a7-80d51d016df5)
+
+## Packages:
+
+- Hyprland, Hyprshot, Hyprpaper, Hyprpicker
+- Kitty
+- Rofi
+- Swaync
+- Waybar
+- Wlogout
+- scrcpy
+- fastfetch and imagemagick
+- mpv
+- copyq
+- cava
+- polkit-gnome

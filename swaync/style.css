@@ -5,7 +5,9 @@
 * {
   font-family: JetBrainsMonoNerdFontMono;
   font-weight: bold;
-  font-size: 15px
+  font-size: 15px;
+  border-width: 3px;
+  border-color: #ebdbb2
 }
 
 .control-center .notification-row:focus,
@@ -15,7 +17,6 @@
 }
 
 .notification-row {
-  border-radius: 20px;
   outline: none;
   margin: 20px;
   padding: 0;
@@ -24,7 +25,8 @@
 .notification {
   background: @textc;
   margin: 0px;
-  border-radius: 20px;
+  border-radius: 0px;
+  border-width: 3px;
   border-color: #ebdbb2;
 }
 
@@ -32,7 +34,6 @@
   background: @textc;
   padding: 7px;
   margin: 0;
-  border-radius: 20px;
 }
 
 .close-button {
@@ -41,7 +42,7 @@
   text-shadow: none;
   padding: 0;
   border-radius: 20px;
-  margin-top: 5px;
+  margin-top: 9px;
   margin-right: 5px;
 }
 
@@ -54,18 +55,8 @@
 }
 
 .notification-action {
-  border-radius: 20px;
-  color: @textc;
-  border-top: none;
-  border-radius: 0px 0px 20px 20px;
-  background: @bgc;
-}
-
-.notification-default-action:hover,
-.notification-action:hover {
   color: @bgc;
   background: @textc;
-  border-radius: 20px;
 }
 
 .summary {
@@ -91,7 +82,7 @@
 }
 
 .control-center-list {
-  background: transparent
+  background: transparent;
 }
 
 .control-center-list-placeholder {
@@ -111,12 +102,6 @@
   padding: 10px 10px;
   margin: 10px 10px 5px 10px;
   font-size: 1.5rem;
-  border-radius: 20px;
-}
-
-.widget-volume {
-  border: 3px solid @borderc;
-  border-radius: 10px;
 }
 
 .widget-title>button {
@@ -126,39 +111,12 @@
   text-shadow: none;
   background: @bgc;
   box-shadow: none;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .widget-title>button:hover {
   background: @borderc;
   color: #282828;
-}
-
-.widget-dnd {
-  padding: 10px 10px;
-  margin: 10px 10px 10px 10px;
-  border-radius: 20px;
-  font-size: large;
-  color: @borderc;
-}
-
-.widget-dnd>switch {
-  border-radius: 20px;
-  background: @borderc;
-}
-
-.widget-dnd>switch:checked {
-  background: #d79921;
-}
-
-.widget-dnd>switch slider {
-  background: @bgc;
-  border-radius: 10px
-}
-
-.widget-dnd>switch:checked slider {
-  background: @bgc;
-  border-radius: 10px
 }
 
 .widget-label {
