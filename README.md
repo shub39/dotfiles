@@ -14,15 +14,13 @@
 </a>
 </div>
 
-![2024-05-16-090849_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/98e050ba-4e9a-4dd5-9096-8a05f1c7a5c1)
+![1](screenshots/1.png)
 
-![2024-05-16-091249_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/fc8c3ba2-daba-4a99-94c8-dbda1903d8e2)
+![2](screenshots/2.png)
 
-![2024-05-16-090956_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/f4014df3-45ca-4811-95c5-5f5b25fb2d66)
+![3](screenshots/3.png)
 
-![2024-05-16-091327_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/8498a511-74f9-434f-be13-c35ed3fc0aa5)
-
-![2024-05-16-091342_hyprshot](https://github.com/shub39/dotfiles/assets/143277026/3c1af5f3-4cff-4c94-b7a7-80d51d016df5)
+![4](screenshots/4.png)
 
 ## Packages:
 
