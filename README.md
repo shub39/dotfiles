@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>🌕 shub39's Hyprland dotfiles 🌕</h1>
+    <h1>✨ shub39's Hyprland dotfiles ✨</h1>
     <h3><i>Nothing like gruvbox</i></h3>
 </div>
 
@@ -24,7 +24,7 @@
 
 ## Packages:
 
-- Hyprland, Hyprshot, Hyprpaper, Hyprpicker
+- Hyprland, Hyprshot, Hyprpaper, Hyprpicker, Hyprlock, Hypridle
 - Kitty
 - Rofi
 - Swaync
@@ -36,3 +36,12 @@
 - copyq
 - cava
 - polkit-gnome
+- neovim (nvchad)
+
+Other programs like browsers and players are listed in `/hyprland/defaultPrograms.conf` edit that accordingly
+
+## Quick Start: 
+
+- On fresh Hyprland, install all the above packages and clone this repository at `~/.config`
+- add `source = ~/.config/dotfiles/hyprland/hyprland.conf` to `~/.config/hypr/hyprland.conf` and remove everything else
+- reboot
