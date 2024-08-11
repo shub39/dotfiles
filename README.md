@@ -26,7 +26,7 @@
 
 - Hyprland, Hyprshot, Hyprpaper, Hyprpicker, Hyprlock, Hypridle
 - Kitty
-- Rofi
+- Rofi `rofi-wayland`
 - Swaync
 - Waybar
 - Wlogout
@@ -35,7 +35,7 @@
 - mpv
 - copyq
 - cava
-- polkit-gnome
+- polkit-gnome 
 - neovim (nvchad)
 
 Other programs like browsers and players are listed in `/hyprland/defaultPrograms.conf` edit that accordingly
