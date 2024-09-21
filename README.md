@@ -22,7 +22,7 @@
 
 ![4](screenshots/4.png)
 
-## Packages:
+## Required Packages
 
 - Hyprland, Hyprshot, Hyprpaper, Hyprpicker, Hyprlock, Hypridle
 - Kitty
@@ -38,9 +38,11 @@
 - polkit-gnome 
 - neovim (nvchad)
 
-Other programs like browsers and players are listed in `/hyprland/defaultPrograms.conf` edit that accordingly
+> ### Other programs like browsers and players are listed in `hyprland/defaultPrograms.conf` edit accordingly
+> ### All keybinds are listed at `hyprland/keybinds.conf` edit accordingly
+> ### Explore hyprland wiki and figure everything else on your own
 
-## Quick Start: 
+## Quick Start
 
 - On fresh Hyprland, install all the above packages and clone this repository at `~/.config`
 - add `source = ~/.config/dotfiles/hyprland/hyprland.conf` to `~/.config/hypr/hyprland.conf` and remove everything else
