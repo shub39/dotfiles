@@ -47,3 +47,7 @@
 - On fresh Hyprland, install all the above packages and clone this repository at `~/.config`
 - add `source = ~/.config/dotfiles/hyprland/hyprland.conf` to `~/.config/hypr/hyprland.conf` and remove everything else
 - reboot
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=shub39/dotfiles&type=Date)](https://star-history.com/#shub39/dotfiles&Date)
