@@ -20,4 +20,4 @@ My config files for hyprland and other utilities with some shell scripts that I 
 
 ## Star History
 
-[![Stargazers over time](https://starchart.cc/shub39/Rush.svg?background=%23282828&axis=%23f2dfd3&line=%23ffb780)](https://starchart.cc/shub39/dotfiles)
+[![Stargazers over time](https://starchart.cc/shub39/dotfiles.svg?background=%23282828&axis=%23f2dfd3&line=%23ffb780)](https://starchart.cc/shub39/dotfiles)
