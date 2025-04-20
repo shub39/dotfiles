@@ -17,9 +17,25 @@ My config files for hyprland and other utilities with some shell scripts that I 
 
 ## Packages
 
+### Official Repo
+Needed
+```
+ttf-jetbrains-mono ttf-jetbrains-mono-nerd hyprpicker hyprpaper neovim hyprpolkitagent nwg-look noto-fonts noto-fonts-emoji noto-fonts-extra swaync waybar hyprlock gnome-terminal chromium cava scrcpy nemo rofi-wayland cmus copyq flatpak
+```
+
+My preferred extras
+```
+vlc loupe gnome-boxes gnome-disk-utility gnome-system-monitor nemo-fileroller
+```
+
 ### AUR
 ```
 gruvbox-dark-icons-gtk gruvbox-material-gtk-theme-git hyprshot wlogout zen-browser-bin
+```
+
+### Flatpak
+```
+it.mijorus.smile
 ```
 
 ## Star History
