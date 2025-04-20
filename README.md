@@ -15,8 +15,12 @@ My config files for hyprland and other utilities with some shell scripts that I 
 ![3](screenshots/3.png)
 ![4](screenshots/4.png)
 
-## Quick Start
-*soon...*
+## Packages
+
+### AUR
+```
+gruvbox-dark-icons-gtk gruvbox-material-gtk-theme-git hyprshot wlogout zen-browser-bin
+```
 
 ## Star History
 
