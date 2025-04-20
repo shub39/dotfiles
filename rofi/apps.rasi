@@ -1,6 +1,6 @@
 configuration {
     show-icons: true;
-    font: "FreeSans Regular 12";
+    font: "JetBrainsMono 12";
     icon-theme: "Gruvbox-Plus-Dark";
 
     display-ssh:    "󰣀 ssh:";

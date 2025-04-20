@@ -10,7 +10,7 @@
 window#waybar {
   background-color: rgba(0, 0, 0, 0);
   transition-property: background-color;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 window#waybar.hidden {
@@ -29,7 +29,7 @@ window#waybar.empty #window {
 
 tooltip {
   opacity: 1;
-  border-radius: 10px;
+  border-radius: 0px; /* Removed rounded corners */
 }
 
 tooltip label {
@@ -48,7 +48,7 @@ tooltip label {
 #workspaces,
 #custom-menu,
 #custom-swaync {
-  border-radius: 10px;
+  border-radius: 0px; /* Removed rounded corners */
   color: #ebdbb2;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -62,14 +62,14 @@ tooltip label {
   padding-bottom: 3px;
   padding-right: 6px;
   padding-left: 6px;
-  border-radius: 12px;
+  border-radius: 0px; /* Removed rounded corners */
 }
 
 #workspaces button {
   margin: 1px;
   box-shadow: none;
   text-shadow: none;
-  border-radius: 12px;
+  border-radius: 0px; /* Removed rounded corners */
   padding-left: 6px;
   padding-right: 6px;
   background-color: #ebdbb2;

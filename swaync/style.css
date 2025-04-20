@@ -7,13 +7,13 @@
   font-weight: bold;
   font-size: 15px;
   border-width: 3px;
-  border-color: #ebdbb2
+  border-color: #ebdbb2;
 }
 
 .control-center .notification-row:focus,
 .control-center .notification-row:hover {
   opacity: 1;
-  background: @bgc
+  background: @bgc;
 }
 
 .notification-row {
@@ -25,7 +25,7 @@
 .notification {
   background: @textc;
   margin: 0px;
-  border-radius: 0px;
+  border-radius: 0px; /* Removed rounded corners */
   border-width: 3px;
   border-color: #ebdbb2;
 }
@@ -41,7 +41,7 @@
   color: @borderc;
   text-shadow: none;
   padding: 0;
-  border-radius: 20px;
+  border-radius: 0px; /* Removed rounded corners */
   margin-top: 9px;
   margin-right: 5px;
 }
@@ -50,8 +50,8 @@
   box-shadow: none;
   background: @borderc;
   color: @textc;
-  transition: all .15s ease-in-out;
-  border: none
+  transition: all 0.15s ease-in-out;
+  border: none;
 }
 
 .notification-action {
@@ -68,7 +68,7 @@
 .time {
   font-size: 11px;
   color: @borderc;
-  margin-right: 40px
+  margin-right: 40px;
 }
 
 .body {
@@ -78,7 +78,7 @@
 
 .control-center {
   background-color: @bgc;
-  border-radius: 20px;
+  border-radius: 0px; /* Removed rounded corners */
 }
 
 .control-center-list {
@@ -86,15 +86,15 @@
 }
 
 .control-center-list-placeholder {
-  opacity: .5
+  opacity: 0.5;
 }
 
 .floating-notifications {
-  background: transparent
+  background: transparent;
 }
 
 .blank-window {
-  background: alpha(black, 0.1)
+  background: alpha(black, 0.1);
 }
 
 .widget-title {
@@ -111,7 +111,7 @@
   text-shadow: none;
   background: @bgc;
   box-shadow: none;
-  border-radius: 5px;
+  border-radius: 0px; /* Removed rounded corners */
 }
 
 .widget-title>button:hover {
@@ -132,14 +132,15 @@
   color: @borderc;
   padding: 5px 5px 5px 5px;
   margin: 10px;
-  border-radius: 20px;
+  border-radius: 0px; /* Removed rounded corners */
 }
 
 .widget-mpris>box>button {
-  border-radius: 20px;
+  border-radius: 0px; /* Removed rounded corners */
 }
 
 .widget-mpris-player {
   padding: 5px 5px;
-  margin: 10px
+  margin: 10px;
 }
+
