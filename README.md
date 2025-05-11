@@ -38,6 +38,26 @@ gruvbox-dark-icons-gtk gruvbox-material-gtk-theme-git hyprshot wlogout zen-brows
 it.mijorus.smile
 ```
 
+## Installation
+
+- Clone this repo at `.config/` in your home directory
+
+```bash
+git clone https://github.com/shub39/dotfiles
+```
+
+- Edit `~/.config/hypr/hyprland.conf` to only include `source = ~/.config/dotfiles/hyprland/hyprland.conf`
+```bash
+echo 'source = ~/.config/dotfiles/hyprland/hyprland.conf' > ~/.config/hypr/hyprland.conf
+```
+
+- Reboot
+
+## Extras
+
+- [NvChad](https://nvchad.com/) a preconfigured neovim setup
+- [Zsh config](https://github.com/pixegami/terminal-profile) for this setup, **edit the scripts according to your package manager first**
+
 ## Star History
 
 [![Stargazers over time](https://starchart.cc/shub39/dotfiles.svg?background=%23282828&axis=%23f2dfd3&line=%23ffb780)](https://starchart.cc/shub39/dotfiles)

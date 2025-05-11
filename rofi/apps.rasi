@@ -1,3 +1,5 @@
+// config for rofi, the menu for apps, lofi and scrcpy
+
 configuration {
     show-icons: true;
     font: "JetBrainsMono 12";

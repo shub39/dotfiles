@@ -1,3 +1,5 @@
+// default config
+
 configuration {
     show-icons: false;
     font: "JetBrainsMono 12";
