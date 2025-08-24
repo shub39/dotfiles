@@ -25,7 +25,7 @@ ttf-jetbrains-mono ttf-jetbrains-mono-nerd hyprpicker hyprpaper neovim hyprpolki
 
 My preferred extras
 ```
-vlc loupe gnome-boxes gnome-disk-utility gnome-system-monitor nemo-fileroller
+mpv loupe gnome-boxes gnome-disk-utility gnome-system-monitor nemo-fileroller
 ```
 
 ### AUR
