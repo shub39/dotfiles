@@ -1,9 +1,7 @@
-// My fastfetch config, the thing that shows system info when you open up the terminal
-
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
      "logo": {
-         "source": "~/.config/dotfiles/fastfetch/Moon.png", // change to your preffered image
+         "source": "~/.config/dotfiles/fastfetch/Moon.png",
          "width": 18,
          "height": 8
      },
@@ -45,7 +43,7 @@
         },
         {
             "type": "os",
-            "key": "├─󰣛", 
+            "key": "├─󰣇", 
             "keyColor": "blue"
         },
         {
