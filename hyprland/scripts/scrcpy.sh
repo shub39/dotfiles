@@ -40,13 +40,13 @@ selected_option=$(echo -e "$options" | rofi -dmenu -config ~/.config/dotfiles/ro
 # Run scrcpy with the selected mode and device
 case "$selected_option" in
     "Video")
-      scrcpy --serial "$selected_device" --max-size=1024 --video-codec=h265 --video-bit-rate=6M --audio-bit-rate=128K --max-fps=30 --no-audio
+      scrcpy --serial "$selected_device" -no-audio
         ;;
     "No Video")
       scrcpy --serial "$selected_device" --no-window
         ;;
     "Video & Audio")
-      scrcpy --serial "$selected_device" --max-size=1024 --video-codec=h265 --video-bit-rate=6M --audio-bit-rate=128K --max-fps=30
+      scrcpy --serial "$selected_device" 
         ;;
     *)
         echo "Invalid selection"
