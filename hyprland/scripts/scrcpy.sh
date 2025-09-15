@@ -40,7 +40,7 @@ selected_option=$(echo -e "$options" | rofi -dmenu -config ~/.config/dotfiles/ro
 # Run scrcpy with the selected mode and device
 case "$selected_option" in
     "Video")
-      scrcpy --serial "$selected_device" -no-audio
+      scrcpy --serial "$selected_device" --no-audio
         ;;
     "No Video")
       scrcpy --serial "$selected_device" --no-window

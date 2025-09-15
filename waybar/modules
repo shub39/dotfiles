@@ -13,15 +13,15 @@
       "3": []
     },
     "format-icons": {
-      "active": "[A]",
-      "default": "[ ]"
+      "active": "[*]",
+      "default": "( )"
     }
   },
 
   "clock": {
     "interval": 1,
-    "format": " [T] {:%H:%M} ",
-    "format-alt": " [T] {:%H:%M  [D]  %Y, %d %B, %A} ",
+    "format": " [TIME] {:%H:%M} ",
+    "format-alt": " [TIME] {:%H:%M  [D]  %Y, %d %B, %A} ",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "year",
@@ -119,7 +119,7 @@
     "critical-threshold": 82,
     "format-critical": "{temperatureC}°C {icon}",
     "format": " {temperatureC}°C {icon} ",
-    "format-icons": ["[T]"],
+    "format-icons": ["[TEMP]"],
     "on-click-right": "kitty -c ~/.config/dotfiles/kitty/kitty.conf --title nvtop sh -c 'nvtop'"
   },
 
@@ -154,10 +154,8 @@
     "on-click-middle": "close",
     "ignore-list": [
       "rofi",
-      "firefox",
       "kitty",
       "jetbrains-studio",
-      "Brave-browser",
       "Spotify",
       "Zen Browser"
     ]

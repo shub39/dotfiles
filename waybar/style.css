@@ -8,22 +8,16 @@
 }
 
 window#waybar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #282828;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
 
 window#waybar.hidden {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 window#waybar.empty {
-  background-color: transparent;
-}
-
-window#waybar.empty #window {
-  padding: 0px;
-  border: 0px;
   background-color: transparent;
 }
 
