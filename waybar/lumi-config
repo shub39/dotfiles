@@ -13,21 +13,10 @@
 "margin-bottom": 0,
 
 "modules-left": [
-  "hyprland/workspaces",
-  "clock",
-  "mpris"
+	"custom/cava",
 	],
 
-"modules-center": [
-	"hyprland/window"
-	], 
-
 "modules-right": [
-	"wlr/taskbar",
-	"cpu", 
-	"temperature", 
-	"memory",
-	"custom/swaync",
-	"pulseaudio"
+	"custom/lumi",
 	]
 }

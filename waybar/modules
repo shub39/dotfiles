@@ -165,5 +165,10 @@
     "exec": "~/.config/dotfiles/hyprland/scripts/waybarCava.sh",
     "format": "{}",
     "on-click": "kitty -c ~/.config/dotfiles/kitty/kitty.conf nvim -c cd ~/.config/dotfiles/"
+  },
+
+  "custom/lumi": {
+    "exec": "~/.cargo/bin/lumi",
+    "format": "{}"
   }
 }
