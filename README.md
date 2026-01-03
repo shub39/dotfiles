@@ -16,7 +16,7 @@ My config files for hyprland and other utilities with some shell scripts that I 
 ![4](screenshots/4.png)
 
 > [!WARNING]
-> This is only meant to be a quick reproducible setup for me. Please don't assume this setup to be a complete package suiting all your needs. You should explore this config on your own, understand stuff and customize this further according to your needs instead of blindly trusting me to magically know everything you want. If you are new to linux and don't identify as a masochist, I strongly suggest you to try a beginner friendly linux distro like Linux Mint or Ubuntu for a few months to get familiar before making the switch.
+> This README is under construction
 
 ## Packages
 

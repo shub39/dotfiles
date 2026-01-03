@@ -39,7 +39,7 @@ window {
   height: 560px;
   width: 600px;
 
-  background-color: @transparent;
+  background-color: @gruv1;
   spacing: 0;
   children: [mainbox];
   orientation: horizontal;
