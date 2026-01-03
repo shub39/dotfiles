@@ -52,17 +52,4 @@ Singleton {
         readonly property color orange:       "#d65d0e";
         readonly property color brightOrange: "#fe8019";
     }
-    
-   	readonly property var popoutXCurve: EasingCurve {
-		curve.type: Easing.OutQuint
-	}
-   
-	readonly property var popoutYCurve: EasingCurve {
-		curve.type: Easing.InQuart
-	}
-   
-	function interpolateColors(x: real, a: color, b: color): color {
-		const xa = 1.0 - x;
-		return Qt.rgba(a.r * xa + b.r * x, a.g * xa + b.g * x, a.b * xa + b.b * x, a.a * xa + b.a * x);
-	}
 }

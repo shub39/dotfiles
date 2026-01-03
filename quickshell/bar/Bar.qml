@@ -1,5 +1,5 @@
 import Quickshell
-import Quickshell.Wayland
+import Quickshell.Io
 import Quickshell.Hyprland
 import QtQuick
 import QtQuick.Layouts
@@ -20,6 +20,97 @@ PanelWindow {
     implicitHeight: 30
     color: ShellGlobals.colors.bg
 
+    property int cpuUsage: 0
+    property int memUsage: 0
+    property string activeWindow: "Window"
+
+    property var lastCpuIdle: 0
+    property var lastCpuTotal: 0
+
+    // CPU usage
+    Process {
+        id: cpuProc
+        command: ["sh", "-c", "head -1 /proc/stat"]
+        stdout: SplitParser {
+            onRead: data => {
+                if (!data)
+                    return;
+                var parts = data.trim().split(/\s+/);
+                var user = parseInt(parts[1]) || 0;
+                var nice = parseInt(parts[2]) || 0;
+                var system = parseInt(parts[3]) || 0;
+                var idle = parseInt(parts[4]) || 0;
+                var iowait = parseInt(parts[5]) || 0;
+                var irq = parseInt(parts[6]) || 0;
+                var softirq = parseInt(parts[7]) || 0;
+
+                var total = user + nice + system + idle + iowait + irq + softirq;
+                var idleTime = idle + iowait;
+
+                if (lastCpuTotal > 0) {
+                    var totalDiff = total - lastCpuTotal;
+                    var idleDiff = idleTime - lastCpuIdle;
+                    if (totalDiff > 0) {
+                        cpuUsage = Math.round(100 * (totalDiff - idleDiff) / totalDiff);
+                    }
+                }
+                lastCpuTotal = total;
+                lastCpuIdle = idleTime;
+            }
+        }
+        Component.onCompleted: running = true
+    }
+
+    // Memory usage
+    Process {
+        id: memProc
+        command: ["sh", "-c", "free | grep Mem"]
+        stdout: SplitParser {
+            onRead: data => {
+                if (!data)
+                    return;
+                var parts = data.trim().split(/\s+/);
+                var total = parseInt(parts[1]) || 1;
+                var used = parseInt(parts[2]) || 0;
+                memUsage = Math.round(100 * used / total);
+            }
+        }
+        Component.onCompleted: running = true
+    }
+
+    // Active window title
+    Process {
+        id: windowProc
+        command: ["sh", "-c", "hyprctl activewindow -j | jq -r '.title // empty'"]
+        stdout: SplitParser {
+            onRead: data => {
+                if (data && data.trim()) {
+                    activeWindow = data.trim();
+                }
+            }
+        }
+        Component.onCompleted: running = true
+    }
+
+    // Slow timer for system stats
+    Timer {
+        interval: 2000
+        running: true
+        repeat: true
+        onTriggered: {
+            cpuProc.running = true;
+            memProc.running = true;
+        }
+    }
+
+    // Listener for Hyprland events
+    Connections {
+        target: Hyprland
+        function onRawEvent(event) {
+            windowProc.running = true;
+        }
+    }
+
     Rectangle {
         anchors.fill: parent
         color: ShellGlobals.colors.bg
@@ -28,41 +119,47 @@ PanelWindow {
             anchors.fill: parent
             anchors.margins: 6
 
-            Repeater {
-                model: ShellGlobals.workspaces
+            Text {
+                property var index: Hyprland.focusedWorkspace?.id - 1 ?? -1
 
-                Rectangle {
-                    Layout.fillWidth: true
-                    Layout.alignment: Qt.AlignAbsolute
-                    Layout.preferredWidth: 20
-                    Layout.maximumHeight: parent.height
-                    color: "transparent"
+                text: "[" + (index + 1) + "]"
+                font.family: ShellGlobals.fontFamily
+                font.pixelSize: ShellGlobals.fontSize
+                color: ShellGlobals.colors.brightYellow
+            }
 
-                    property var ws: Hyprland.workspaces.values.find(ws => ws.id === index + 1) ?? null
-                    property bool isActive: Hyprland.focusedWorkspace?.id === (index + 1)
+            Text {
+                id: clockText
+                text: Qt.formatDateTime(new Date(), "[HH:mm] ddd MMM dd")
+                color: ShellGlobals.colors.brightYellow
+                font.pixelSize: ShellGlobals.fontSize
+                font.family: ShellGlobals.fontFamily
+                Layout.rightMargin: 8
 
-                    Text {
-                        text: isActive ? "[*]" : (ws ? "[_]" : "[ ]")
-                        font.family: ShellGlobals.fontFamily
-                        font.pixelSize: ShellGlobals.fontSize
-                        color: isActive ? ShellGlobals.colors.brightYellow : (ws ? ShellGlobals.colors.brightAqua : ShellGlobals.colors.fg)
-                        anchors.centerIn: parent
-                    }
-
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: Hyprland.dispatch("workspace " + (index + 1))
-                    }
+                Timer {
+                    interval: 1000
+                    running: true
+                    repeat: true
+                    onTriggered: clockText.text = Qt.formatDateTime(new Date(), "[HH:mm] ddd MMM dd")
                 }
             }
 
-            Rectangle {
-                Layout.preferredWidth: 1
-                Layout.preferredHeight: 16
-                Layout.alignment: Qt.AlignVCenter
-                Layout.leftMargin: 8
-                Layout.rightMargin: 8
-                color: "transparent"
+            Text {
+                text: activeWindow
+                color: ShellGlobals.colors.brightGreen
+                font.pixelSize: ShellGlobals.fontSize
+                font.family: ShellGlobals.fontFamily
+                Layout.leftMargin: 4
+                Layout.fillWidth: true
+                elide: Text.ElideRight
+                maximumLineCount: 1
+            }
+
+            Text {
+                text: "[CPU] " + cpuUsage + "%" + " [MEM] " + memUsage + "%"
+                color: ShellGlobals.colors.fg
+                font.pixelSize: ShellGlobals.fontSize
+                font.family: ShellGlobals.fontFamily
             }
         }
     }
