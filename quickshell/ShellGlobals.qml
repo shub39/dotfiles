@@ -6,7 +6,8 @@ import QtQuick
 Singleton {
     readonly property int workspaces: 4
     
-    readonly property string fontFamily: "JetBrainsMono Nerd Font"
+    readonly property string fontFamily: "Google Sans"
+    readonly property string nerdFont: "JetBrainsMono Nerd Font"
     readonly property int fontSize: 14
     
     readonly property var colors: QtObject {

@@ -1,142 +1,145 @@
-@define-color bg #282828;
-@define-color fg #EBDBB2;
+@define-color bgc rgba(0, 0, 0, 0.1);
+@define-color borderc #ebdbb2;
+@define-color textc #282828;
 
 * {
   font-family: JetBrainsMonoNerdFontMono;
   font-weight: bold;
   font-size: 15px;
-
-  background: @bg;
-  color: @fg;
-
-  border-radius: 0;
   border-width: 3px;
-  border-style: solid;
-  border-color: @fg;
-
-  box-shadow: none;
-  text-shadow: none;
-  transition: none;
+  border-color: #ebdbb2
 }
 
-/* Notifications */
-
-.notification-row,
-.notification,
-.notification-content,
-.notification-action {
-  background: @bg;
-  color: @fg;
-  margin: 0;
-  padding: 0;
-  border-radius: 0;
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+  opacity: 1;
+  background: @bgc
 }
 
 .notification-row {
+  outline: none;
   margin: 20px;
+  padding: 0;
+}
+
+.notification {
+  background: @textc;
+  margin: 0px;
+  border-radius: 0px;
+  border-width: 3px;
+  border-color: #ebdbb2;
 }
 
 .notification-content {
+  background: @textc;
   padding: 7px;
+  margin: 0;
 }
-
-/* Close button */
 
 .close-button {
-  background: @bg;
-  color: @fg;
+  background: @textc;
+  color: @borderc;
+  text-shadow: none;
+  padding: 0;
+  border-radius: 20px;
   margin-top: 9px;
   margin-right: 5px;
-  padding: 0;
-  border-radius: 0;
 }
 
-/* Explicitly kill hover/focus behavior */
-
-.notification-row:hover,
-.notification-row:focus,
-.close-button:hover,
-.widget-title > button:hover {
-  background: @bg;
-  color: @fg;
+.close-button:hover {
   box-shadow: none;
-  border-radius: 0;
+  background: @borderc;
+  color: @textc;
+  transition: all .15s ease-in-out;
+  border: none
 }
 
-/* Text blocks */
-
-.summary,
-.body,
-.time {
-  color: @fg;
+.notification-action {
+  color: @bgc;
+  background: @textc;
 }
 
 .summary {
-  font-size: 13px;
   padding-top: 7px;
-}
-
-.body {
-  font-size: 12px;
+  font-size: 13px;
+  color: @borderc;
 }
 
 .time {
   font-size: 11px;
-  margin-right: 40px;
+  color: @borderc;
+  margin-right: 40px
 }
 
-/* Control center */
+.body {
+  font-size: 12px;
+  color: @borderc;
+}
 
-.control-center,
-.control-center-list,
-.control-center-list-placeholder,
-.floating-notifications,
-.blank-window {
-  background: @bg;
-  color: @fg;
-  border-radius: 0;
-  box-shadow: none;
+.control-center {
+  background-color: @bgc;
+  border-radius: 20px;
+}
+
+.control-center-list {
+  background: transparent;
 }
 
 .control-center-list-placeholder {
-  opacity: 1; /* no dimming */
+  opacity: .5
 }
 
-/* Widgets */
+.floating-notifications {
+  background: transparent
+}
+
+.blank-window {
+  background: alpha(black, 0.1)
+}
 
 .widget-title {
-  color: @fg;
-  padding: 10px;
+  color: @borderc;
+  padding: 10px 10px;
   margin: 10px 10px 5px 10px;
   font-size: 1.5rem;
 }
 
-.widget-title > button {
-  background: @bg;
-  color: @fg;
-  padding: 10px;
+.widget-title>button {
   font-size: 1rem;
-  border-radius: 0;
+  color: @borderc;
+  padding: 10px;
+  text-shadow: none;
+  background: @bgc;
   box-shadow: none;
+  border-radius: 5px;
+}
+
+.widget-title>button:hover {
+  background: @borderc;
+  color: #282828;
 }
 
 .widget-label {
-  margin: 10px;
+  margin: 10px 10px 10px 10px;
 }
 
-.widget-label > label {
-  color: @fg;
+.widget-label>label {
   font-size: 1rem;
+  color: @textc;
 }
 
-.widget-mpris,
-.widget-mpris-player,
-.widget-mpris > box > button {
-  background: @bg;
-  color: @fg;
+.widget-mpris {
+  color: @borderc;
+  padding: 5px 5px 5px 5px;
   margin: 10px;
-  padding: 5px;
-  border-radius: 0;
-  box-shadow: none;
+  border-radius: 20px;
 }
 
+.widget-mpris>box>button {
+  border-radius: 20px;
+}
+
+.widget-mpris-player {
+  padding: 5px 5px;
+  margin: 10px
+}
