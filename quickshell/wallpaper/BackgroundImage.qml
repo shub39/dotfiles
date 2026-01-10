@@ -3,7 +3,7 @@ import Quickshell
 
 Item {
 	id: root
-
+	
 	required property ShellScreen screen;
 	property alias asynchronous: image.asynchronous;
 
@@ -11,6 +11,7 @@ Item {
 
 	Image {
 		id: image
-		source: Qt.resolvedUrl("1.png")
+		source: Qt.resolvedUrl("Wallpaper.png")
+		fillMode: Image.PreserveAspectFit
 	}
 }

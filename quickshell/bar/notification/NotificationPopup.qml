@@ -1,7 +1,6 @@
-pragma ComponentBehavior: Bound
-
 import QtQuick
 import Quickshell
+import qs
 
 PopupWindow {
     id: root
@@ -65,7 +64,7 @@ PopupWindow {
         NotifServer.notifServer.onNotification.connect(n => {
             popup.notif = n;
             popup.state = "HasNotif";
-            root.visible = true;
+            root.visible = !ShellGlobals.isDnd;
             timer.start();
         });
 

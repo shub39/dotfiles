@@ -35,9 +35,8 @@ PanelWindow {
     Rectangle {
         anchors.fill: parent
         color: ShellGlobals.colors.bg0_s
-        radius: 1000
-        border.width: 1
-        border.color: ShellGlobals.colors.brightYellow
+        border.width: 2
+        border.color: ShellGlobals.colors.yellow
         
         RowLayout {
             anchors.fill: parent
@@ -57,6 +56,8 @@ PanelWindow {
             CpuUsage {}
             Break {}
             MemUsage {}
+            Break {}
+            Dnd {}
         }
     }
 }

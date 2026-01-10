@@ -1,8 +1,7 @@
-pragma ComponentBehavior: Bound
-
 import QtQuick
 import QtQuick.Layouts
 import Quickshell.Services.Notifications
+import qs
 
 Item {
     id: root
@@ -11,17 +10,20 @@ Item {
     property string appName: notif?.appName ?? ""
     property string summary: notif?.summary ?? ""
     property list<NotificationAction> actions: notif?.actions ?? []
-
-    implicitHeight: field.height + 10 // unholy I know, maybe I'll clean it up later, but yk if it works, don't break it .w.
+    
+    implicitHeight: field.height + 10
 
     Rectangle {
         id: field
+        
         anchors.centerIn: parent
         width: parent.width - 10
         height: sumText.height + bodText.height + 45
+        color: ShellGlobals.colors.bg
 
         border {
-            width: 2
+            width: 1
+            color: ShellGlobals.colors.yellow
         }
 
         ColumnLayout {
@@ -31,13 +33,15 @@ Item {
             anchors.topMargin: 25
             anchors.bottomMargin: 15
             anchors.margins: 20
-
+            
             Text {
                 id: sumText
                 Layout.fillWidth: true
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 text: root.summary
                 font.bold: true
+                color: ShellGlobals.colors.fg
+                font.pixelSize: 16
             }
 
             Text {
@@ -45,6 +49,8 @@ Item {
                 Layout.fillWidth: true
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 text: root.body
+                color: ShellGlobals.colors.fg
+                font.pixelSize: 14
             }
         }
     }
@@ -56,11 +62,17 @@ Item {
 
         width: text.width + 10
         height: text.height + 2
+        color: ShellGlobals.colors.bg
+        border {
+            width: 1
+            color: ShellGlobals.colors.brightGreen
+        }
 
         Text {
             id: text
             anchors.centerIn: parent
             text: root.appName
+            color: ShellGlobals.colors.brightGreen
         }
     }
 
@@ -70,12 +82,18 @@ Item {
 
         width: header.height
         height: header.height
+        color: ShellGlobals.colors.bg
+        border {
+            width: 1
+            color: ShellGlobals.colors.brightRed
+        }
 
         Text {
             anchors.centerIn: parent
-            text: ""
+            text: ""
             font.bold: true
             font.pointSize: 10
+            color: ShellGlobals.colors.brightRed
         }
 
         MouseArea {
@@ -85,7 +103,6 @@ Item {
     }
 
     RowLayout {
-        // actions
         anchors.right: parent.right
         anchors.bottom: parent.bottom
         anchors.rightMargin: 15
@@ -101,10 +118,14 @@ Item {
                 required property NotificationAction modelData
                 Layout.fillHeight: true
                 implicitWidth: text2.width + 10
+                color: ShellGlobals.colors.bg
+                border.color: ShellGlobals.colors.brightAqua
+                border.width: 1
                 Text {
                     id: text2
                     anchors.centerIn: parent
                     text: actionRect?.modelData?.text ?? "Activate"
+                    color: ShellGlobals.colors.fg
                     MouseArea {
                         anchors.fill: parent
                         onClicked: event => {

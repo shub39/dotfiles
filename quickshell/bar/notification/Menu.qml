@@ -10,14 +10,14 @@ PopupWindow {
     id: panel
     property bool debug: false
     required property PanelWindow bar
-    color: ShellGlobals.colors.bg1
+    color: "transparent"
     visible: debug
 
     anchor.window: bar
     anchor.rect.x: bar.width - width - 10
-    anchor.rect.y: bar.height + 10
-    implicitWidth: 480
-    implicitHeight: cardbox.height
+    anchor.rect.y: bar.height + 20
+    implicitWidth: 500
+    implicitHeight: 600
 
     function toggleVisibility() {
         if (panel.visible) {
@@ -45,12 +45,19 @@ PopupWindow {
         }
     }
 
+    Rectangle {
+        id: background
+        anchors.fill: parent
+        color: ShellGlobals.colors.bg1
+        opacity: cardbox.opacity
+        border.width: 2
+        border.color: ShellGlobals.colors.green
+    }
+
     ColumnLayout {
         id: cardbox
-        anchors.top: parent.top
-        anchors.left: parent.left
-        anchors.right: parent.right
-        spacing: 8
+        anchors.fill: parent
+        spacing: 0
 
         state: (panel.debug) ? "Open" : "Closed"
         states: [
@@ -81,14 +88,57 @@ PopupWindow {
             }
         }
 
-        ListView { // Notification Inbox
+        RowLayout {
+            Layout.topMargin: 15
+            Layout.leftMargin: 20
+            Layout.rightMargin: 20
+            Layout.bottomMargin: 10
+
+            Text {
+                text: "Notifications"
+                font.bold: true
+                font.pixelSize: ShellGlobals.fontSize
+                color: ShellGlobals.colors.brightYellow
+            }
+            Item {
+                Layout.fillWidth: true
+            }
+            Text {
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: NotifServer.clearNotifs()
+                }
+
+                text: "󰎟 Clear"
+                font.bold: true
+                font.pixelSize: ShellGlobals.fontSize
+                color: ShellGlobals.colors.brightYellow
+            }
+        }
+
+        Rectangle {
+            implicitHeight: 1
+            implicitWidth: parent.width
+            color: ShellGlobals.colors.green
+        }
+
+        ListView {
             id: listView
+
             Layout.fillWidth: true
+            Layout.fillHeight: true
             Layout.minimumHeight: 0
+            Layout.leftMargin: 20
+            Layout.rightMargin: 20
+            Layout.bottomMargin: 2
             Layout.preferredHeight: childrenRect.height + 20
             Layout.maximumHeight: Screen.height * 0.95 - this.y
+
             clip: true
             model: NotifServer.notifications
+            header: Item { height: 20 }
+            footer: Item { height: 100 }
+            spacing: 10
             delegate: NotificationEntry {
                 id: toast
                 width: parent?.width

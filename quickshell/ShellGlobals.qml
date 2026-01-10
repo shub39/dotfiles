@@ -4,6 +4,8 @@ import Quickshell
 import QtQuick
 
 Singleton {
+    property bool isDnd: false
+    
     // Font Config
     readonly property string fontFamily: "JetBrainsMono Nerd Font"
     readonly property int fontSize: 14
