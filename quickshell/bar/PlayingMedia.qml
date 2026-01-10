@@ -11,7 +11,9 @@ Text {
         stdout: SplitParser {
             onRead: data => {
                 if (data && data.trim()) {
-                    playingMedia = data.trim();
+                    playingMedia = "  " + ShellGlobals.adjustTextOverflow(data.trim(), 100);
+                } else {
+                    playingMedia = "";
                 }
             }
         }
@@ -27,11 +29,11 @@ Text {
         }
     }
 
-    text: "Now Playing - " + playingMedia
+    text: playingMedia
     color: ShellGlobals.colors.brightPurple
     font.pixelSize: ShellGlobals.fontSize
-    font.italic: true
     font.family: ShellGlobals.fontFamily
+    font.italic: true
     elide: Text.ElideRight
     maximumLineCount: 1
 }

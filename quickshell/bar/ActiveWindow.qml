@@ -12,7 +12,7 @@ Text {
         stdout: SplitParser {
             onRead: data => {
                 if (data && data.trim()) {
-                    activeWindow = data.trim();
+                    activeWindow = " " + ShellGlobals.adjustTextOverflow(data.trim(), 50);
                 }
             }
         }

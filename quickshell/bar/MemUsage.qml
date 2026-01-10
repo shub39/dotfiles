@@ -30,7 +30,7 @@ Text {
         }
     }
 
-    text: "RAM " + memUsage + "%"
+    text: " " + memUsage + "%"
     color: ShellGlobals.colors.brightYellow
     font.pixelSize: ShellGlobals.fontSize
     font.bold: true

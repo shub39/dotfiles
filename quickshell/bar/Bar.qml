@@ -1,29 +1,44 @@
 import Quickshell
 import QtQuick
 import QtQuick.Layouts
+
 import qs
+import "notification"
 
 PanelWindow {
+    id: bar
     anchors {
         top: true
         left: true
         right: true
     }
     margins {
-        top: 0
+        top: 10
         bottom: 0
-        left: 0
-        right: 0
+        left: 10
+        right: 10
     }
     implicitHeight: 30
     color: "transparent"
+    
+    Menu {
+        id: menu
+        bar: bar
+    }
+    
+    NotificationPopup {
+        id: notificationPopup
+        bar: bar
+        menu: menu
+    }
 
     Rectangle {
         anchors.fill: parent
         color: ShellGlobals.colors.bg0_s
-        bottomLeftRadius: 32
-        bottomRightRadius: 32
-
+        radius: 1000
+        border.width: 1
+        border.color: ShellGlobals.colors.brightYellow
+        
         RowLayout {
             anchors.fill: parent
             anchors.leftMargin: 10

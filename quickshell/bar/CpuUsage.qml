@@ -49,7 +49,7 @@ Text {
         }
     }
 
-    text: "CPU " + cpuUsage + "%"
+    text: " " + cpuUsage + "%"
     color: ShellGlobals.colors.brightYellow
     font.pixelSize: ShellGlobals.fontSize
     font.bold: true

@@ -5,8 +5,6 @@ import QtQuick
 PanelWindow {
     id: window
 
-    screen: modelData
-
     exclusionMode: ExclusionMode.Ignore
     WlrLayershell.layer: WlrLayer.Background
     WlrLayershell.namespace: "shell:background"

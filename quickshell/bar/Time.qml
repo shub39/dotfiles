@@ -3,7 +3,7 @@ import qs
 
 Text {
     id: clockText
-    text: Qt.formatDateTime(new Date(), "HH:mm")
+    text: Qt.formatDateTime(new Date(), " HH:mm")
     color: ShellGlobals.colors.brightAqua
     font.pixelSize: ShellGlobals.fontSize
     font.family: ShellGlobals.fontFamily
@@ -13,6 +13,6 @@ Text {
         interval: 1000
         running: true
         repeat: true
-        onTriggered: clockText.text = Qt.formatDateTime(new Date(), "HH:mm")
+        onTriggered: clockText.text = Qt.formatDateTime(new Date(), " HH:mm")
     }
 }

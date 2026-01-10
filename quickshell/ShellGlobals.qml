@@ -4,12 +4,11 @@ import Quickshell
 import QtQuick
 
 Singleton {
-    readonly property int workspaces: 4
-    
-    readonly property string fontFamily: "Google Sans"
-    readonly property string nerdFont: "JetBrainsMono Nerd Font"
+    // Font Config
+    readonly property string fontFamily: "JetBrainsMono Nerd Font"
     readonly property int fontSize: 14
     
+    // Theme
     readonly property var colors: QtObject {
         // Core
         readonly property color bg:    "#282828";
@@ -52,5 +51,12 @@ Singleton {
         // Extra
         readonly property color orange:       "#d65d0e";
         readonly property color brightOrange: "#fe8019";
+    }
+    
+    function adjustTextOverflow(text, maxWidth) {
+        if (text.length > maxWidth) {
+            return text.substring(0, maxWidth - 3) + "...";
+        }
+        return text;
     }
 }
