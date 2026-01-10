@@ -12,12 +12,6 @@ PanelWindow {
         left: true
         right: true
     }
-    margins {
-        top: 10
-        bottom: 0
-        left: 10
-        right: 10
-    }
     implicitHeight: 30
     color: "transparent"
     

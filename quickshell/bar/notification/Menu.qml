@@ -13,9 +13,13 @@ PopupWindow {
     color: "transparent"
     visible: debug
 
+    anchor.margins {
+        top: 50
+        bottom: 0
+        left: 1400
+        right: 10
+    }
     anchor.window: bar
-    anchor.rect.x: bar.width - width - 10
-    anchor.rect.y: bar.height + 20
     implicitWidth: 500
     implicitHeight: 600
 
@@ -136,8 +140,12 @@ PopupWindow {
 
             clip: true
             model: NotifServer.notifications
-            header: Item { height: 20 }
-            footer: Item { height: 100 }
+            header: Item {
+                height: 20
+            }
+            footer: Item {
+                height: 100
+            }
             spacing: 10
             delegate: NotificationEntry {
                 id: toast

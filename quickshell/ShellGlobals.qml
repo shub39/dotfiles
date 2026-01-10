@@ -4,6 +4,7 @@ import Quickshell
 import QtQuick
 
 Singleton {
+    property bool isLocked: false
     property bool isDnd: false
     
     // Font Config
