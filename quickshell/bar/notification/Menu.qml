@@ -3,7 +3,7 @@ import QtQuick
 import QtQuick.Layouts
 import Quickshell.Services.Notifications
 import Quickshell.Hyprland
-
+import Qt5Compat.GraphicalEffects
 import qs
 
 PopupWindow {
@@ -14,7 +14,7 @@ PopupWindow {
     visible: debug
 
     anchor.margins {
-        top: 50
+        top: 70
         bottom: 0
         left: 1400
         right: 10
@@ -52,10 +52,9 @@ PopupWindow {
     Rectangle {
         id: background
         anchors.fill: parent
-        color: ShellGlobals.colors.bg1
+        color: ShellGlobals.materialColors.tertiarycontainer
         opacity: cardbox.opacity
-        border.width: 2
-        border.color: ShellGlobals.colors.green
+        radius: 16
     }
 
     ColumnLayout {
@@ -93,37 +92,50 @@ PopupWindow {
         }
 
         RowLayout {
-            Layout.topMargin: 15
-            Layout.leftMargin: 20
-            Layout.rightMargin: 20
-            Layout.bottomMargin: 10
+            Layout.leftMargin: 16
+            Layout.rightMargin: 16
+            Layout.bottomMargin: 8
+            Layout.topMargin: 8
 
             Text {
                 text: "Notifications"
                 font.bold: true
-                font.pixelSize: ShellGlobals.fontSize
-                color: ShellGlobals.colors.brightYellow
+                font.pixelSize: 20
+                font.family: ShellGlobals.fontFamily
+                font.letterSpacing: ShellGlobals.letterSpacing
+                color: ShellGlobals.materialColors.ontertiarycontainer
             }
             Item {
                 Layout.fillWidth: true
             }
-            Text {
+            Item {
+                Layout.preferredWidth: 24
+                Layout.preferredHeight: 24
+
                 MouseArea {
                     anchors.fill: parent
                     onClicked: NotifServer.clearNotifs()
                 }
 
-                text: "󰎟 Clear"
-                font.bold: true
-                font.pixelSize: ShellGlobals.fontSize
-                color: ShellGlobals.colors.brightYellow
+                Image {
+                    id: clear_all
+                    source: `icons/clear_all.png`
+                    anchors.fill: parent
+                    visible: false
+                }
+
+                ColorOverlay {
+                    anchors.fill: parent
+                    source: clear_all
+                    color: ShellGlobals.materialColors.ontertiarycontainer
+                }
             }
         }
-
+        
         Rectangle {
-            implicitHeight: 1
-            implicitWidth: parent.width
-            color: ShellGlobals.colors.green
+            color: ShellGlobals.materialColors.ontertiarycontainer
+            width: parent.width
+            height: 1
         }
 
         ListView {
@@ -134,7 +146,6 @@ PopupWindow {
             Layout.minimumHeight: 0
             Layout.leftMargin: 20
             Layout.rightMargin: 20
-            Layout.bottomMargin: 2
             Layout.preferredHeight: childrenRect.height + 20
             Layout.maximumHeight: Screen.height * 0.95 - this.y
 
@@ -146,6 +157,8 @@ PopupWindow {
             footer: Item {
                 height: 100
             }
+            
+           
             spacing: 10
             delegate: NotificationEntry {
                 id: toast

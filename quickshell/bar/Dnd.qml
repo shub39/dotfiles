@@ -1,14 +1,3 @@
-// import QtQuick
-// import qs
-
-// Text {
-
-//     text: !ShellGlobals.isDnd ? "" : ""
-//     font.family: ShellGlobals.fontFamily
-//     font.pixelSize: ShellGlobals.fontSize
-//     color: ShellGlobals.isDnd ? ShellGlobals.colors.brightRed : ShellGlobals.colors.orange
-// }
-
 import QtQuick
 import QtQuick.Layouts
 import Qt5Compat.GraphicalEffects

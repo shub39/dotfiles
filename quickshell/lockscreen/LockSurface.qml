@@ -5,76 +5,82 @@ import QtQuick.Controls.Fusion
 import qs
 
 Rectangle {
-	id: root
-	required property LockContext context
+    id: root
+    required property LockContext context
 
-	color: ShellGlobals.colors.bg
-	
-	Label {
-		id: clock
-		property var date: new Date()
+    color: ShellGlobals.materialColors.background
 
-		anchors {
-			horizontalCenter: parent.horizontalCenter
-			top: parent.top
-			topMargin: 100
-		}
+    Label {
+        id: clock
+        property var date: new Date()
 
-		renderType: Text.NativeRendering
-		font.pointSize: 80
-		color: ShellGlobals.colors.fg
+        anchors {
+            horizontalCenter: parent.horizontalCenter
+            top: parent.top
+            topMargin: 100
+        }
 
-		Timer {
-			running: true
-			repeat: true
-			interval: 1000
+        renderType: Text.NativeRendering
+        font.pixelSize: 80
+        font.family: ShellGlobals.fontFamily
+        font.letterSpacing: ShellGlobals.letterSpacing
+        font.bold: true
+        color: ShellGlobals.materialColors.onsurface
 
-			onTriggered: {
-				clock.date = new Date();
-			}
-		}
+        Timer {
+            running: true
+            repeat: true
+            interval: 1000
 
-		text: {
-			const hours = this.date.getHours().toString().padStart(2, '0');
-			const minutes = this.date.getMinutes().toString().padStart(2, '0');
-			return `${hours}:${minutes}`;
-		}
-	}
+            onTriggered: {
+                clock.date = new Date();
+            }
+        }
 
-	ColumnLayout {
-		anchors {
-			horizontalCenter: parent.horizontalCenter
-			top: parent.verticalCenter
-		}
+        text: {
+            const hours = this.date.getHours().toString().padStart(2, '0');
+            const minutes = this.date.getMinutes().toString().padStart(2, '0');
+            return `${hours}:${minutes}`;
+        }
+    }
 
-		RowLayout {
-			TextField {
-				id: passwordBox
+    ColumnLayout {
+        anchors {
+            horizontalCenter: parent.horizontalCenter
+            top: parent.verticalCenter
+        }
 
-				implicitWidth: 400
-				padding: 10
-				color: ShellGlobals.colors.fg
+        RowLayout {
+            TextField {
+                id: passwordBox
+                horizontalAlignment: Qt.AlignHCenter
 
-				focus: true
-				enabled: !root.context.unlockInProgress
-				echoMode: TextInput.Password
-				inputMethodHints: Qt.ImhSensitiveData
-				onTextChanged: root.context.currentText = this.text;
-				onAccepted: root.context.tryUnlock();
-				Connections {
-					target: root.context
+                implicitWidth: 400
+                padding: 10
+                color: ShellGlobals.materialColors.onsurface
+                focus: true
+                enabled: !root.context.unlockInProgress
+                font.pixelSize: 24
+                font.family: ShellGlobals.fontFamily
+                font.letterSpacing: ShellGlobals.letterSpacing
+                echoMode: TextInput.Password
+                inputMethodHints: Qt.ImhSensitiveData
+                onTextChanged: root.context.currentText = this.text
+                onAccepted: root.context.tryUnlock()
+                Connections {
+                    target: root.context
 
-					function onCurrentTextChanged() {
-						passwordBox.text = root.context.currentText;
-					}
-				}
-			}
-		}
+                    function onCurrentTextChanged() {
+                        passwordBox.text = root.context.currentText;
+                    }
+                }
+            }
+        }
 
-		Label {
-			visible: root.context.showFailure
-			text: "Incorrect password"
-			color: ShellGlobals.colors.red
-		}
-	}
+        Label {
+            visible: root.context.showFailure
+            text: "Incorrect password"
+            color: ShellGlobals.materialColors.error
+        }
+    }
 }

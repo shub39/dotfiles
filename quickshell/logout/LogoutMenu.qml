@@ -3,14 +3,15 @@ import QtQuick.Layouts
 import Quickshell
 import Quickshell.Hyprland
 import Quickshell.Wayland
+import Qt5Compat.GraphicalEffects
 
 import qs
 
 Variants {
     id: root
-    property color backgroundColor: "#e60c0c0c"
-    property color buttonColor: ShellGlobals.colors.bg0
-    property color buttonHoverColor: ShellGlobals.colors.bg1
+    property color backgroundColor: ShellGlobals.materialColors.background
+    property color buttonColor: ShellGlobals.materialColors.tertiarycontainer
+    property color buttonHoverColor: ShellGlobals.materialColors.tertiary
     default property list<LogoutButton> buttons
 
     model: Quickshell.screens
@@ -71,8 +72,8 @@ Variants {
                     height: parent.height * 0.75
 
                     columns: 3
-                    columnSpacing: 0
-                    rowSpacing: 0
+                    columnSpacing: 8
+                    rowSpacing: 8
 
                     Repeater {
                         model: buttons
@@ -83,8 +84,7 @@ Variants {
                             Layout.fillHeight: true
 
                             color: ma.containsMouse ? buttonHoverColor : buttonColor
-                            border.color: ShellGlobals.colors.yellow
-                            border.width: 1
+                            radius: 1000
 
                             MouseArea {
                                 id: ma
@@ -96,12 +96,28 @@ Variants {
                                 }
                             }
 
-                            Image {
+                            Item {
                                 id: icon
-                                anchors.centerIn: parent
-                                source: `icons/${modelData.icon}.png`
+                                anchors {
+                                    top: parent.top
+                                    topMargin: 120
+                                    horizontalCenter: parent.horizontalCenter
+                                }
                                 width: parent.width * 0.25
-                                height: parent.width * 0.25
+                                height: width
+
+                                Image {
+                                    id: image
+                                    anchors.fill: parent
+                                    source: `icons/${modelData.icon}.png`
+                                    visible: false
+                                }
+
+                                ColorOverlay {
+                                    anchors.fill: parent
+                                    source: image
+                                    color: ShellGlobals.materialColors.ontertiary
+                                }
                             }
 
                             Text {
@@ -113,7 +129,9 @@ Variants {
 
                                 text: modelData.text
                                 font.pointSize: 20
-                                color: ShellGlobals.colors.fg0
+                                color: ShellGlobals.materialColors.ontertiary
+                                font.bold: true
+                                font.family: ShellGlobals.fontFamily
                             }
                         }
                     }
