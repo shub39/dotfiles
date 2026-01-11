@@ -1,8 +1,16 @@
-import Quickshell.Io
 import QtQuick
+import QtQuick.Layouts
+import Qt5Compat.GraphicalEffects
+import Quickshell.Io
 import qs
 
-Text {
+Rectangle {
+    color: ShellGlobals.materialColors.primary
+    radius: 1000
+
+    implicitHeight: row.height + 16
+    implicitWidth: row.width + 32
+
     property int cpuUsage: 0
     property int lastCpuTotal: 0
     property int lastCpuIdle: 0
@@ -49,9 +57,38 @@ Text {
         }
     }
 
-    text: " " + cpuUsage + "%"
-    color: ShellGlobals.colors.brightYellow
-    font.pixelSize: ShellGlobals.fontSize
-    font.bold: true
-    font.family: ShellGlobals.fontFamily
+    RowLayout {
+        id: row
+        spacing: 8
+        anchors.centerIn: parent
+
+        Item {
+            Layout.preferredWidth: 24
+            Layout.preferredHeight: 24
+
+            Image {
+                id: icon
+                anchors.fill: parent
+                source: "icons/cpu.png"
+                visible: false
+            }
+
+            ColorOverlay {
+                anchors.fill: parent
+                source: icon
+                color: ShellGlobals.materialColors.onprimary
+            }
+        }
+
+        Text {
+            id: text
+            text: cpuUsage + "%"
+            font.family: ShellGlobals.fontFamily
+            font.pixelSize: 20
+            font.bold: true
+            font.letterSpacing: ShellGlobals.letterSpacing
+            elide: Text.ElideLeft
+            color: ShellGlobals.materialColors.onprimary
+        }
+    }
 }

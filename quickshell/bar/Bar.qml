@@ -1,7 +1,6 @@
 import Quickshell
 import QtQuick
 import QtQuick.Layouts
-
 import qs
 import "notification"
 
@@ -12,46 +11,42 @@ PanelWindow {
         left: true
         right: true
     }
-    implicitHeight: 30
+    implicitHeight: rowLayout.implicitHeight + 8
     color: "transparent"
-    
+
     Menu {
         id: menu
         bar: bar
     }
-    
+
     NotificationPopup {
         id: notificationPopup
         bar: bar
         menu: menu
     }
 
-    Rectangle {
-        anchors.fill: parent
-        color: ShellGlobals.colors.bg0_s
-        border.width: 2
-        border.color: ShellGlobals.colors.yellow
-        
-        RowLayout {
-            anchors.fill: parent
-            anchors.leftMargin: 10
-            anchors.rightMargin: 10
+    RowLayout {
+        id: rowLayout
 
-            Workspace {}
-            Break {}
-            Time {}
-            Break {}
-            ActiveWindow {}
-            Item {
-                Layout.fillWidth: true
-            }
-            PlayingMedia {}
-            Break {}
-            CpuUsage {}
-            Break {}
-            MemUsage {}
-            Break {}
-            Dnd {}
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.top: parent.top
+        
+        anchors.leftMargin: 16
+        anchors.rightMargin: 16
+        anchors.topMargin: 8
+        
+        spacing: 8
+
+        Workspace {}
+        Time {}
+        ActiveWindow {}
+        Item {
+            Layout.fillWidth: true
         }
+        PlayingMedia {}
+        CpuUsage {}
+        MemUsage {}
+        Dnd {}
     }
 }

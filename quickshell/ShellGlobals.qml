@@ -8,8 +8,49 @@ Singleton {
     property bool isDnd: false
     
     // Font Config
-    readonly property string fontFamily: "JetBrainsMono Nerd Font"
+    readonly property string fontFamily: "Google Sans"
+    readonly property double letterSpacing: 0.1
     readonly property int fontSize: 14
+    
+    // material colors
+    readonly property var materialColors: QtObject {
+        readonly property color primary: "#ffba2c"
+        readonly property color onprimary: "#563b00"
+        readonly property color primarycontainer: "#eaa702"
+        readonly property color onprimarycontainer: "#452f00"
+        readonly property color inverseprimary: "#7e5800"
+        readonly property color secondary: "#dac3a1"
+        readonly property color onsecondary: "#4d3e24"
+        readonly property color secondarycontainer: "#483920"
+        readonly property color onsecondarycontainer: "#d3bc9a"
+        readonly property color tertiary: "#ffc5a6"
+        readonly property color ontertiary: "#693c21"
+        readonly property color tertiarycontainer: "#f6b591"
+        readonly property color ontertiarycontainer: "#5e3318"
+        readonly property color background: "#110e08"
+        readonly property color onbackground: "#f2e3d1"
+        readonly property color surface: "#110e08"
+        readonly property color onsurface: "#f2e3d1"
+        readonly property color surfacevariant: "#2c2519"
+        readonly property color onsurfacevariant: "#b6a998"
+        readonly property color surfacetint: "#ffba2c"
+        readonly property color inversesurface: "#fff8f3"
+        readonly property color inverseonsurface: "#5a544c"
+        readonly property color error: "#f97758"
+        readonly property color onerror: "#450900"
+        readonly property color errorcontainer: "#85230a"
+        readonly property color onerrorcontainer: "#ff9b82"
+        readonly property color outline: "#7f7464"
+        readonly property color outlinevariant: "#504739"
+        readonly property color scrim: "#000000"
+        readonly property color surfacebright: "#332b1f"
+        readonly property color surfacecontainer: "#1e1910"
+        readonly property color surfacecontainerhigh: "#251f15"
+        readonly property color surfacecontainerhighest: "#2c2519"
+        readonly property color surfacecontainerlow: "#17130b"
+        readonly property color surfacecontainerlowest: "#000000"
+        readonly property color surfacedim: "#110e08"
+    }
     
     // Theme
     readonly property var colors: QtObject {
