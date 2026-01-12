@@ -15,7 +15,7 @@ PanelWindow {
         left: true
         right: true
     }
-
+    
     BackgroundImage {
         anchors.fill: parent
         screen: window.screen
