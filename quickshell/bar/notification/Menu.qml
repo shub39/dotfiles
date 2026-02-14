@@ -2,8 +2,8 @@ import Quickshell
 import QtQuick
 import QtQuick.Layouts
 import Quickshell.Services.Notifications
-import Quickshell.Hyprland
 import Qt5Compat.GraphicalEffects
+import Quickshell.Io
 import qs
 
 PopupWindow {
@@ -28,27 +28,18 @@ PopupWindow {
             cardbox.state = "Closed";
         } else {
             panel.visible = true;
-            grab.active = true;
             cardbox.state = "Open";
         }
     }
 
-    GlobalShortcut {
-        name: "notifications"
-        onPressed: toggleVisibility()
-    }
-
-    HyprlandFocusGrab {
-        id: grab
-        windows: [panel]
-
-        onActiveChanged: {
-            if (!grab.active) {
-                cardbox.state = "Closed";
-            }
+    IpcHandler {
+        target: "notifications"
+        
+        function toggle() {
+            toggleVisibility()
         }
     }
-
+    
     Rectangle {
         id: background
         anchors.fill: parent

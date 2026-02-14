@@ -13,5 +13,4 @@ Scope {
     Bar {}
     Wallpaper {}
     Logout {}
-    LockScreen {}
 }

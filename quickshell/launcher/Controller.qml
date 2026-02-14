@@ -4,17 +4,20 @@ pragma ComponentBehavior: Bound
 import QtQuick
 import Quickshell
 import Quickshell.Wayland
-import Quickshell.Hyprland
+import Quickshell.Io
 
 Singleton {
 	PersistentProperties {
 		id: persist
 		property bool launcherOpen: false;
 	}
-
-	GlobalShortcut {
-	    name: "launcher"
-		onPressed: persist.launcherOpen = !persist.launcherOpen
+	
+	IpcHandler {
+		target: "launcher"
+		
+		function toggle() {
+			persist.launcherOpen = !persist.launcherOpen;
+		}
 	}
 
 	LazyLoader {
@@ -28,16 +31,6 @@ Singleton {
 			implicitHeight: content.height
 			WlrLayershell.keyboardFocus: WlrKeyboardFocus.Exclusive
 			WlrLayershell.namespace: "shell:launcher"
-
-			HyprlandWindow.visibleMask: Region {
-				item: content
-			}
-
-			HyprlandFocusGrab {
-				windows: [launcherWindow]
-				active: true
-				onCleared: persist.launcherOpen = false
-			}
 
 			MouseArea {
 				anchors.fill: parent

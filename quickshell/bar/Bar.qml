@@ -38,9 +38,7 @@ PanelWindow {
         
         spacing: 8
 
-        Workspace {}
         Time {}
-        ActiveWindow {}
         Item {
             Layout.fillWidth: true
         }

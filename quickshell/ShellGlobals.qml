@@ -9,7 +9,7 @@ Singleton {
     
     // Font Config
     readonly property string fontFamily: "Google Sans"
-    readonly property double letterSpacing: 0.1
+    readonly property double letterSpacing: 0
     readonly property int fontSize: 14
     
     // material colors

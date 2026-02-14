@@ -1,8 +1,8 @@
 import QtQuick
 import QtQuick.Layouts
 import Quickshell
-import Quickshell.Hyprland
 import Quickshell.Wayland
+import Quickshell.Io
 import Qt5Compat.GraphicalEffects
 
 import qs
@@ -28,11 +28,14 @@ Variants {
         color: "transparent"
         visible: false
 
-        GlobalShortcut {
-            name: "logout"
-            onPressed: w.visible = !w.visible
+        IpcHandler {
+            target: "logout"
+            
+            function toggle() {
+                w.visible = !w.visible;
+            }
         }
-
+        
         contentItem {
             focus: true
             Keys.onPressed: event => {
@@ -98,11 +101,7 @@ Variants {
 
                             Item {
                                 id: icon
-                                anchors {
-                                    top: parent.top
-                                    topMargin: 120
-                                    horizontalCenter: parent.horizontalCenter
-                                }
+                                anchors.centerIn: parent
                                 width: parent.width * 0.25
                                 height: width
 
