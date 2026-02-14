@@ -1,0 +1,50 @@
+input {
+    keyboard {
+        xkb {
+          layout "us"
+          options "caps:swapescape"
+        }
+    }
+    touchpad {
+        off
+    }
+    mouse {
+        accel-speed 0.5
+    }
+    trackpoint {
+        off
+    }
+    warp-mouse-to-focus
+    focus-follows-mouse max-scroll-amount="0%"
+}
+
+output "Acer Technologies ED270R S3 15250E4BD3W01" {
+    mode "1920x1080@179.998"
+    scale 1
+    transform "normal"
+    position x=1280 y=0
+    variable-refresh-rate on-demand=true
+
+    hot-corners {
+      off
+    }
+}
+
+cursor {
+    hide-when-typing
+}
+
+layout {
+    gaps 8
+    center-focused-column "on-overflow"
+    always-center-single-column
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+    default-column-width { proportion 0.5; }
+    focus-ring { off; }
+    border { off; }
+    struts {}
+}
