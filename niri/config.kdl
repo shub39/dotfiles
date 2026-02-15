@@ -1,4 +1,4 @@
 include "settings.kdl"
 include "startupapps.kdl"
 include "keybinds.kdl"
-
+include "windowrules.kdl"

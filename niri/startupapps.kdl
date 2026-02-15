@@ -1,7 +1,7 @@
 spawn-sh-at-startup "qs -p ~/.config/dotfiles/quickshell/shell.qml"
 spawn-sh-at-startup "copyq --start-server"
 spawn-sh-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-spawn-sh-at-startup "/usr/libexec/xdg-desktop-portal"
+spawn-sh-at-startup "/usr/lib/xdg-desktop-portal-gnome"
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 

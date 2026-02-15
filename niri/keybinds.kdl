@@ -1,6 +1,8 @@
 binds {
     Mod+Q { spawn "sh" "-c" "kitty -c ~/.config/dotfiles/kitty/kitty.conf --hold fastfetch -c ~/.config/dotfiles/fastfetch/config.jsonc --logo-padding 3 --logo-padding-top 1 "; }
     Mod+Shift+Q { spawn "alacritty"; }
+    Mod+E { spawn-sh "kitty -c ~/.config/dotfiles/kitty/kitty.conf nvim"; }
+    Mod+M { spawn-sh "kitty -c ~/.config/dotfiles/kitty/kitty.conf nmtui"; }
     Mod+F2 allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
     Mod+F3 allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
     Mod+F4 allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }

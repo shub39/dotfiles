@@ -1,0 +1,22 @@
+window-rule {
+  match app-id="studio"
+
+  open-maximized true
+}
+
+window-rule {
+  match title="^Picture-in-Picture$"
+
+  open-floating true
+  default-column-width { fixed 480; }
+  default-window-height { fixed 270; }
+  baba-is-float true
+}
+
+window-rule {
+  match app-id="vesktop"
+
+  open-focused false
+}
+
+
