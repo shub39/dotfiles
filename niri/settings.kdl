@@ -31,7 +31,6 @@ output "Acer Technologies ED270R S3 15250E4BD3W01" {
 }
 
 cursor {
-    hide-when-typing
 }
 
 layout {

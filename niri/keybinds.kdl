@@ -18,6 +18,8 @@ binds {
     Mod+T { spawn "sh" "-c" "qs -c ~/.config/dotfiles/quickshell/ ipc call logout toggle"; }
     Mod+Space { spawn "sh" "-c" "qs -c ~/.config/dotfiles/quickshell/ ipc call launcher toggle"; }
     Mod+X { spawn "sh" "-c" "qs -c ~/.config/dotfiles/quickshell/ ipc call notifications toggle"; }
+    Mod+U { spawn-sh "killall java"; }
+    Mod+D { spawn-sh "flatpak run it.mijorus.smile"; }
 
     Mod+H     { focus-column-left; }
     Mod+J     { focus-window-down; }

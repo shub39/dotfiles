@@ -19,4 +19,9 @@ window-rule {
   open-focused false
 }
 
+window-rule {
+  match app-id="smile"
+  match app-id="kdenlive"
 
+  open-floating true
+}
