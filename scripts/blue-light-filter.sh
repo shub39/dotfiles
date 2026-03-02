@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TEMP=5000
+TEMP=4000
 
 if pgrep -x wlsunset >/dev/null; then
     pkill -x wlsunset
