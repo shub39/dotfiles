@@ -1,7 +1,9 @@
 window-rule {
   match app-id="studio"
+  match app-id="zed"
 
-  open-maximized true
+  open-maximized false
+  default-column-width { fixed 1300; }
 }
 
 window-rule {

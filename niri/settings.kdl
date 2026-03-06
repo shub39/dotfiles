@@ -35,7 +35,7 @@ cursor {
 
 layout {
     gaps 8
-    center-focused-column "never"
+    center-focused-column "always"
     always-center-single-column
     preset-column-widths {
         proportion 0.33333
