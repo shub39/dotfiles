@@ -20,6 +20,7 @@ binds {
     Mod+X { spawn "sh" "-c" "qs -c ~/.config/dotfiles/quickshell/ ipc call notifications toggle"; }
     Mod+U { spawn-sh "killall java"; }
     Mod+D { spawn-sh "flatpak run it.mijorus.smile"; }
+    Mod+G { spawn "hyprpicker" "-a"; }
 
     Mod+H     { focus-column-left; }
     Mod+J     { focus-window-down; }
