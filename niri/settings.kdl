@@ -24,10 +24,22 @@ output "Acer Technologies ED270R S3 15250E4BD3W01" {
     transform "normal"
     position x=1280 y=0
     variable-refresh-rate on-demand=true
+    background-color "#282828"
 
     hot-corners {
       off
     }
+}
+
+output "Dell Inc. DELL P2422H DQMDBJ3" {
+  mode "1920x1080@60.00"
+  scale 1
+  transform "normal"
+  background-color "#282828"
+
+  hot-corners {
+    off
+  }
 }
 
 cursor {
@@ -35,14 +47,14 @@ cursor {
 
 layout {
     gaps 8
-    center-focused-column "always"
+    center-focused-column "on-overflow"
     always-center-single-column
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
     }
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 0.4; }
     focus-ring {
       on
       width 4

@@ -11,7 +11,7 @@ binds {
     Mod+C { close-window; }
     Mod+W { spawn "nemo"; }
     Mod+Z { spawn "zen-browser"; }
-    Mod+Shift+Z { spawn "helium"; }
+    Mod+Shift+Z { spawn-sh "helium-browser --user-agent=\"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\""; }
     Mod+N { spawn "~/.config/dotfiles/scripts/ledfx.sh"; }
     Mod+B { spawn "~/.config/dotfiles/scripts/blue-light-filter.sh"; }
     Mod+O { spawn "scrcpy"; }
