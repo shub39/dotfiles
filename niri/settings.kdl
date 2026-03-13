@@ -32,6 +32,7 @@ output "Acer Technologies ED270R S3 15250E4BD3W01" {
 }
 
 output "Dell Inc. DELL P2422H DQMDBJ3" {
+  off
   mode "1920x1080@60.00"
   scale 1
   transform "normal"
@@ -47,14 +48,14 @@ cursor {
 
 layout {
     gaps 8
-    center-focused-column "on-overflow"
+    center-focused-column "never"
     always-center-single-column
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
     }
-    default-column-width { proportion 0.4; }
+    default-column-width { proportion 0.45; }
     focus-ring {
       on
       width 4
