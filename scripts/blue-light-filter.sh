@@ -1,9 +1,7 @@
 #!/bin/bash
 
-TEMP=4000
-
 if pgrep -x wlsunset >/dev/null; then
     pkill -x wlsunset
 else
-    wlsunset -t $TEMP &
+    wlsunset  -t 4000 -T 4001 &
 fi
