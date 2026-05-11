@@ -2,8 +2,7 @@ window-rule {
   match app-id="studio"
   match app-id="zed"
 
-  open-maximized false
-  default-column-width { fixed 1300; }
+  open-maximized true
 }
 
 window-rule {
@@ -16,13 +15,6 @@ window-rule {
 }
 
 window-rule {
-  match app-id="vesktop"
-
-  open-focused false
-}
-
-window-rule {
-  match app-id="smile"
   match app-id="kdenlive"
 
   open-floating true

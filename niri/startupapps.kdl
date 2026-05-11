@@ -5,6 +5,3 @@ spawn-sh-at-startup "/usr/lib/xdg-desktop-portal-gnome"
 spawn-at-startup "vicinae" "server"
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
-
-animations {
-}

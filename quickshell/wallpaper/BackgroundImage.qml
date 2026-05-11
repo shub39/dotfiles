@@ -11,7 +11,7 @@ Item {
 
 	Image {
 		id: image
-		source: Qt.resolvedUrl("flowers-2.jpg")
+		source: Qt.resolvedUrl("Wallpaper.png")
 		fillMode: Image.PreserveAspectFit
 		width: 1920
 	}
