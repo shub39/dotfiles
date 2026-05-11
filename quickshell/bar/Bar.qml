@@ -6,13 +6,15 @@ import "notification"
 
 PanelWindow {
     id: bar
+    readonly property int componentWidth: 40
+
     anchors {
         top: true
-        left: true
         right: true
+        bottom: true
     }
-    implicitHeight: rowLayout.implicitHeight + 8
-    color: "transparent"
+    implicitWidth: componentWidth + 8
+    color: ShellGlobals.materialColors.background
 
     Menu {
         id: menu
@@ -25,26 +27,53 @@ PanelWindow {
         menu: menu
     }
 
-    RowLayout {
-        id: rowLayout
+    ColumnLayout {
+        id: columnLayout
 
-        anchors.left: parent.left
+        width: bar.componentWidth
         anchors.right: parent.right
         anchors.top: parent.top
+        anchors.bottom: parent.bottom
         
-        anchors.leftMargin: 16
-        anchors.rightMargin: 16
-        anchors.topMargin: 8
+        anchors.rightMargin: 4
+        anchors.topMargin: 4
+        anchors.bottomMargin: 4
         
-        spacing: 8
+        spacing: 4
 
-        Time {}
-        Item {
+        Time {
             Layout.fillWidth: true
+            Layout.preferredWidth: bar.componentWidth
+            Layout.minimumWidth: bar.componentWidth
+            Layout.maximumWidth: bar.componentWidth
         }
-        PlayingMedia {}
-        CpuUsage {}
-        MemUsage {}
-        Dnd {}
+
+        Item {
+            Layout.fillHeight: true
+        }
+        PlayingMedia {
+            Layout.fillWidth: true
+            Layout.preferredWidth: bar.componentWidth
+            Layout.minimumWidth: bar.componentWidth
+            Layout.maximumWidth: bar.componentWidth
+        }
+        CpuUsage {
+            Layout.fillWidth: true
+            Layout.preferredWidth: bar.componentWidth
+            Layout.minimumWidth: bar.componentWidth
+            Layout.maximumWidth: bar.componentWidth
+        }
+        MemUsage {
+            Layout.fillWidth: true
+            Layout.preferredWidth: bar.componentWidth
+            Layout.minimumWidth: bar.componentWidth
+            Layout.maximumWidth: bar.componentWidth
+        }
+        Dnd {
+            Layout.fillWidth: true
+            Layout.preferredWidth: bar.componentWidth
+            Layout.minimumWidth: bar.componentWidth
+            Layout.maximumWidth: bar.componentWidth
+        }
     }
 }

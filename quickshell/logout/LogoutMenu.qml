@@ -87,7 +87,7 @@ Variants {
                             Layout.fillHeight: true
 
                             color: ma.containsMouse ? buttonHoverColor : buttonColor
-                            radius: 1000
+                            radius: 0
 
                             MouseArea {
                                 id: ma
@@ -127,7 +127,7 @@ Variants {
                                 }
 
                                 text: modelData.text
-                                font.pointSize: 20
+                                font.pointSize: 12
                                 color: ShellGlobals.materialColors.ontertiary
                                 font.bold: true
                                 font.family: ShellGlobals.fontFamily

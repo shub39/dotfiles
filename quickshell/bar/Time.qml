@@ -5,28 +5,29 @@ import qs
 
 Rectangle {
     color: ShellGlobals.materialColors.tertiary
-    radius: 1000
+    radius: 0
 
-    implicitHeight: row.height + 16
-    implicitWidth: row.width + 32
+    implicitHeight: column.height + 10
+    implicitWidth: column.width + 16
 
-    property var clockText: Qt.formatDateTime(new Date(), "HH:mm")
+    property var clockText: Qt.formatDateTime(new Date(), "HH\nmm")
     
     Timer {
         interval: 1000
         running: true
         repeat: true
-        onTriggered: clockText = Qt.formatDateTime(new Date(), "HH:mm")
+        onTriggered: clockText = Qt.formatDateTime(new Date(), "HH\nmm")
     }
 
-    RowLayout {
-        id: row
-        spacing: 8
+    ColumnLayout {
+        id: column
+        spacing: 4
         anchors.centerIn: parent
 
         Item {
-            Layout.preferredWidth: 24
-            Layout.preferredHeight: 24
+            Layout.preferredWidth: 18
+            Layout.preferredHeight: 18
+            Layout.alignment: Qt.AlignHCenter
         
             Image {
                 id: icon
@@ -46,10 +47,12 @@ Rectangle {
             id: text
             text: clockText
             font.family: ShellGlobals.fontFamily
-            font.pixelSize: 20
+            font.pixelSize: ShellGlobals.fontSize + 4
             font.bold: true
             font.letterSpacing: ShellGlobals.letterSpacing
             color: ShellGlobals.materialColors.ontertiary
+            horizontalAlignment: Text.AlignHCenter
+            Layout.alignment: Qt.AlignHCenter
         }
     }
 }

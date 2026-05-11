@@ -20,7 +20,7 @@ Item {
         }
         width: parent.width
         color: ShellGlobals.materialColors.tertiarycontainer
-        radius: 32
+        radius: 0
 
         ColumnLayout {
             anchors.fill: parent
@@ -33,7 +33,7 @@ Item {
                 Layout.fillWidth: true
                 implicitHeight: searchbox.implicitHeight + 10
                 color: ShellGlobals.materialColors.secondarycontainer
-                radius: 1000
+                radius: 0
 
                 RowLayout {
                     id: searchbox
@@ -50,7 +50,7 @@ Item {
                         color: ShellGlobals.materialColors.onsecondarycontainer
 
                         font.family: ShellGlobals.fontFamily
-                        font.pixelSize: 36
+                        font.pixelSize: 16
                         font.bold: true
                         font.letterSpacing: ShellGlobals.letterSpacing
 
@@ -224,7 +224,7 @@ Item {
 
                 highlight: Rectangle {
                     color: ShellGlobals.materialColors.tertiary
-                    radius: 1000
+                    radius: 0
                 }
 
                 keyNavigationEnabled: true
@@ -236,7 +236,7 @@ Item {
                 highlightRangeMode: ListView.ApplyRange
                 snapMode: ListView.SnapToItem
 
-                readonly property real delegateHeight: 48
+                readonly property real delegateHeight: 36
 
                 delegate: MouseArea {
                     required property DesktopEntry modelData
@@ -268,7 +268,7 @@ Item {
                         Text {
                             text: modelData.name
                             color: ShellGlobals.materialColors.ontertiarycontainer
-                            font.pixelSize: 24
+                            font.pixelSize: 14
                             font.family: ShellGlobals.fontFamily
                             font.bold: true
                             Layout.alignment: Qt.AlignVCenter

@@ -6,10 +6,10 @@ import qs
 
 Rectangle {
     color: ShellGlobals.materialColors.tertiarycontainer
-    radius: 1000
+    radius: 0
 
-    implicitHeight: row.height + 16
-    implicitWidth: row.width + 32
+    implicitHeight: column.height + 10
+    implicitWidth: column.width + 16
 
     property string playingMedia: "Nothing Playing..."
 
@@ -19,7 +19,7 @@ Rectangle {
         stdout: SplitParser {
             onRead: data => {
                 if (data && data.trim()) {
-                    playingMedia = ShellGlobals.adjustTextOverflow(data.trim(), 30);
+                    playingMedia = ShellGlobals.adjustTextOverflow(data.trim(), 24);
                 } else {
                     playingMedia = "";
                 }
@@ -37,14 +37,15 @@ Rectangle {
         }
     }
 
-    RowLayout {
-        id: row
-        spacing: 8
+    ColumnLayout {
+        id: column
+        spacing: 4
         anchors.centerIn: parent
 
         Item {
-            Layout.preferredWidth: 24
-            Layout.preferredHeight: 24
+            Layout.preferredWidth: 18
+            Layout.preferredHeight: 18
+            Layout.alignment: Qt.AlignHCenter
 
             Image {
                 id: icon
@@ -60,15 +61,24 @@ Rectangle {
             }
         }
 
-        Text {
-            id: text
-            text: playingMedia
-            font.family: ShellGlobals.fontFamily
-            font.pixelSize: 20
-            font.bold: true
-            font.letterSpacing: ShellGlobals.letterSpacing
-            elide: Text.ElideLeft
-            color: ShellGlobals.materialColors.ontertiarycontainer
+        Item {
+            Layout.preferredWidth: text.implicitHeight
+            Layout.preferredHeight: text.implicitWidth
+            Layout.alignment: Qt.AlignHCenter
+
+            Text {
+                id: text
+                anchors.centerIn: parent
+                text: playingMedia
+                font.family: ShellGlobals.fontFamily
+                font.pixelSize: ShellGlobals.fontSize + 3
+                font.bold: true
+                font.letterSpacing: ShellGlobals.letterSpacing
+                color: ShellGlobals.materialColors.ontertiarycontainer
+                horizontalAlignment: Text.AlignHCenter
+                rotation: 90
+                transformOrigin: Item.Center
+            }
         }
     }
 }

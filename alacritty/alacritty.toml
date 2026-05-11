@@ -1,0 +1,59 @@
+[font]
+size = 11.0
+
+[font.normal]
+family = "GoogleSansCode"
+style = "Regular"
+
+[font.bold]
+family = "GoogleSansCode"
+style = "Bold"
+
+[font.italic]
+family = "GoogleSansCode"
+style = "Italic"
+
+[font.bold_italic]
+family = "GoogleSansCode"
+style = "Bold Italic"
+
+[window]
+decorations = "None"
+opacity = 1.0
+
+[bell]
+animation = "EaseOutExpo"
+color = "#95e5cb"
+duration = 0
+
+[colors.primary]
+background = "#05080b"
+foreground = "#f5f0dc"
+
+[colors.cursor]
+text = "#05080b"
+cursor = "#f19618"
+
+[colors.selection]
+text = "#05080b"
+background = "#3d5568"
+
+[colors.normal]
+black = "#000000"
+red = "#ff3333"
+green = "#b8cc52"
+yellow = "#e6c446"
+blue = "#36a3d9"
+magenta = "#f07078"
+cyan = "#95e5cb"
+white = "#ffffff"
+
+[colors.bright]
+black = "#4a5560"
+red = "#ff6565"
+green = "#e9fe83"
+yellow = "#fff778"
+blue = "#68d4ff"
+magenta = "#ffa3aa"
+cyan = "#c7fffc"
+white = "#ffffff"

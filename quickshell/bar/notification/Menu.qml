@@ -13,15 +13,11 @@ PopupWindow {
     color: "transparent"
     visible: debug
 
-    anchor.margins {
-        top: 70
-        bottom: 0
-        left: 1400
-        right: 10
-    }
     anchor.window: bar
-    implicitWidth: 500
-    implicitHeight: 600
+    anchor.rect.x: -width - 8
+    anchor.rect.y: 8
+    implicitWidth: 320
+    implicitHeight: 520
 
     function toggleVisibility() {
         if (panel.visible) {
@@ -45,7 +41,7 @@ PopupWindow {
         anchors.fill: parent
         color: ShellGlobals.materialColors.tertiarycontainer
         opacity: cardbox.opacity
-        radius: 16
+        radius: 0
     }
 
     ColumnLayout {
@@ -83,15 +79,15 @@ PopupWindow {
         }
 
         RowLayout {
-            Layout.leftMargin: 16
-            Layout.rightMargin: 16
-            Layout.bottomMargin: 8
-            Layout.topMargin: 8
+            Layout.leftMargin: 10
+            Layout.rightMargin: 10
+            Layout.bottomMargin: 6
+            Layout.topMargin: 6
 
             Text {
                 text: "Notifications"
                 font.bold: true
-                font.pixelSize: 20
+                font.pixelSize: 15
                 font.family: ShellGlobals.fontFamily
                 font.letterSpacing: ShellGlobals.letterSpacing
                 color: ShellGlobals.materialColors.ontertiarycontainer
@@ -100,8 +96,8 @@ PopupWindow {
                 Layout.fillWidth: true
             }
             Item {
-                Layout.preferredWidth: 24
-                Layout.preferredHeight: 24
+                Layout.preferredWidth: 18
+                Layout.preferredHeight: 18
 
                 MouseArea {
                     anchors.fill: parent
@@ -126,7 +122,7 @@ PopupWindow {
         Rectangle {
             color: ShellGlobals.materialColors.ontertiarycontainer
             width: parent.width
-            height: 1
+            height: 0
         }
 
         ListView {
@@ -135,22 +131,21 @@ PopupWindow {
             Layout.fillWidth: true
             Layout.fillHeight: true
             Layout.minimumHeight: 0
-            Layout.leftMargin: 20
-            Layout.rightMargin: 20
+            Layout.leftMargin: 10
+            Layout.rightMargin: 10
             Layout.preferredHeight: childrenRect.height + 20
             Layout.maximumHeight: Screen.height * 0.95 - this.y
 
             clip: true
             model: NotifServer.notifications
             header: Item {
-                height: 20
+                height: 6
             }
             footer: Item {
-                height: 100
+                height: 10
             }
-            
-           
-            spacing: 10
+
+            spacing: 6
             delegate: NotificationEntry {
                 id: toast
                 width: parent?.width

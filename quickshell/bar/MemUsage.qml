@@ -6,10 +6,10 @@ import qs
 
 Rectangle {
     color: ShellGlobals.materialColors.primary
-    radius: 1000
+    radius: 0
 
-    implicitHeight: row.height + 16
-    implicitWidth: row.width + 32
+    implicitHeight: column.height + 10
+    implicitWidth: column.width + 16
 
     property int memUsage: 0
 
@@ -38,14 +38,15 @@ Rectangle {
         }
     }
 
-    RowLayout {
-        id: row
-        spacing: 8
+    ColumnLayout {
+        id: column
+        spacing: 4
         anchors.centerIn: parent
 
         Item {
-            Layout.preferredWidth: 24
-            Layout.preferredHeight: 24
+            Layout.preferredWidth: 18
+            Layout.preferredHeight: 18
+            Layout.alignment: Qt.AlignHCenter
 
             Image {
                 id: icon
@@ -65,11 +66,13 @@ Rectangle {
             id: text
             text: memUsage + "%"
             font.family: ShellGlobals.fontFamily
-            font.pixelSize: 20
+            font.pixelSize: ShellGlobals.fontSize
             font.bold: true
             font.letterSpacing: ShellGlobals.letterSpacing
             elide: Text.ElideLeft
             color: ShellGlobals.materialColors.onprimary
+            horizontalAlignment: Text.AlignHCenter
+            Layout.alignment: Qt.AlignHCenter
         }
     }
 }

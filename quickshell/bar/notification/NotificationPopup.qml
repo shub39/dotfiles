@@ -9,9 +9,9 @@ PopupWindow {
 
     visible: false
     anchor.window: bar
-    anchor.rect.x: bar.width - width - 10
-    anchor.rect.y: bar.height + 10
-    implicitWidth: 450
+    anchor.rect.x: -width - 8
+    anchor.rect.y: 8
+    implicitWidth: 320
     implicitHeight: popup.height
     color: "transparent"
 

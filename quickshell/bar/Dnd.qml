@@ -5,24 +5,25 @@ import qs
 
 Rectangle {
     color: ShellGlobals.materialColors.primarycontainer
-    radius: 1000
+    radius: 0
 
-    implicitHeight: row.height + 16
-    implicitWidth: row.width + 32
+    implicitHeight: column.height + 10
+    implicitWidth: column.width + 16
 
     MouseArea {
         onClicked: ShellGlobals.isDnd = !ShellGlobals.isDnd
         anchors.fill: parent
     }
 
-    RowLayout {
-        id: row
-        spacing: 8
+    ColumnLayout {
+        id: column
+        spacing: 4
         anchors.centerIn: parent
 
         Item {
-            Layout.preferredWidth: 24
-            Layout.preferredHeight: 24
+            Layout.preferredWidth: 18
+            Layout.preferredHeight: 18
+            Layout.alignment: Qt.AlignHCenter
 
             Image {
                 id: icon
