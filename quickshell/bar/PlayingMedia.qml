@@ -19,7 +19,7 @@ Rectangle {
         stdout: SplitParser {
             onRead: data => {
                 if (data && data.trim()) {
-                    playingMedia = ShellGlobals.adjustTextOverflow(data.trim(), 24);
+                    playingMedia = ShellGlobals.adjustTextOverflow(data.trim(), 50);
                 } else {
                     playingMedia = "";
                 }
@@ -46,7 +46,8 @@ Rectangle {
             Layout.preferredWidth: 18
             Layout.preferredHeight: 18
             Layout.alignment: Qt.AlignHCenter
-
+            rotation: 90
+            
             Image {
                 id: icon
                 anchors.fill: parent

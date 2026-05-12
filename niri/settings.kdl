@@ -58,7 +58,7 @@ layout {
 
 overview {
     zoom 0.5
-    backdrop-color "#000000"
+    backdrop-color "#393d41"
 }
 
 blur {
