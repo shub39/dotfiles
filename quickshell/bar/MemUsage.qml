@@ -5,13 +5,38 @@ import Quickshell.Io
 import qs
 
 Rectangle {
-    color: ShellGlobals.materialColors.primary
+    color: memCritical ? "#ff1f3d" : ShellGlobals.materialColors.primary
     radius: 0
+    border.width: memCritical ? 2 : 0
+    border.color: memCritical ? "#ffffff" : "transparent"
 
     implicitHeight: column.height + 10
     implicitWidth: column.width + 16
 
     property int memUsage: 0
+    property bool memCritical: memUsage >= 90
+
+    Behavior on color {
+        ColorAnimation {
+            duration: 180
+        }
+    }
+
+    SequentialAnimation on opacity {
+        running: memCritical
+        loops: Animation.Infinite
+        NumberAnimation {
+            to: 0.72
+            duration: 420
+            easing.type: Easing.InOutQuad
+        }
+        NumberAnimation {
+            to: 1
+            duration: 420
+            easing.type: Easing.InOutQuad
+        }
+        onStopped: opacity = 1
+    }
 
     Process {
         id: memProc
@@ -58,7 +83,7 @@ Rectangle {
             ColorOverlay {
                 anchors.fill: parent
                 source: icon
-                color: ShellGlobals.materialColors.onprimary
+                color: "#ffffff"
             }
         }
 
@@ -70,7 +95,7 @@ Rectangle {
             font.bold: true
             font.letterSpacing: ShellGlobals.letterSpacing
             elide: Text.ElideLeft
-            color: ShellGlobals.materialColors.onprimary
+            color: "#ffffff"
             horizontalAlignment: Text.AlignHCenter
             Layout.alignment: Qt.AlignHCenter
         }
