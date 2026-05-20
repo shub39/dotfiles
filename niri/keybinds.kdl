@@ -6,6 +6,7 @@ binds {
     Mod+F2 allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
     Mod+F3 allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
     Mod+F4 allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+    Mod+I allow-when-locked=true { spawn "playerctl" "play-pause"; }
     Mod+A repeat=false { toggle-overview; }
     Mod+Shift+T { quit; }
 
@@ -16,6 +17,7 @@ binds {
     Mod+N { spawn "~/.config/dotfiles/scripts/ledfx.sh"; }
     Mod+B { spawn "~/.config/dotfiles/scripts/blue-light-filter.sh"; }
     Mod+O { spawn "scrcpy"; }
+    Mod+Shift+O { spawn "obs" "--startrecording"; }
     Mod+T { spawn "sh" "-c" "qs -c ~/.config/dotfiles/quickshell/ ipc call logout toggle"; }
     Mod+Space repeat=false { spawn "vicinae" "toggle"; }
     Mod+X { spawn "sh" "-c" "qs -c ~/.config/dotfiles/quickshell/ ipc call notifications toggle"; }
