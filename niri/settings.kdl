@@ -24,7 +24,7 @@ output "Acer Technologies ED270R S3 15250E4BD3W01" {
     transform "normal"
     position x=1280 y=0
     variable-refresh-rate on-demand=true
-    background-color "#000000"
+    background-color "#1d2021"
 
     hot-corners {
       off
@@ -56,9 +56,9 @@ layout {
     focus-ring {
       on
       width 4
-      active-color "#FFFFFF"
-      inactive-color "#000000"
-      urgent-color "#9b0000"
+      active-color "#98971a"
+      inactive-color "transparent"
+      urgent-color "#cc241d"
     }
     border { off; }
     struts {}
@@ -66,7 +66,7 @@ layout {
 
 overview {
     zoom 0.5
-    backdrop-color "#393d41"
+    backdrop-color "#282828"
 }
 
 blur {

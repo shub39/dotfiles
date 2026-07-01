@@ -12,89 +12,89 @@ Singleton {
     readonly property double letterSpacing: 0
     readonly property int fontSize: 11
     
-    // material colors
+    // Gruvbox dark material-style roles
     readonly property var materialColors: QtObject {
-        readonly property color primary: "#0a0a0a"
-        readonly property color onprimary: "#ffffff"
-        readonly property color primarycontainer: "#111111"
-        readonly property color onprimarycontainer: "#ffffff"
-        readonly property color inverseprimary: "#ffffff"
-        readonly property color secondary: "#ffffff"
-        readonly property color onsecondary: "#000000"
-        readonly property color secondarycontainer: "#0a0a0a"
-        readonly property color onsecondarycontainer: "#ffffff"
-        readonly property color tertiary: "#111111"
-        readonly property color ontertiary: "#ffffff"
-        readonly property color tertiarycontainer: "#000000"
-        readonly property color ontertiarycontainer: "#ffffff"
-        readonly property color background: "#000000"
-        readonly property color onbackground: "#ffffff"
-        readonly property color surface: "#000000"
-        readonly property color onsurface: "#ffffff"
-        readonly property color surfacevariant: "#111111"
-        readonly property color onsurfacevariant: "#ffffff"
-        readonly property color surfacetint: "#ffffff"
-        readonly property color inversesurface: "#ffffff"
-        readonly property color inverseonsurface: "#000000"
-        readonly property color error: "#ffffff"
-        readonly property color onerror: "#000000"
-        readonly property color errorcontainer: "#ffffff"
-        readonly property color onerrorcontainer: "#000000"
-        readonly property color outline: "#000000"
-        readonly property color outlinevariant: "#000000"
-        readonly property color scrim: "#000000"
-        readonly property color surfacebright: "#111111"
-        readonly property color surfacecontainer: "#0a0a0a"
-        readonly property color surfacecontainerhigh: "#111111"
-        readonly property color surfacecontainerhighest: "#161616"
-        readonly property color surfacecontainerlow: "#050505"
-        readonly property color surfacecontainerlowest: "#000000"
-        readonly property color surfacedim: "#000000"
+        readonly property color primary: "#3c3836"
+        readonly property color onprimary: "#ebdbb2"
+        readonly property color primarycontainer: "#504945"
+        readonly property color onprimarycontainer: "#fbf1c7"
+        readonly property color inverseprimary: "#d65d0e"
+        readonly property color secondary: "#d79921"
+        readonly property color onsecondary: "#282828"
+        readonly property color secondarycontainer: "#32302f"
+        readonly property color onsecondarycontainer: "#ebdbb2"
+        readonly property color tertiary: "#665c54"
+        readonly property color ontertiary: "#fbf1c7"
+        readonly property color tertiarycontainer: "#3c3836"
+        readonly property color ontertiarycontainer: "#ebdbb2"
+        readonly property color background: "#1d2021"
+        readonly property color onbackground: "#ebdbb2"
+        readonly property color surface: "#282828"
+        readonly property color onsurface: "#ebdbb2"
+        readonly property color surfacevariant: "#3c3836"
+        readonly property color onsurfacevariant: "#d5c4a1"
+        readonly property color surfacetint: "#d79921"
+        readonly property color inversesurface: "#ebdbb2"
+        readonly property color inverseonsurface: "#282828"
+        readonly property color error: "#fb4934"
+        readonly property color onerror: "#282828"
+        readonly property color errorcontainer: "#cc241d"
+        readonly property color onerrorcontainer: "#fbf1c7"
+        readonly property color outline: "transparent"
+        readonly property color outlinevariant: "transparent"
+        readonly property color scrim: "#1d2021"
+        readonly property color surfacebright: "#504945"
+        readonly property color surfacecontainer: "#282828"
+        readonly property color surfacecontainerhigh: "#3c3836"
+        readonly property color surfacecontainerhighest: "#504945"
+        readonly property color surfacecontainerlow: "#1d2021"
+        readonly property color surfacecontainerlowest: "#1d2021"
+        readonly property color surfacedim: "#1d2021"
     }
     
     // Theme
     readonly property var colors: QtObject {
         // Core
-        readonly property color bg:    "#000000";
-        readonly property color fg:    "#ffffff";
+        readonly property color bg:    "#282828";
+        readonly property color fg:    "#ebdbb2";
     
         // Normal colors
-        readonly property color red:    "#ffffff";
-        readonly property color green:  "#ffffff";
-        readonly property color yellow: "#ffffff";
-        readonly property color blue:   "#ffffff";
-        readonly property color purple: "#ffffff";
-        readonly property color aqua:   "#ffffff";
-        readonly property color gray:   "#ffffff";
+        readonly property color red:    "#cc241d";
+        readonly property color green:  "#98971a";
+        readonly property color yellow: "#d79921";
+        readonly property color blue:   "#458588";
+        readonly property color purple: "#b16286";
+        readonly property color aqua:   "#689d6a";
+        readonly property color gray:   "#a89984";
     
         // Bright colors
-        readonly property color brightRed:    "#ffffff";
-        readonly property color brightGreen:  "#ffffff";
-        readonly property color brightYellow: "#ffffff";
-        readonly property color brightBlue:   "#ffffff";
-        readonly property color brightPurple: "#ffffff";
-        readonly property color brightAqua:   "#ffffff";
-        readonly property color brightGray:   "#ffffff";
+        readonly property color brightRed:    "#fb4934";
+        readonly property color brightGreen:  "#b8bb26";
+        readonly property color brightYellow: "#fabd2f";
+        readonly property color brightBlue:   "#83a598";
+        readonly property color brightPurple: "#d3869b";
+        readonly property color brightAqua:   "#8ec07c";
+        readonly property color brightGray:   "#928374";
     
         // Background shades
-        readonly property color bg0_h: "#000000";
-        readonly property color bg0:   "#000000";
-        readonly property color bg0_s: "#050505";
-        readonly property color bg1:   "#0a0a0a";
-        readonly property color bg2:   "#111111";
-        readonly property color bg3:   "#161616";
-        readonly property color bg4:   "#202020";
+        readonly property color bg0_h: "#1d2021";
+        readonly property color bg0:   "#282828";
+        readonly property color bg0_s: "#32302f";
+        readonly property color bg1:   "#3c3836";
+        readonly property color bg2:   "#504945";
+        readonly property color bg3:   "#665c54";
+        readonly property color bg4:   "#7c6f64";
     
         // Foreground shades
-        readonly property color fg0: "#ffffff";
-        readonly property color fg1: "#ffffff";
-        readonly property color fg2: "#eeeeee";
-        readonly property color fg3: "#dddddd";
-        readonly property color fg4: "#cccccc";
+        readonly property color fg0: "#fbf1c7";
+        readonly property color fg1: "#ebdbb2";
+        readonly property color fg2: "#d5c4a1";
+        readonly property color fg3: "#bdae93";
+        readonly property color fg4: "#a89984";
     
         // Extra
-        readonly property color orange:       "#ffffff";
-        readonly property color brightOrange: "#ffffff";
+        readonly property color orange:       "#d65d0e";
+        readonly property color brightOrange: "#fe8019";
     }
     
     function adjustTextOverflow(text, maxWidth) {

@@ -5,10 +5,10 @@ import Quickshell.Io
 import qs
 
 Rectangle {
-    color: memCritical ? "#ff1f3d" : ShellGlobals.materialColors.primary
+    color: memCritical ? ShellGlobals.materialColors.errorcontainer : ShellGlobals.materialColors.primary
     radius: 0
-    border.width: memCritical ? 2 : 0
-    border.color: memCritical ? "#ffffff" : "transparent"
+    border.width: 0
+    border.color: "transparent"
 
     implicitHeight: column.height + 10
     implicitWidth: column.width + 16
@@ -83,7 +83,7 @@ Rectangle {
             ColorOverlay {
                 anchors.fill: parent
                 source: icon
-                color: "#ffffff"
+                color: memCritical ? ShellGlobals.materialColors.onerrorcontainer : ShellGlobals.materialColors.onprimary
             }
         }
 
@@ -95,7 +95,7 @@ Rectangle {
             font.bold: true
             font.letterSpacing: ShellGlobals.letterSpacing
             elide: Text.ElideLeft
-            color: "#ffffff"
+            color: memCritical ? ShellGlobals.materialColors.onerrorcontainer : ShellGlobals.materialColors.onprimary
             horizontalAlignment: Text.AlignHCenter
             Layout.alignment: Qt.AlignHCenter
         }
