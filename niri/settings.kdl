@@ -56,7 +56,7 @@ layout {
     focus-ring {
       on
       width 4
-      active-color "#98971a"
+      active-color "#ebdbb2"
       inactive-color "transparent"
       urgent-color "#cc241d"
     }
