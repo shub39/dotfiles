@@ -9,7 +9,8 @@ input {
         off
     }
     mouse {
-        accel-speed 0.5
+        accel-speed -0.5
+        accel-profile "flat"
     }
     trackpoint {
         off
