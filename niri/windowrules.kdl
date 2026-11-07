@@ -13,9 +13,3 @@ window-rule {
   default-window-height { fixed 270; }
   baba-is-float true
 }
-
-window-rule {
-  match app-id="kdenlive"
-
-  open-floating true
-}
