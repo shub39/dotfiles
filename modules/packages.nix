@@ -28,6 +28,7 @@
     pwvucontrol
     easyeffects
     baobab
+    mpv
 
     # dev tools
     android-tools
