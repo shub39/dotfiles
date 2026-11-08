@@ -122,6 +122,8 @@
     # dev tools
     android-tools
     godot
+    nixd
+    nil
 
     # look and feel
     nwg-look
