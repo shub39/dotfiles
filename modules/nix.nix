@@ -13,6 +13,8 @@
 
   system.autoUpgrade = {
     enable = true;
+    flake = "/home/shub39/.config/dotfiles";
+    upgrade = false; 
     dates = "weekly";
   };
 
