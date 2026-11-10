@@ -1,6 +1,5 @@
 binds {
     Mod+Q { spawn-sh "alacritty --config-file ~/.config/dotfiles/alacritty/alacritty.toml"; }
-    Mod+Shift+Q { spawn-sh "alacritty --config-file ~/.config/dotfiles/alacritty/alacritty.toml"; }
     Mod+E { quit; }
     Mod+M { spawn-sh "alacritty --config-file ~/.config/dotfiles/alacritty/alacritty.toml -e nmtui"; }
     Mod+F2 allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
@@ -12,7 +11,7 @@ binds {
     Mod+C { close-window; }
     Mod+W { spawn "nemo"; }
     Mod+Z { spawn-sh "flatpak run app.zen_browser.zen"; }
-    Mod+N { spawn "~/.config/dotfiles/scripts/ledfx.sh"; }
+    Mod+N { spawn-sh "alacritty --config-file ~/.config/dotfiles/alacritty/alacritty.toml -e ledfx"; }
     Mod+B { spawn "~/.config/dotfiles/scripts/blue-light-filter.sh"; }
     Mod+O { spawn "scrcpy"; }
     Mod+Shift+O { spawn "obs" "--startrecording"; }

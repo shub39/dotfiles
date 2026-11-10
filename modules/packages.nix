@@ -41,6 +41,7 @@
     gruvbox-dark-gtk
     gruvbox-gtk-theme
     gruvbox-plus-icons
+    ledfx
   ];
 
   fonts.packages = with pkgs; [
