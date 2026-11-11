@@ -1,0 +1,11 @@
+// rher (desktop): no built-in pointing devices.
+// Include this after niri/config.kdl.
+
+input {
+    touchpad {
+        off
+    }
+    trackpoint {
+        off
+    }
+}

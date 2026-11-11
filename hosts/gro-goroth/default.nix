@@ -1,16 +1,19 @@
-{ config, pkgs, ... }:
+{ ... }:
 
 {
-  imports =
-    [ 
-      ../../modules
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    ../../modules
+    ../../modules/laptop.nix
+    ../../modules/homeserver.nix
+    ./hardware-configuration.nix
+  ];
 
-  networking.hostName = "gro-goroth"; 
+  networking.hostName = "gro-goroth";
 
-  # Enable the GNOME Desktop Environment.
-  services.desktopManager.gnome.enable = true;
+  my = {
+    gaming.enable = false;
+    devTools.enable = false;
+  };
 
   system.stateVersion = "26.05";
 }

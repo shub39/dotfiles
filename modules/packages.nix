@@ -1,48 +1,52 @@
-{ pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
-    # necessities
-    quickshell
-    kdePackages.qt5compat
-    neovim
-    fastfetch
-    vicinae
-    alacritty
-    copyq
-    nemo
-    nemo-fileroller
-    file-roller
-    obs-studio
-    networkmanager
-    wl-clipboard
-    brightnessctl
-    wlsunset
-    hyprpicker
-    playerctl
-    uv
-    xwayland-satellite
-    zed-editor
-    nixfmt
-    git
-    pwvucontrol
-    easyeffects
-    baobab
-    mpv
+  environment.systemPackages =
+    with pkgs;
+    [
+      # necessities
+      quickshell
+      kdePackages.qt5compat
+      neovim
+      fastfetch
+      vicinae
+      alacritty
+      copyq
+      nemo
+      nemo-fileroller
+      file-roller
+      obs-studio
+      networkmanager
+      wl-clipboard
+      brightnessctl
+      wlsunset
+      hyprpicker
+      playerctl
+      xwayland-satellite
+      git
+      pwvucontrol
+      easyeffects
+      baobab
+      mpv
 
-    # dev tools
-    android-tools
-    godot
-    nixd
-    nil
-
-    # look and feel
-    nwg-look
-    gruvbox-dark-gtk
-    gruvbox-gtk-theme
-    gruvbox-plus-icons
-    ledfx
-  ];
+      # look and feel
+      nwg-look
+      gruvbox-dark-gtk
+      gruvbox-gtk-theme
+      gruvbox-plus-icons
+      ledfx
+    ]
+    ++ lib.optionals config.my.editor.enable (with pkgs; [
+      zed-editor
+      nixd
+      nil
+    ])
+    ++ lib.optionals config.my.devTools.enable (with pkgs; [
+      android-tools
+      godot
+      nixfmt
+      uv
+    ]);
 
   fonts.packages = with pkgs; [
     noto-fonts

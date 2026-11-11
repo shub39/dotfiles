@@ -11,8 +11,8 @@ Item {
 
 	Image {
 		id: image
+		anchors.fill: parent
 		source: Qt.resolvedUrl("Wallpaper.png")
-		fillMode: Image.PreserveAspectFit
-		width: 1920
+		fillMode: Image.PreserveAspectCrop
 	}
 }

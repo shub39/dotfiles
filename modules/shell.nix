@@ -1,3 +1,8 @@
+{ config, ... }:
+
+let
+  editor = if config.my.editor.enable then "zeditor --wait" else "nvim";
+in
 {
   programs.zsh = {
     enable = true;
@@ -27,7 +32,7 @@
   programs.nix-ld.enable = true;
 
   environment.variables = {
-    EDITOR = "zeditor --wait";
-    VISUAL = "zeditor --wait";
+    EDITOR = editor;
+    VISUAL = editor;
   };
 }

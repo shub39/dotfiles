@@ -1,3 +1,7 @@
+{ config, lib, ... }:
+
 {
-  programs.steam.enable = true;
+  config = lib.mkIf config.my.gaming.enable {
+    programs.steam.enable = true;
+  };
 }

@@ -6,13 +6,12 @@ input {
         }
     }
     touchpad {
-        off
+        tap
+        natural-scroll
+        accel-speed 0.2
     }
     mouse {
         accel-speed 0.5
-    }
-    trackpoint {
-        off
     }
     warp-mouse-to-focus
     focus-follows-mouse max-scroll-amount="0%"

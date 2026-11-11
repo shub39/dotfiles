@@ -16,14 +16,15 @@
         nix-flatpak.nixosModules.nix-flatpak
       ];
     };
-    nixosConfigurations."gro-goroth" = nixpkgs.lib.nixosSystem {
-    	specialArgs = { inherit inputs; };
-	system = "x86_64-linux";
 
-	modules = [
-	   ./hosts/gro-goroth
-	   nix-flatpak.nixosModules.nix-flatpak
-	];
+    nixosConfigurations."gro-goroth" = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      system = "x86_64-linux";
+
+      modules = [
+        ./hosts/gro-goroth
+        nix-flatpak.nixosModules.nix-flatpak
+      ];
     };
   };
 }
