@@ -2,9 +2,11 @@ binds {
     Mod+Q { spawn-sh "alacritty --config-file ~/.config/dotfiles/alacritty/alacritty.toml"; }
     Mod+E { quit; }
     Mod+M { spawn-sh "alacritty --config-file ~/.config/dotfiles/alacritty/alacritty.toml -e nmtui"; }
-    Mod+F2 allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
-    Mod+F3 allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
-    Mod+F4 allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+    Mod+F1 allow-when-locked=true { spawn "brightnessctl" "set" "10%-"; }
+    Mod+F2 allow-when-locked=true { spawn "brightnessctl" "set" "+10%"; }
+    Mod+F3 allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
+    Mod+F4 allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
+    Mod+F5 allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     Mod+I allow-when-locked=true { spawn "playerctl" "play-pause"; }
     Mod+A repeat=false { toggle-overview; }
 
