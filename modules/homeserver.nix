@@ -11,10 +11,8 @@
     enable = true;
     webuiPort = 6969;
     openFirewall = true;
-    serverConfig = {
-      LegalNotice.Accepted = true;
-      BitTorrent.Session.DefaultSavePath = "/mnt/media/temp";
-    };
+    profileDir = "/mnt/media/qbittorrent";
+    extraArgs = [ "--confirm-legal-notice" ];
   };
 
   services.tailscale = {
@@ -48,5 +46,6 @@
 
   systemd.tmpfiles.rules = [
     "d /mnt/media/temp 0755 qbittorrent qbittorrent -"
+    "d /mnt/media/qbittorrent 0755 qbittorrent qbittorrent -"
   ];
 }
