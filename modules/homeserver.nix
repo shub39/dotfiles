@@ -30,6 +30,22 @@
 
   networking.firewall.trustedInterfaces = [ "tailscale0" ];
 
+  # This machine doubles as the home server, so keep it running: closing the
+  # lid does nothing and suspend/hibernate are disabled entirely.
+  services.logind.settings.Login = {
+    HandleLidSwitch = "ignore";
+    HandleLidSwitchExternalPower = "ignore";
+    HandleLidSwitchDocked = "ignore";
+    IdleAction = "ignore";
+  };
+
+  systemd.sleep.settings.Sleep = {
+    AllowSuspend = "no";
+    AllowHibernation = "no";
+    AllowSuspendThenHibernate = "no";
+    AllowHybridSleep = "no";
+  };
+
   systemd.tmpfiles.rules = [
     "d /mnt/media/temp 0755 qbittorrent qbittorrent -"
   ];
