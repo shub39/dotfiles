@@ -4,6 +4,13 @@ import Quickshell
 ShellRoot {
 	LogoutMenu {
 		LogoutButton {
+			command: "qs -c ~/.config/dotfiles/quickshell/ ipc call lock lock"
+			keybind: Qt.Key_L
+			text: "Lock"
+			icon: "lock"
+		}
+
+		LogoutButton {
 			command: "systemctl suspend"
 			keybind: Qt.Key_S
 			text: "Suspend"

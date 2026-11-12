@@ -4,6 +4,7 @@ import QtQuick
 import "bar"
 import "wallpaper"
 import "logout"
+import "lock"
 import "launcher" as Launcher
 
 Scope {
@@ -12,4 +13,5 @@ Scope {
     Bar {}
     Wallpaper {}
     Logout {}
+    Lock {}
 }

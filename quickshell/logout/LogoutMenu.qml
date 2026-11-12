@@ -74,7 +74,7 @@ Variants {
                     width: parent.width * 0.75
                     height: parent.height * 0.75
 
-                    columns: 3
+                    columns: 4
                     columnSpacing: 8
                     rowSpacing: 8
 
