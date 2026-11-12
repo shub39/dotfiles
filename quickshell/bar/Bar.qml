@@ -69,6 +69,12 @@ PanelWindow {
             Layout.minimumWidth: bar.componentWidth
             Layout.maximumWidth: bar.componentWidth
         }
+        Battery {
+            Layout.fillWidth: true
+            Layout.preferredWidth: bar.componentWidth
+            Layout.minimumWidth: bar.componentWidth
+            Layout.maximumWidth: bar.componentWidth
+        }
         Dnd {
             Layout.fillWidth: true
             Layout.preferredWidth: bar.componentWidth
