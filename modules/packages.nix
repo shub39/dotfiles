@@ -28,6 +28,7 @@
       easyeffects
       baobab
       mpv
+      gnome-system-monitor
 
       # look and feel
       nwg-look
