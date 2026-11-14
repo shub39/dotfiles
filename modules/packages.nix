@@ -40,6 +40,7 @@
       zed-editor
       nixd
       nil
+      unstable.jetbrains-toolbox
     ])
     ++ lib.optionals config.my.devTools.enable (with pkgs; [
       android-tools
