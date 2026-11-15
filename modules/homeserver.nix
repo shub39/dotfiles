@@ -41,7 +41,7 @@
 
   security.sudo.extraRules = [
     {
-      users = [ "your-username" ];
+      users = [ "shub39" ];
       commands = [
         {
           command = "/run/current-system/sw/bin/docker";
