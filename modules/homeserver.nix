@@ -31,6 +31,14 @@
     enable = true;
     useRoutingFeatures = "client";
   };
+
+  security.sudo.extraRules = [{
+  users = [ "your-username" ];
+  commands = [{
+    command = "/run/current-system/sw/bin/docker";
+    options = [ "NOPASSWD" ];
+  }];
+}];
   
   fileSystems."/mnt/media" = {
     device = "/dev/disk/by-uuid/98bffd2c-423a-4377-8624-867ceb60dac2";
