@@ -8,8 +8,15 @@
     addToSystemPackages = true;
     environmentFiles = [ "/var/lib/hermes/env" ];
     container = {
-    	enable = true;
-	hostUsers = [ "shub39" ];
+      enable = true;
+      hostUsers = [ "shub39" ];
+    };
+    settings = {
+      model.default = "deepseek/deepseek-v4.1-flash-1017";
+      toolsets = [ "all" ];
+      terminal = { backend = "local"; timeout = 180; };
+      display = { compact = false; personality = "teacher"; };
+      memory = { memory_enabled = true; user_profile_enabled = true; };
     };
   };
 
@@ -32,14 +39,18 @@
     useRoutingFeatures = "client";
   };
 
-  security.sudo.extraRules = [{
-  users = [ "your-username" ];
-  commands = [{
-    command = "/run/current-system/sw/bin/docker";
-    options = [ "NOPASSWD" ];
-  }];
-}];
-  
+  security.sudo.extraRules = [
+    {
+      users = [ "your-username" ];
+      commands = [
+        {
+          command = "/run/current-system/sw/bin/docker";
+          options = [ "NOPASSWD" ];
+        }
+      ];
+    }
+  ];
+
   fileSystems."/mnt/media" = {
     device = "/dev/disk/by-uuid/98bffd2c-423a-4377-8624-867ceb60dac2";
     fsType = "ext4";
