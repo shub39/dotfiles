@@ -1,6 +1,18 @@
-{ ... }:
+{ inputs, ... }:
 
 {
+  imports = [ inputs.hermes-agent.nixosModules.default ];
+
+  services.hermes-agent = {
+    enable = true;
+    addToSystemPackages = true;
+    environmentFiles = [ "/var/lib/hermes/env" ];
+    container = {
+    	enable = true;
+	hostUsers = [ "shub39" ];
+    };
+  };
+
   services.jellyfin = {
     enable = true;
     openFirewall = true;
