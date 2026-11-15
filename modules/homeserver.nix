@@ -11,12 +11,22 @@
       enable = true;
       hostUsers = [ "shub39" ];
     };
+    environment = { DISCORD_ALLOWED_USERS = "1125393715612094514"; };
     settings = {
       model.default = "deepseek/deepseek-v4.1-flash-1017";
       toolsets = [ "all" ];
       terminal = { backend = "local"; timeout = 180; };
       display = { compact = false; personality = "teacher"; };
       memory = { memory_enabled = true; user_profile_enabled = true; };
+
+      platforms.discord.enable = true;
+      discord = {
+        require_mention = true;
+	auto_thread = true;
+	reactions = true;
+	history_backfill = true;
+      };
+      group_sessions_per_user = true;
     };
   };
 
