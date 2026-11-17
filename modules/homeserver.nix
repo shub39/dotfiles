@@ -9,6 +9,8 @@
     container.backend = "docker";
     addToSystemPackages = true;
     container.hostUsers = [ "shub39" ];
+    environmentFiles = [ "/var/lib/hermes/env" ];
+    environment = { DISCORD_ALLOWED_USERS = "1125393715612094514"; };
     settings.webapp = {
       enabled = true;
       host = "0.0.0.0";
