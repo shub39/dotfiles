@@ -11,6 +11,18 @@
     container.hostUsers = [ "shub39" ];
   };
 
+  security.sudo.extraRules = [
+    {
+      users = [ "shub39" ];
+      commands = [
+        {
+          command = "/run/current-system/sw/bin/docker";
+          options = [ "NOPASSWD" ];
+        }
+      ];
+    }
+  ];
+
   services.jellyfin = {
     enable = true;
     openFirewall = true;
