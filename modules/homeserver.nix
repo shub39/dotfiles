@@ -9,6 +9,11 @@
     container.backend = "docker";
     addToSystemPackages = true;
     container.hostUsers = [ "shub39" ];
+    settings.webapp = {
+      enabled = true;
+      host = "0.0.0.0";
+      port = 9120;
+    };
   };
 
   security.sudo.extraRules = [
