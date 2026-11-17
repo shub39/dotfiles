@@ -1,4 +1,16 @@
+{ inputs, ... }:
+
 {
+  imports = [ inputs.hermes-agent.nixosModules.default ];
+
+  services.hermes-agent = {
+    enable = true;
+    container.enable = true;
+    container.backend = "docker";
+    addToSystemPackages = true;
+    container.hostUsers = [ "shub39" ];
+  };
+
   services.jellyfin = {
     enable = true;
     openFirewall = true;
