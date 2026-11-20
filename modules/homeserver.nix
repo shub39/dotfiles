@@ -81,6 +81,7 @@
   };
 
   networking.firewall.trustedInterfaces = [ "tailscale0" ];
+  networking.firewall.allowedTCPPorts = [ 5030 ];
 
   # This machine doubles as the home server, so keep it running: closing the
   # lid does nothing and suspend/hibernate are disabled entirely.
