@@ -10,7 +10,9 @@
     addToSystemPackages = true;
     container.hostUsers = [ "shub39" ];
     environmentFiles = [ "/var/lib/hermes/env" ];
-    environment = { DISCORD_ALLOWED_USERS = "1125393715612094514"; };
+    environment = {
+      DISCORD_ALLOWED_USERS = "1125393715612094514";
+    };
     settings.webapp = {
       enabled = true;
       host = "0.0.0.0";
@@ -42,6 +44,29 @@
     openFirewall = true;
     profileDir = "/mnt/media/qbittorrent";
     extraArgs = [ "--confirm-legal-notice" ];
+  };
+
+  services.slskd = {
+    enable = true;
+    user = "shub39";
+    group = "users";
+    environmentFile = "/etc/slskd.env";
+    openFirewall = true;
+    domain = null;
+    settings = {
+      shares = {
+        directories = [
+          "/mnt/media/music"
+        ];
+      };
+      directories = {
+        downloads = "/mnt/media/temp/slskd/downloads";
+        incomplete = "/mnt/media/temp/slskd/incomplete";
+      };
+      web = {
+        port = 5030;
+      };
+    };
   };
 
   services.tailscale = {

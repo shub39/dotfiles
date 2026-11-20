@@ -48,6 +48,7 @@
       godot
       nixfmt
       uv
+      unstable.audacity
     ]);
 
   fonts.packages = with pkgs; [
