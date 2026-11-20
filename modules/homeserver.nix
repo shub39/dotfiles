@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   imports = [ inputs.hermes-agent.nixosModules.default ];
@@ -48,6 +48,7 @@
 
   services.slskd = {
     enable = true;
+    package = pkgs.unstable.slskd;
     user = "shub39";
     group = "users";
     environmentFile = "/etc/slskd.env";
