@@ -33,3 +33,8 @@ include "~/.config/dotfiles/niri/hosts/rher.kdl"
 include "~/.config/dotfiles/niri/config.kdl"
 include "~/.config/dotfiles/niri/hosts/gro-goroth.kdl"
 ```
+
+## Fonts
+
+I have not found a way to have `Google Sans Code` and `Google Sans` declaratively. So on installation download, unarchive and copy them to 
+`~/.local/share/fonts`
