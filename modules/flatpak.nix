@@ -8,7 +8,6 @@
       "org.torproject.torbrowser-launcher"
       "io.github.flattool.Warehouse"
       "app.zen_browser.zen"
-      "sh.cider.Cider"
     ];
     remotes = [
       {
