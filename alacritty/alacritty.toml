@@ -2,19 +2,19 @@
 size = 11.0
 
 [font.normal]
-family = "GoogleSansCode"
+family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "GoogleSansCode"
+family = "JetBrainsMono Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "GoogleSansCode"
+family = "JetBrainsMono Nerd Font"
 style = "Italic"
 
 [font.bold_italic]
-family = "GoogleSansCode"
+family = "JetBrainsMono Nerd Font"
 style = "Bold Italic"
 
 [window]
