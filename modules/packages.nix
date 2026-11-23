@@ -29,6 +29,7 @@
       baobab
       mpv
       gnome-system-monitor
+      chromium
 
       # look and feel
       nwg-look
@@ -50,6 +51,14 @@
       uv
       unstable.audacity
     ]);
+
+  programs.chromium = {
+    enable = true;
+    extensions = [
+      # uBlock Origin Lite (Chrome Web Store)
+      "ddkjiahejlhfcafbddmgiahcphecmpfh"
+    ];
+  };
 
   fonts.packages = with pkgs; [
     noto-fonts
