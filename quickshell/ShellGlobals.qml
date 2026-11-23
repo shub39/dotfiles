@@ -8,7 +8,7 @@ Singleton {
     property bool isDnd: false
     
     // Font Config
-    readonly property string fontFamily: "Google Sans"
+    readonly property string fontFamily: "Open Sans"
     readonly property double letterSpacing: 0
     readonly property int fontSize: 11
     
