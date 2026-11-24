@@ -11,7 +11,7 @@
 
     nix-darwin = {
       url = "github:LnL7/nix-darwin";
-      inputs.nixpkgs.follows = "nixpkgs-unstable"
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
   };
 
@@ -38,7 +38,7 @@
 
     darwinConfigurations."alll-mer" = nix-darwin.lib.darwinSystem {
       modules = [
-        .hosts/alll-mer
+        ./hosts/alll-mer
       ];
     };
   };
