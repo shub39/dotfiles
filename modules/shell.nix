@@ -33,8 +33,8 @@ in
   programs.nix-ld.enable = true;
 
   environment.shellAliases = {
-    # rebuild the current host from the dotfiles flake
     rs = "sudo ${rebuild} switch --flake ~/.config/dotfiles#${config.networking.hostName}";
+    ff = "fastfetch --config ~/.config/dotfiles/fastfetch/config.jsonc";
   };
 
   environment.variables = {
