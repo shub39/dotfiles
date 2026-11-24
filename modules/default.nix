@@ -5,6 +5,7 @@
     ./boot.nix
     ./desktop.nix
     ./flatpak.nix
+    ./fonts.nix
     ./gaming.nix
     ./git.nix
     ./locale.nix

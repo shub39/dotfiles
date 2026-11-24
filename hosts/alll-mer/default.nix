@@ -4,6 +4,7 @@
 {
   imports = [
     ../../modules/options.nix
+    ../../modules/fonts.nix
     ../../modules/nix.nix
     ../../modules/nix-darwin.nix
     ../../modules/shell.nix
@@ -46,12 +47,4 @@
         ${pkgs.mkalias}/bin/mkalias "$src" "/Applications/Nix Apps/$app_name"
       done
     '';
-
-  fonts.packages = with pkgs; [
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-color-emoji
-    nerd-fonts.jetbrains-mono
-    open-sans
-  ];
 }
