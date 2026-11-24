@@ -1,5 +1,5 @@
 {
-  description = "My NixOS configuration";
+  description = "shub39's Nix configs";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
@@ -8,6 +8,11 @@
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
 
     hermes-agent.url = "github:NousResearch/hermes-agent";
+
+    nix-darwin = {
+      url = "github:LnL7/nix-darwin";
+      inputs.nixpkgs.follows = "nixpkgs-unstable"
+    };
   };
 
   outputs = { self, nixpkgs, nix-flatpak, nix-darwin, ... } @ inputs: {
@@ -28,6 +33,12 @@
       modules = [
         ./hosts/gro-goroth
         nix-flatpak.nixosModules.nix-flatpak
+      ];
+    };
+
+    darwinConfigurations."alll-mer" = nix-darwin.lib.darwinSystem {
+      modules = [
+        .hosts/alll-mer
       ];
     };
   };

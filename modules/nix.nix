@@ -14,19 +14,7 @@
     "flakes"
   ];
   nix.settings.auto-optimise-store = true;
-
-  nix.gc = {
-    automatic = true;
-    dates = "daily";
-    options = "--delete-older-than 10d";
-  };
-
-  system.autoUpgrade = {
-    enable = true;
-    flake = "/home/shub39/.config/dotfiles";
-    upgrade = false; 
-    dates = "weekly";
-  };
+  nix.gc.options = "--delete-older-than 10d";
 
   nixpkgs.config.allowUnfree = true;
 }

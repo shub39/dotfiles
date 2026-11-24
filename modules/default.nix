@@ -10,6 +10,7 @@
     ./locale.nix
     ./networking.nix
     ./nix.nix
+    ./nix-linux.nix
     ./packages.nix
     ./shell.nix
     ./ssh.nix
