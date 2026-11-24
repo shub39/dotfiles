@@ -1,7 +1,8 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 
 let
   editor = if config.my.editor.enable then "zeditor --wait" else "nvim";
+  rebuild = if pkgs.stdenv.isDarwin then "darwin-rebuild" else "nixos-rebuild";
 in
 {
   programs.zsh = {
@@ -30,6 +31,11 @@ in
   };
 
   programs.nix-ld.enable = true;
+
+  environment.shellAliases = {
+    # rebuild the current host from the dotfiles flake
+    rs = "sudo ${rebuild} switch --flake ~/.config/dotfiles#${config.networking.hostName}";
+  };
 
   environment.variables = {
     EDITOR = editor;

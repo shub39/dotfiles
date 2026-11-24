@@ -12,7 +12,7 @@ Item {
 	Image {
 		id: image
 		anchors.fill: parent
-		source: Qt.resolvedUrl("Wallpaper.png")
+		source: "file://" + Quickshell.shellPath("../Wallpaper.png")
 		fillMode: Image.PreserveAspectCrop
 	}
 }
