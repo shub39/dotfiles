@@ -4,11 +4,16 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+        
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
+
     hermes-agent.url = "github:NousResearch/hermes-agent";
+    
+    nix-darwin.url = "github.com/LnL7/nix-darwin";
+    nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, nix-flatpak, ... } @ inputs: {
+  outputs = { self, nixpkgs, nix-flatpak, nix-darwin, ... } @ inputs: {
     nixosConfigurations."rher" = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       system = "x86_64-linux";
@@ -26,6 +31,12 @@
       modules = [
         ./hosts/gro-goroth
         nix-flatpak.nixosModules.nix-flatpak
+      ];
+    };
+
+    darwinConfigurations."alll-mer" = nix-darwin.lib.darwinSystem {
+      modules = [
+        ./hosts/alll-mer
       ];
     };
   };
