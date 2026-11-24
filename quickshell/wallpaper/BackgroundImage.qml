@@ -12,7 +12,7 @@ Item {
 	Image {
 		id: image
 		anchors.fill: parent
-		source: "file://" + Quickshell.shellPath("../Wallpaper.png")
+		source: "file://" + Quickshell.shellPath("../wallpaper.png")
 		fillMode: Image.PreserveAspectCrop
 	}
 }

@@ -13,3 +13,13 @@ window-rule {
   default-window-height { fixed 270; }
   baba-is-float true
 }
+
+window-rule {
+  match app-id="^Alacritty$"
+
+  draw-border-with-background false
+
+  background-effect {
+    blur true
+  }
+}

@@ -6,6 +6,13 @@ import QtQuick
 Singleton {
     property bool isLocked: false
     property bool isDnd: false
+
+    // Opacity for layer-shell surfaces; niri blurs the wallpaper behind them.
+    readonly property real surfaceOpacity: 0.85
+
+    function withAlpha(color, alpha) {
+        return Qt.rgba(color.r, color.g, color.b, alpha);
+    }
     
     // Font Config
     readonly property string fontFamily: "Open Sans"

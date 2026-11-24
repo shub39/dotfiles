@@ -5,7 +5,7 @@ import Quickshell.Io
 import qs
 
 Rectangle {
-    color: ShellGlobals.materialColors.primary
+    color: ShellGlobals.withAlpha(ShellGlobals.materialColors.primary, ShellGlobals.surfaceOpacity)
     radius: 0
 
     implicitHeight: column.height + 10

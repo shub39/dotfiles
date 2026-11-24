@@ -1,0 +1,91 @@
+{
+  "display": {
+    "color": {
+      "keys": "#ffffff"
+    },
+    "key": {
+      "width": 14
+    },
+    "separator": "  "
+  },
+  "logo": {
+    "color": {
+      "1": "#67b0e8"
+    },
+    "padding": {
+      "left": 2,
+      "top": 2
+    },
+    "source": "~/.config/dotfiles/fastfetch/logo.txt",
+    "type": "file"
+  },
+  "modules": [
+    {
+      "color": {
+        "at": "#666666",
+        "host": "#ff8a8a",
+        "user": "#ff8a8a"
+      },
+      "type": "title"
+    },
+    "break",
+    {
+      "format": "{pretty-name}",
+      "key": " os",
+      "keyColor": "#71b7ff",
+      "type": "os"
+    },
+    {
+      "key": " kernel",
+      "keyColor": "#d2a8ff",
+      "type": "kernel"
+    },
+    {
+      "format": "{pretty-name}",
+      "key": " wm",
+      "keyColor": "#ff8a8a",
+      "type": "wm"
+    },
+    {
+      "format": "{pretty-name}",
+      "key": " shell",
+      "keyColor": "#8ddb8c",
+      "type": "shell"
+    },
+    {
+      "key": " uptime",
+      "keyColor": "#d2b45f",
+      "type": "uptime"
+    },
+    {
+      "format": "{name}",
+      "key": " cpu",
+      "keyColor": "cyan",
+      "type": "cpu"
+    },
+    {
+      "format": "",
+      "key": " gpu",
+      "keyColor": "magenta",
+      "type": "gpu"
+    },
+    {
+      "format": "{used} / {total}",
+      "key": " ram",
+      "keyColor": "#71b7ff",
+      "type": "memory"
+    },
+    {
+      "format": "{name} {size}",
+      "key": " font",
+      "keyColor": "yellow",
+      "type": "terminalfont"
+    },
+    {
+      "format": "{pretty-name}",
+      "key": " color",
+      "symbol": "circle",
+      "type": "colors"
+    }
+  ]
+}

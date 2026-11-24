@@ -7,7 +7,7 @@ bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
 
 [window]
 decorations = "None"
-opacity = 1.0
+opacity = 0.85
 
 [bell]
 animation = "EaseOutExpo"

@@ -4,7 +4,7 @@ import Qt5Compat.GraphicalEffects
 import qs
 
 Rectangle {
-    color: ShellGlobals.materialColors.tertiary
+    color: ShellGlobals.withAlpha(ShellGlobals.materialColors.tertiary, ShellGlobals.surfaceOpacity)
     radius: 0
 
     implicitHeight: column.height + 10

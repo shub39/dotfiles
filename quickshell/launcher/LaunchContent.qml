@@ -19,7 +19,7 @@ Item {
             }
         }
         width: parent.width
-        color: ShellGlobals.materialColors.tertiarycontainer
+        color: ShellGlobals.withAlpha(ShellGlobals.materialColors.tertiarycontainer, ShellGlobals.surfaceOpacity)
         radius: 0
 
         ColumnLayout {
@@ -32,7 +32,7 @@ Item {
                 id: searchContainer
                 Layout.fillWidth: true
                 implicitHeight: searchbox.implicitHeight + 10
-                color: ShellGlobals.materialColors.secondarycontainer
+                color: ShellGlobals.withAlpha(ShellGlobals.materialColors.secondarycontainer, ShellGlobals.surfaceOpacity)
                 radius: 0
 
                 RowLayout {

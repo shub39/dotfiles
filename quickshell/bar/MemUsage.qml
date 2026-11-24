@@ -5,7 +5,7 @@ import Quickshell.Io
 import qs
 
 Rectangle {
-    color: memCritical ? ShellGlobals.materialColors.errorcontainer : ShellGlobals.materialColors.primary
+    color: memCritical ? ShellGlobals.withAlpha(ShellGlobals.materialColors.errorcontainer, ShellGlobals.surfaceOpacity) : ShellGlobals.withAlpha(ShellGlobals.materialColors.primary, ShellGlobals.surfaceOpacity)
     radius: 0
     border.width: 0
     border.color: "transparent"

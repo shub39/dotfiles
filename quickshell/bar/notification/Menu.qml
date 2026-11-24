@@ -39,7 +39,7 @@ PopupWindow {
     Rectangle {
         id: background
         anchors.fill: parent
-        color: ShellGlobals.materialColors.tertiarycontainer
+        color: ShellGlobals.withAlpha(ShellGlobals.materialColors.tertiarycontainer, ShellGlobals.surfaceOpacity)
         opacity: cardbox.opacity
         radius: 0
     }

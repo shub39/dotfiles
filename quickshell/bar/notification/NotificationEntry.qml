@@ -19,7 +19,7 @@ Item {
 
         anchors.fill: parent
         implicitHeight: content.implicitHeight + 16
-        color: ShellGlobals.materialColors.tertiary
+        color: ShellGlobals.withAlpha(ShellGlobals.materialColors.tertiary, ShellGlobals.surfaceOpacity)
         radius: 0
 
         ColumnLayout {

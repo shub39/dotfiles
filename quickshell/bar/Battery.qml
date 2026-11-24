@@ -28,7 +28,7 @@ Rectangle {
     }
 
     visible: hasBattery
-    color: critical ? ShellGlobals.materialColors.errorcontainer : ShellGlobals.materialColors.primary
+    color: critical ? ShellGlobals.withAlpha(ShellGlobals.materialColors.errorcontainer, ShellGlobals.surfaceOpacity) : ShellGlobals.withAlpha(ShellGlobals.materialColors.primary, ShellGlobals.surfaceOpacity)
     radius: 0
 
     implicitHeight: column.height + 10

@@ -14,7 +14,7 @@ PanelWindow {
         bottom: true
     }
     implicitWidth: componentWidth + 8
-    color: ShellGlobals.materialColors.background
+    color: "transparent"
 
     Menu {
         id: menu

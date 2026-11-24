@@ -1,0 +1,16 @@
+// Blur the wallpaper behind quickshell surfaces (bar, launcher, notifications).
+layer-rule {
+  match namespace="^quickshell$"
+
+  background-effect {
+    blur true
+  }
+}
+
+layer-rule {
+  match namespace="^shell:launcher$"
+
+  background-effect {
+    blur true
+  }
+}
