@@ -14,6 +14,7 @@ binds {
     Mod+C { close-window; }
     Mod+W { spawn "nemo"; }
     Mod+Z { spawn-sh "flatpak run app.zen_browser.zen"; }
+    Mod+Shift+Z { spawn "chromium"; }
     Mod+N { spawn-sh "alacritty --config-file ~/.config/dotfiles/alacritty/alacritty.toml -e ledfx"; }
     Mod+B { spawn "~/.config/dotfiles/scripts/blue-light-filter.sh"; }
     Mod+O { spawn "scrcpy"; }
