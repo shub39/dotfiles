@@ -13,6 +13,7 @@
     ./nix-linux.nix
     ./packages.nix
     ./shell.nix
+    ./shell-linux.nix
     ./ssh.nix
     ./users.nix
   ];

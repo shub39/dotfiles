@@ -3,8 +3,11 @@
 # standalone for now, will distribute it later
 {
   imports = [
+    ../../modules/options.nix
     ../../modules/nix.nix
     ../../modules/nix-darwin.nix
+    ../../modules/shell.nix
+    ../../modules/shell-darwin.nix
   ];
 
   system.stateVersion = 7;

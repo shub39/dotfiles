@@ -8,20 +8,6 @@ in
   programs.zsh = {
     enable = true;
     enableCompletion = true;
-
-    ohMyZsh = {
-      enable = true;
-      theme = "robbyrussell";
-
-      plugins = [
-        "git"
-        "sudo"
-        "docker"
-      ];
-    };
-
-    autosuggestions.enable = true;
-    syntaxHighlighting.enable = true;
   };
 
   programs.direnv = {
@@ -29,8 +15,6 @@ in
     enableZshIntegration = true;
     nix-direnv.enable = true;
   };
-
-  programs.nix-ld.enable = true;
 
   environment.shellAliases = {
     rs = "sudo ${rebuild} switch --flake ~/.config/dotfiles#${config.networking.hostName}";

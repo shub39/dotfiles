@@ -11,4 +11,7 @@
     upgrade = false;
     dates = "weekly";
   };
+
+  # NixOS-only: lets dynamically linked, non-Nix binaries run.
+  programs.nix-ld.enable = true;
 }
