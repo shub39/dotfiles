@@ -35,6 +35,7 @@ in
   environment.shellAliases = {
     rs = "sudo ${rebuild} switch --flake ~/.config/dotfiles#${config.networking.hostName}";
     ff = "fastfetch --config ~/.config/dotfiles/fastfetch/config.jsonc";
+    e = "cd ~/.config/dotfiles";
   };
 
   environment.variables = {
