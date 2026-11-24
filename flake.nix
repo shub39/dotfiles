@@ -8,9 +8,6 @@
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
 
     hermes-agent.url = "github:NousResearch/hermes-agent";
-    
-    nix-darwin.url = "github.com/LnL7/nix-darwin";
-    nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { self, nixpkgs, nix-flatpak, nix-darwin, ... } @ inputs: {
@@ -31,12 +28,6 @@
       modules = [
         ./hosts/gro-goroth
         nix-flatpak.nixosModules.nix-flatpak
-      ];
-    };
-
-    darwinConfigurations."alll-mer" = nix-darwin.lib.darwinSystem {
-      modules = [
-        ./hosts/alll-mer
       ];
     };
   };
