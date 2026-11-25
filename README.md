@@ -6,8 +6,9 @@
 | ------------ | ---------------- | --------------------------------- |
 | `rher`       | Desktop PC       | Gaming + development              |
 | `gro-goroth` | ThinkPad laptop  | Laptop + home server (Jellyfin)   |
+| `alll-mer`   | Macbook          | development                       |
 
-Capabilities are toggled per host through the `my.*` options in
+Capabilities for the linux machines are toggled per host through the `my.*` options in
 `modules/options.nix`. For example, `gro-goroth` sets:
 
 ```nix
