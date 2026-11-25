@@ -23,6 +23,10 @@
 
   system.defaults = {
     dock.autohide = true;
+    dock.persistent-apps = [
+      "/Applications/Zen.app"
+      "/Applications/Zed.app"
+    ]; 
   };
 
   system.activationScripts.applications.text =

@@ -5,7 +5,6 @@
     neovim
     mkalias
     fastfetch
-    vicinae
     nixd
     nil
     uv

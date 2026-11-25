@@ -28,6 +28,13 @@
     ];
 
     casks = [
+      "zen"
+      "google-chrome"
+      "zed"
+      "vicinae"
+      "jetbrains-toolbox"
+      "slack"
+      
       "bluesnooze"
       "utm"
       "qeude/tap/defi"
