@@ -1,0 +1,26 @@
+mod = "ctrl"
+disabled_keys = ["mod-o"]
+[menu_bar]
+workspace_style = "name"
+
+[layout]
+outer_top_gap = 4.0
+outer_bottom_gap = 4.0
+outer_left_gap = 4.0
+outer_right_gap = 4.0
+gaps = 2.0
+
+[input]
+focus_follows_mouse = true
+
+[overview]
+window_corner_radius = 0.0
+
+[keys]
+ctrl-shift-1 = "move-window-to-workspace-position 1"
+ctrl-shift-2 = "move-window-to-workspace-position 2"
+ctrl-shift-3 = "move-window-to-workspace-position 3"
+ctrl-shift-4 = "move-window-to-workspace-position 4"
+ctrl-shift-equal = "set-column-width +10%"
+ctrl-shift-minus = "set-column-width -10%"
+ctrl-a = "toggle-overview"

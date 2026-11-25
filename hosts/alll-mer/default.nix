@@ -5,8 +5,10 @@
   imports = [
     ../../modules/options.nix
     ../../modules/fonts.nix
+    ../../modules/homebrew.nix
     ../../modules/nix.nix
     ../../modules/nix-darwin.nix
+    ../../modules/packages-darwin.nix
     ../../modules/shell.nix
     ../../modules/shell-darwin.nix
   ];
@@ -15,17 +17,13 @@
 
   networking.hostName = "alll-mer";
 
+  system.primaryUser = "shub39";
+
   nixpkgs.hostPlatform = "aarch64-darwin";
 
-  environment.systemPackages = with pkgs; [
-    neovim
-    mkalias
-    fastfetch
-    alacritty
-    vicinae
-    nixd
-    nil
-  ];
+  system.defaults = {
+    dock.autohide = true;
+  };
 
   system.activationScripts.applications.text =
     let

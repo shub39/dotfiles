@@ -2,7 +2,7 @@
 
 let
   editor = if config.my.editor.enable then "zeditor --wait" else "nvim";
-  rebuild = if pkgs.stdenv.isDarwin then "darwin-rebuild" else "nixos-rebuild";
+  rebuild = if pkgs.stdenv.hostPlatform.isDarwin then "darwin-rebuild" else "nixos-rebuild";
 in
 {
   programs.zsh = {
