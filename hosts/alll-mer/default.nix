@@ -27,6 +27,12 @@
       "/Applications/Zen.app"
       "/Applications/Zed.app"
     ]; 
+    finder.FXPreferredViewStyle = "clmv";
+    loginwindow.GuestEnabled = false;
+    NSGlobalDomain = {
+      AppleInterfaceStyle = "Dark";
+      KeyRepeat = 2;
+    };
   };
 
   system.activationScripts.applications.text =
