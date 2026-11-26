@@ -38,6 +38,16 @@
       ];
     };
 
+    nixosConfigurations."sylvian" = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      system = "x86_64-linux";
+
+      modules = [
+        ./hosts/sylvian
+        nix-flatpak.nixosModules.nix-flatpak
+      ];
+    };
+
     darwinConfigurations."alll-mer" = nix-darwin.lib.darwinSystem {
       specialArgs = { inherit inputs; };
 
