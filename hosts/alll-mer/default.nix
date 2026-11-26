@@ -1,6 +1,5 @@
 { pkgs, config, ... }:
 
-# standalone for now, will distribute it later
 {
   imports = [
     ../../modules/darwin
@@ -21,7 +20,7 @@
     dock.persistent-apps = [
       "/Applications/Zen.app"
       "/Applications/Zed.app"
-    ]; 
+    ];
     finder.FXPreferredViewStyle = "clmv";
     loginwindow.GuestEnabled = false;
     NSGlobalDomain = {

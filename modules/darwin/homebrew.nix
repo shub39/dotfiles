@@ -34,7 +34,7 @@
       "vicinae"
       "jetbrains-toolbox"
       "slack"
-      
+
       "bluesnooze"
       "utm"
       "qeude/tap/defi"
