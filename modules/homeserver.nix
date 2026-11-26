@@ -78,7 +78,10 @@
     mediaLocation = "/mnt/media/immich";
     user = "shub39";
     group = "users";
-    database.user = "shub39";
+    database = {
+      name = "shub39";
+      user = "shub39";
+    };
     accelerationDevices = [ "/dev/dri/renderD128" ];
     settings.ffmpeg = {
       accel = "vaapi";
