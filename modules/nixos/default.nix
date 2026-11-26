@@ -15,6 +15,7 @@
     ./nix.nix
     ./shell.nix
     ./git.nix
+    ../common/packages.nix
     ./packages.nix
   ];
 }
