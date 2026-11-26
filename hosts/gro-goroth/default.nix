@@ -13,6 +13,7 @@
     devTools.enable = false;
     laptop.enable = true;
     homeserver.enable = true;
+    hermes.enable = true;
   };
 
   system.stateVersion = "26.05";

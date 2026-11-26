@@ -32,7 +32,8 @@ choose capabilities with `my.*` flags.
 | `my.devTools.enable`   | `true`  | Android tools, Godot, formatters, uv, audacity                  |
 | `my.editor.enable`     | `true`  | Zed editor and the Nix language servers (nixd, nil)             |
 | `my.laptop.enable`     | `false` | Laptop power management, ThinkPad charge cap, bluetooth         |
-| `my.homeserver.enable` | `false` | Jellyfin, qbittorrent, slskd, tailscale, hermes-agent           |
+| `my.homeserver.enable` | `false` | Jellyfin, qbittorrent, slskd, tailscale                           |
+| `my.hermes.enable`     | `false` | Hermes agent container (docker) with its web UI                 |
 | `my.immich.enable`     | `false` | Immich photo server (mount data disk at `/var/lib/immich`)      |
 | `my.niri.enable`       | `true`  | Niri compositor, `ly` display manager, and Niri-only desktop packages |
 | `my.gnome.enable`      | `false` | GNOME desktop environment with GDM                              |
@@ -48,6 +49,7 @@ my = {
 };
 ```
 
+`sylvian` runs Immich only; it leaves `homeserver` and `hermes` disabled.
 `gro-goroth` sets:
 
 ```nix
@@ -56,6 +58,7 @@ my = {
   devTools.enable = false;
   laptop.enable = true;
   homeserver.enable = true;
+  hermes.enable = true;
 };
 ```
 

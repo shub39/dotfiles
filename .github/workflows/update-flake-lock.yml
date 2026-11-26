@@ -33,6 +33,9 @@ jobs:
       - name: Evaluate gro-goroth
         run: nix eval .#nixosConfigurations.gro-goroth.config.system.build.toplevel.drvPath --show-trace
 
+      - name: Evaluate sylvian
+        run: nix eval .#nixosConfigurations.sylvian.config.system.build.toplevel.drvPath --show-trace
+
       - name: Evaluate alll-mer
         run: nix eval .#darwinConfigurations.alll-mer.config.system.build.toplevel.drvPath --show-trace
 

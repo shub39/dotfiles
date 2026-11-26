@@ -14,6 +14,7 @@
     editor.enable = false;
     laptop.enable = false;
     homeserver.enable = false;
+    hermes.enable = false;
     immich.enable = true;
     niri.enable = false;
     gnome.enable = true;
