@@ -17,6 +17,8 @@
 
   networking.hostName = "alll-mer";
 
+  time.timeZone = "Asia/Kolkata";
+
   system.primaryUser = "shub39";
 
   nixpkgs.hostPlatform = "aarch64-darwin";
