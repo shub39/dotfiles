@@ -30,12 +30,14 @@
   ];
 
   services.jellyfin = {
+    package = pkgs.unstable.jellyfin ;
     enable = true;
     openFirewall = true;
     user = "shub39";
   };
 
   services.qbittorrent = {
+    package = pkgs.unstable.qbittorrent;
     enable = true;
     webuiPort = 6969;
     openFirewall = true;
@@ -68,6 +70,7 @@
   };
 
   services.immich = {
+    package = pkgs.unstable.immich;
     enable = true;
     host = "0.0.0.0";
     port = 2283;
@@ -86,6 +89,7 @@
   hardware.graphics.extraPackages = [ pkgs.intel-media-driver ];
 
   services.tailscale = {
+    package = pkgs.unstable.tailscale;
     enable = true;
     useRoutingFeatures = "client";
   };
