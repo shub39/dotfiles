@@ -2,6 +2,8 @@
   imports = [
     ../common
     ../features/gaming.nix
+    ../features/laptop.nix
+    ../features/homeserver.nix
     ./boot.nix
     ./audio.nix
     ./desktop.nix

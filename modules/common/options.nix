@@ -1,23 +1,19 @@
 { lib, ... }:
 
+let
+  opt = default: description: {
+    enable = lib.mkOption {
+      type = lib.types.bool;
+      inherit default description;
+    };
+  };
+in
 {
   options.my = {
-    gaming.enable = lib.mkOption {
-      type = lib.types.bool;
-      default = true;
-      description = "Enable Steam and gaming support.";
-    };
-
-    devTools.enable = lib.mkOption {
-      type = lib.types.bool;
-      default = true;
-      description = "Enable general development tools (Android tools, Godot, formatters, uv).";
-    };
-
-    editor.enable = lib.mkOption {
-      type = lib.types.bool;
-      default = true;
-      description = "Enable the Zed editor and the Nix language servers (nixd, nil).";
-    };
+    gaming = opt true "Steam and gaming support.";
+    devTools = opt true "General development tools (Android tools, Godot, formatters, uv).";
+    editor = opt true "Zed editor and the Nix language servers (nixd, nil).";
+    laptop = opt false "Laptop power management and ThinkPad charge cap.";
+    homeserver = opt false "Home server services (jellyfin, immich, qbittorrent, slskd, tailscale, hermes-agent).";
   };
 }
