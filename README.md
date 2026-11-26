@@ -2,11 +2,12 @@
 
 ## Hosts
 
-| Host         | Machine          | Role                              |
-| ------------ | ---------------- | --------------------------------- |
-| `rher`       | Desktop PC       | Gaming + development              |
-| `gro-goroth` | ThinkPad laptop  | Laptop + home server (Jellyfin)   |
-| `alll-mer`   | Macbook          | development                       |
+| Host         | Machine          | Role                                |
+| ------------ | ---------------- | ----------------------------------- |
+| `rher`       | Desktop PC       | Gaming + development                |
+| `gro-goroth` | ThinkPad laptop  | Laptop + home server (Jellyfin)     |
+| `sylvian`    | Home computer    | GNOME drawing workstation + Immich  |
+| `alll-mer`   | Macbook          | development                         |
 
 ## Module layout
 
@@ -31,9 +32,23 @@ choose capabilities with `my.*` flags.
 | `my.devTools.enable`   | `true`  | Android tools, Godot, formatters, uv, audacity                  |
 | `my.editor.enable`     | `true`  | Zed editor and the Nix language servers (nixd, nil)             |
 | `my.laptop.enable`     | `false` | Laptop power management, ThinkPad charge cap, bluetooth         |
-| `my.homeserver.enable` | `false` | Jellyfin, immich, qbittorrent, slskd, tailscale, hermes-agent   |
+| `my.homeserver.enable` | `false` | Jellyfin, qbittorrent, slskd, tailscale, hermes-agent           |
+| `my.immich.enable`     | `false` | Immich photo server (mount data disk at `/var/lib/immich`)      |
+| `my.niri.enable`       | `true`  | Niri compositor, `ly` display manager, and Niri-only desktop packages |
+| `my.gnome.enable`      | `false` | GNOME desktop environment with GDM                              |
 
-For example, `gro-goroth` sets:
+A host picks exactly one desktop environment with `my.niri.enable` /
+`my.gnome.enable` (niri is the default). For example, `sylvian` sets:
+
+```nix
+my = {
+  niri.enable = false;
+  gnome.enable = true;
+  immich.enable = true;
+};
+```
+
+`gro-goroth` sets:
 
 ```nix
 my = {

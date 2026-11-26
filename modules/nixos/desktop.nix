@@ -1,26 +1,41 @@
-{ pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
-  programs.niri.enable = true;
+  config = lib.mkMerge [
+    {
+      services.xserver.xkb = {
+        layout = "us";
+        variant = "";
+      };
 
-  services.displayManager.ly = {
-    enable = true;
-    settings = {
-      animate = true;
-      animation = "doom";
-    };
-  };
+      security.polkit.enable = true;
+      services.gnome.gnome-keyring.enable = true;
+      qt.enable = true;
+    }
 
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
+    (lib.mkIf config.my.niri.enable {
+      programs.niri.enable = true;
 
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-  xdg.portal.config.common.default = "gtk";
+      services.displayManager.ly = {
+        enable = true;
+        settings = {
+          animate = true;
+          animation = "doom";
+        };
+      };
 
-  security.polkit.enable = true;
-  services.gnome.gnome-keyring.enable = true;
+      xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+      xdg.portal.config.common.default = "gtk";
+    })
 
-  qt.enable = true;
+    (lib.mkIf config.my.gnome.enable {
+      services.displayManager.gdm.enable = true;
+      services.desktopManager.gnome.enable = true;
+    })
+  ];
 }

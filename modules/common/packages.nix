@@ -20,9 +20,6 @@ let
     uv
   ];
   linuxDesktop = with pkgs; [
-    quickshell
-    kdePackages.qt5compat
-    vicinae
     alacritty
     copyq
     nemo
@@ -32,22 +29,28 @@ let
     networkmanager
     wl-clipboard
     brightnessctl
-    wlsunset
-    hyprpicker
     playerctl
-    xwayland-satellite
     pwvucontrol
     easyeffects
     baobab
     mpv
     gnome-system-monitor
     chromium
+    ledfx
+  ];
+  # Only meaningful on a Niri/wlroots session.
+  niriDesktop = with pkgs; [
+    quickshell
+    kdePackages.qt5compat
+    vicinae
+    wlsunset
+    hyprpicker
+    xwayland-satellite
     # look and feel
     nwg-look
     gruvbox-dark-gtk
     gruvbox-gtk-theme
     gruvbox-plus-icons
-    ledfx
   ];
 in
 {
@@ -55,6 +58,7 @@ in
     both
     ++ lib.optionals isDarwin darwinExtra
     ++ lib.optionals (!isDarwin) linuxDesktop
+    ++ lib.optionals (!isDarwin && config.my.niri.enable) niriDesktop
     ++ lib.optionals (!isDarwin && config.my.editor.enable) (
       with pkgs;
       [

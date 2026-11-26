@@ -4,6 +4,7 @@
     ../features/gaming.nix
     ../features/laptop.nix
     ../features/homeserver.nix
+    ../features/immich.nix
     ./boot.nix
     ./audio.nix
     ./desktop.nix

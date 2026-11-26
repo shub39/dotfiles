@@ -1,7 +1,9 @@
+{ lib, ... }:
+
 {
   services.flatpak = {
     enable = true;
-    packages = [
+    packages = lib.mkDefault [
       "com.github.tchx84.Flatseal"
       "org.kde.kdenlive"
       "org.localsend.localsend_app"
