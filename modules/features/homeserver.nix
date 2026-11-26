@@ -76,34 +76,6 @@
       };
     };
 
-    services.immich = {
-      package = pkgs.unstable.immich;
-      enable = true;
-      host = "0.0.0.0";
-      port = 2283;
-      openFirewall = true;
-      mediaLocation = "/mnt/media/immich";
-      user = "shub39";
-      group = "users";
-      database = {
-        name = "shub39";
-        user = "shub39";
-      };
-      accelerationDevices = [ "/dev/dri/renderD128" ];
-      settings.ffmpeg = {
-        accel = "vaapi";
-        accelDecode = true;
-      };
-    };
-
-    systemd.tmpfiles.settings.immich."/mnt/media/immich".d = {
-      user = "shub39";
-      group = "users";
-      mode = "0700";
-    };
-
-    hardware.graphics.extraPackages = [ pkgs.intel-media-driver ];
-
     services.tailscale = {
       package = pkgs.unstable.tailscale;
       enable = true;
