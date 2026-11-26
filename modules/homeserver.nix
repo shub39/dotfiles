@@ -89,7 +89,12 @@
     };
   };
 
-  # VA-API driver for the Intel iGPU, used by immich's ffmpeg.
+  systemd.tmpfiles.settings.immich."/mnt/media/immich".d = {
+    user = "shub39";
+    group = "users";
+    mode = "0700";
+  };
+
   hardware.graphics.extraPackages = [ pkgs.intel-media-driver ];
 
   services.tailscale = {
@@ -107,8 +112,6 @@
   networking.firewall.trustedInterfaces = [ "tailscale0" ];
   networking.firewall.allowedTCPPorts = [ 5030 ];
 
-  # This machine doubles as the home server, so keep it running: closing the
-  # lid does nothing and suspend/hibernate are disabled entirely.
   services.logind.settings.Login = {
     HandleLidSwitch = "ignore";
     HandleLidSwitchExternalPower = "ignore";
