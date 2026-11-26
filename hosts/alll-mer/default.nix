@@ -3,14 +3,7 @@
 # standalone for now, will distribute it later
 {
   imports = [
-    ../../modules/options.nix
-    ../../modules/fonts.nix
-    ../../modules/homebrew.nix
-    ../../modules/nix.nix
-    ../../modules/nix-darwin.nix
-    ../../modules/packages-darwin.nix
-    ../../modules/shell.nix
-    ../../modules/shell-darwin.nix
+    ../../modules/darwin
   ];
 
   system.stateVersion = 7;

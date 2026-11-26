@@ -2,10 +2,10 @@
 
 {
   imports = [
-    ../../modules
-    ../../modules/laptop.nix
-    ../../modules/homeserver.nix
     ./hardware-configuration.nix
+    ../../modules/nixos
+    ../../modules/features/laptop.nix
+    ../../modules/features/homeserver.nix
   ];
 
   networking.hostName = "gro-goroth";
