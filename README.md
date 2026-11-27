@@ -14,7 +14,7 @@
 | Directory          | Scope                                                          |
 | ------------------ | -------------------------------------------------------------- |
 | `modules/common`   | Cross-platform modules (options, nix, shell, fonts, packages)  |
-| `modules/nixos`    | NixOS-only modules                                             |
+| `modules/nixos`    | NixOS-only modules (`environment.nix` = base, `default.nix` = base + packages) |
 | `modules/darwin`   | nix-darwin-only modules                                        |
 | `modules/features` | Opt-in capabilities, gated by `my.*` flags                     |
 
@@ -23,6 +23,12 @@ Each platform has an aggregator (`modules/nixos/default.nix`,
 own platform modules. Host files must **not** list module paths: they import
 only their own `hardware-configuration.nix` and the platform aggregator, then
 choose capabilities with `my.*` flags.
+
+`modules/nixos/environment.nix` is the base aggregator: boot, networking,
+locale, audio, desktop plumbing, users, shell and git, with **no** application
+packages. `modules/nixos/default.nix` adds the shared desktop packages on top.
+Hosts that should stay minimal (like `sylvian`) import `environment.nix` plus
+the features they need instead of the full aggregator.
 
 ## Capabilities (`my.*`)
 
@@ -49,7 +55,8 @@ my = {
 };
 ```
 
-`sylvian` runs Immich only; it leaves `homeserver` and `hermes` disabled.
+`sylvian` imports only the base environment plus the Immich feature, so it does
+not pull in the shared desktop packages (alacritty, chromium, etc.).
 `gro-goroth` sets:
 
 ```nix

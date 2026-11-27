@@ -3,18 +3,14 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ../../modules/nixos
+    ../../modules/nixos/environment.nix
+    ../../modules/features/immich.nix
   ];
 
   networking.hostName = "sylvian";
 
   my = {
-    gaming.enable = false;
-    devTools.enable = false;
     editor.enable = false;
-    laptop.enable = false;
-    homeserver.enable = false;
-    hermes.enable = false;
     immich.enable = true;
     niri.enable = false;
     gnome.enable = true;
@@ -68,6 +64,9 @@
     }
   ];
 
+  # Keep en_IN: the Immich PostgreSQL data directory was initialised with this
+  # locale. Changing it drops en_IN from i18n.supportedLocales and the database
+  # fails to start.
   i18n.defaultLocale = "en_IN";
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_IN";
@@ -93,6 +92,13 @@
       "nofail"
     ];
   };
+
+  # Minimal package set: the shared desktop packages are intentionally not
+  # imported for this host. `fastfetch` backs the shared `ff` shell alias.
+  environment.systemPackages = with pkgs; [
+    neovim
+    fastfetch
+  ];
 
   system.stateVersion = "26.05";
 }

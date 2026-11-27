@@ -1,22 +1,11 @@
 {
   imports = [
-    ../common
+    ./environment.nix
     ../features/gaming.nix
     ../features/laptop.nix
     ../features/homeserver.nix
     ../features/hermes.nix
     ../features/immich.nix
-    ./boot.nix
-    ./audio.nix
-    ./desktop.nix
-    ./flatpak.nix
-    ./networking.nix
-    ./ssh.nix
-    ./users.nix
-    ./locale.nix
-    ./nix.nix
-    ./shell.nix
-    ./git.nix
     ../common/packages.nix
     ./packages.nix
   ];
