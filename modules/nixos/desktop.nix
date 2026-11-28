@@ -31,6 +31,12 @@
 
       xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
       xdg.portal.config.common.default = "gtk";
+
+      services.earlyoom = {
+        enable = true;
+        freeMemThreshold = 10;
+        enableNotifications = true;
+      };
     })
 
     (lib.mkIf config.my.gnome.enable {
