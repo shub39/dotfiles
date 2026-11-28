@@ -51,6 +51,7 @@ let
     gruvbox-dark-gtk
     gruvbox-gtk-theme
     gruvbox-plus-icons
+    vimix-cursors
   ];
 in
 {

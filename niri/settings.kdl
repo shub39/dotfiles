@@ -39,6 +39,8 @@ output "Dell Inc. DELL P2422H DQMDBJ3" {
 }
 
 cursor {
+    xcursor-theme "Vimix-cursors"
+    xcursor-size 30
     hide-after-inactive-ms 5000
 }
 
